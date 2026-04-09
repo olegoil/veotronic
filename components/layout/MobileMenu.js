@@ -24,7 +24,7 @@ export default function MobileMenu() {
 		<>
 			<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 				<ul className="navigation clearfix">
-					<li className={`dropdown2 ${isAccordion == 1 ? "open" : ""} ${checkParentActive([
+					{/* <li className={`dropdown2 ${isAccordion == 1 ? "open" : ""} ${checkParentActive([
 						"/home2",
 						"/home3",
 						"/home4",
@@ -54,8 +54,8 @@ export default function MobileMenu() {
 						</ul>
 						<div class="dropdown2-btn" onClick={() => handleAccordion(1)} />
 
-					</li>
-					<li className={`dropdown2 ${isAccordion == 2 ? "open" : ""} ${checkParentActive([
+					</li> */}
+					{/* <li className={`dropdown2 ${isAccordion == 2 ? "open" : ""} ${checkParentActive([
 						"/about-company",
 						"/team",
 						"/team-details",
@@ -73,33 +73,48 @@ export default function MobileMenu() {
 							<li className={`${checkCurrentMenuItem("/team-details",)}`}>
 								<Link href="/team-details">Team Details</Link>
 
-							</li></ul>
+							</li>
+							</ul>
 						<div class="dropdown2-btn" onClick={() => handleAccordion(2)} />
 
+					</li> */}
+					<li className={`${pathname === "/faq" ? "current" : ""}`}>
+						<Link href="/">Home</Link>
+					</li>
+					<li className={`${pathname === "/faq" ? "current" : ""}`}>
+						<Link href="/about-company">About Company</Link>
 					</li>
 					<li className={`dropdown2 ${isAccordion == 3 ? "open" : ""} ${checkParentActive([
-						"/service1",
-						"/service2",
-						"/service-details"
+						"/service-ai",
+						"/service-auto",
+						"/service-api",
+						"/service-development",
+						"/service-mobile"
 
 					])}`}>
 						<Link href="/#">Service</Link>
 						<ul style={{ display: `${isAccordion == 3 ? "block" : "none"}` }}>
-							<li className={`${checkCurrentMenuItem("/service1")}`}>
-								<Link href="/service1">Service 01</Link>
+							<li className={`${checkCurrentMenuItem("/service-ai")}`}>
+								<Link href="/service-ai">AI & Machine Learning</Link>
 							</li>
-							<li className={`${checkCurrentMenuItem("/service2")}`}>
-								<Link href="/service2">Service 02</Link>
+							<li className={`${checkCurrentMenuItem("/service-auto")}`}>
+								<Link href="/service-auto">Process Automation</Link>
 							</li>
-							<li className={`${checkCurrentMenuItem("/service-details")}`}>
-								<Link href="/service-details">Service
-									Details</Link>
+							<li className={`${checkCurrentMenuItem("/service-api")}`}>
+								<Link href="/service-api">Unified API Platform</Link>
 							</li>
+							<li className={`${checkCurrentMenuItem("/service-development")}`}>
+								<Link href="/service-development">Custom Software Development</Link>
+							</li>
+							<li className={`${checkCurrentMenuItem("/service-mobile")}`}>
+								<Link href="/service-mobile">Mobile App Development</Link>
+							</li>							
+														
 						</ul>
 						<div class="dropdown2-btn" onClick={() => handleAccordion(3)} />
 
 					</li>
-					<li className={`dropdown2 ${isAccordion == 4 ? "open" : ""} ${checkParentActive([
+					{/* <li className={`dropdown2 ${isAccordion == 4 ? "open" : ""} ${checkParentActive([
 						"/project-grid",
 						"/project-mansory",
 						"/project-slider",
@@ -127,8 +142,8 @@ export default function MobileMenu() {
 						</ul>
 						<div class="dropdown2-btn" onClick={() => handleAccordion(4)} />
 
-					</li>
-					<li className={`dropdown2 ${isAccordion == 5 ? "open" : ""} ${checkParentActive([
+					</li> */}
+					{/* <li className={`dropdown2 ${isAccordion == 5 ? "open" : ""} ${checkParentActive([
 						"/faq",
 						"/pricing",
 						"/404",
@@ -148,8 +163,8 @@ export default function MobileMenu() {
 						</ul>
 						<div class="dropdown2-btn" onClick={() => handleAccordion(5)} />
 
-					</li>
-					<li className={`dropdown2 ${isAccordion == 6 ? "open" : ""} ${checkParentActive([
+					</li> */}
+					{/* <li className={`dropdown2 ${isAccordion == 6 ? "open" : ""} ${checkParentActive([
 						"/blog",
 						"/blog-style2",
 						"/blog-details"
@@ -169,6 +184,9 @@ export default function MobileMenu() {
 						</ul>
 						<div class="dropdown2-btn" onClick={() => handleAccordion(6)} />
 
+					</li> */}
+					<li className={`${pathname === "/faq" ? "current" : ""}`}>
+						<Link href="/faq">Faq</Link>
 					</li>
 					<li className={`${pathname === "/contact-us" ? "current" : ""}`}>
 						<Link href="/contact-us">Contact</Link>

@@ -42,49 +42,49 @@ export default function Team1() {
 								<div className="flex">
 									<span className="number">01</span>
 									<div className="box-wrap">
-										<h3 className="name"><Link href="/team-details">George C. Anderson</Link></h3>
+										<h3 className="name">George C. Anderson</h3>
 										<p className="job font-man">Senior Manager</p>
 									</div>
 								</div>
-								<Link href="/team-details" className="link-team flex-five"><i className="icon-top" /></Link>
+								{/* <Link href="/team-details" className="link-team flex-five"><i className="icon-top" /></Link> */}
 							</div>
 							<div className="tf-team-list flex-one team-post team-post-22 wow fadeInUpSmall" data-wow-delay=".3s" data-id={22} onMouseEnter={() => handleHover(2)} onMouseLeave={() => handleHover(2)}>
 								<div className="flex">
 									<span className="number">02</span>
 									<div className="box-wrap">
-										<h3 className="name"><Link href="/team-details">Brandon D. Garcia</Link></h3>
+										<h3 className="name">Brandon D. Garcia</h3>
 										<p className="job font-man">IT Consultant</p>
 									</div>
 								</div>
-								<Link href="/team-details" className="link-team flex-five"><i className="icon-top" /></Link>
+								{/* <Link href="/team-details" className="link-team flex-five"><i className="icon-top" /></Link> */}
 							</div>
 							<div className="tf-team-list flex-one team-post team-post-33 wow fadeInUpSmall" data-wow-delay=".4s" data-id={33} onMouseEnter={() => handleHover(3)} onMouseLeave={() => handleHover(3)}>
 								<div className="flex">
 									<span className="number">03</span>
 									<div className="box-wrap">
-										<h3 className="name"><Link href="/team-details">William A. Rogers</Link></h3>
+										<h3 className="name">William A. Rogers</h3>
 										<p className="job font-man">Product Designer</p>
 									</div>
 								</div>
-								<Link href="/team-details" className="link-team flex-five"><i className="icon-top" /></Link>
+								{/* <Link href="/team-details" className="link-team flex-five"><i className="icon-top" /></Link> */}
 							</div>
 							<div className="tf-team-list flex-one team-post team-post-44 wow fadeInUpSmall" data-wow-delay=".4s" data-id={44} onMouseEnter={() => handleHover(4)} onMouseLeave={() => handleHover(4)}>
 								<div className="flex">
 									<span className="number">04</span>
 									<div className="box-wrap">
-										<h3 className="name"><Link href="/team-details">Matthew R. Howard</Link></h3>
+										<h3 className="name">Matthew R. Howard</h3>
 										<p className="job font-man">IT Manager</p>
 									</div>
 								</div>
-								<Link href="/team-details" className="link-team flex-five"><i className="icon-top" /></Link>
+								{/* <Link href="/team-details" className="link-team flex-five"><i className="icon-top" /></Link> */}
 							</div>
 						</div>
 						<div className="col-md-7 content-right">
 							<div className="item-team-grid">
 								<div className={`item-team-member team-post team-post-11 item1 relative ${isHover == 1 ? "active-thumb" : ""}`} data-id={11}>
-									<Link href="/team-details">
+									
 										<img src="/assets/images/team/teamh1_new.jpg" alt="image" />
-									</Link>
+									
 									{/* <ul className="social-team flex-three">
 										<li>
 											<Link href="/#"><i className="icon-facebook" /></Link>
@@ -101,9 +101,9 @@ export default function Team1() {
 									</ul> */}
 								</div>
 								<div className={`item-team-member team-post team-post-22 item2 relative ${isHover == 2 ? "active-thumb" : ""}`} data-id={22}>
-									<Link href="/team-details">
+									
 										<img src="/assets/images/team/teamh1_new2.jpg" alt="image" />
-									</Link>
+									
 									{/* <ul className="social-team flex-three">
 										<li>
 											<Link href="/#"><i className="icon-facebook" /></Link>
@@ -120,9 +120,9 @@ export default function Team1() {
 									</ul> */}
 								</div>
 								<div className={`item-team-member team-post team-post-33 item3 relative ${isHover == 3 ? "active-thumb" : ""}`} data-id={33}>
-									<Link href="/team-details">
+									
 										<img src="/assets/images/team/teamh1_new3.jpg" alt="image" />
-									</Link>
+									
 									{/* <ul className="social-team flex-three">
 										<li>
 											<Link href="/#"><i className="icon-facebook" /></Link>
@@ -139,9 +139,9 @@ export default function Team1() {
 									</ul> */}
 								</div>
 								<div className={`item-team-member team-post team-post-44 item4 relative ${isHover == 4 ? "active-thumb" : ""}`} data-id={44}>
-									<Link href="/team-details">
+									
 										<img src="/assets/images/team/teamh1_new4.jpg" alt="image" />
-									</Link>
+									
 									{/* <ul className="social-team flex-three">
 										<li>
 											<Link href="/#"><i className="icon-facebook" /></Link>

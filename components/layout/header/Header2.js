@@ -25,16 +25,16 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, handle
 						<div className="col-md-5 flex-six">
 							<ul className="menu-left flex-three">
 								<li>
-									<Link href="/#">Help</Link>
+									<Link href="/about-company">Company</Link>
 								</li>
 								<li>
-									<Link href="/#">Support</Link>
+									<Link href="/contact-us">Support</Link>
 								</li>
 								<li>
-									<Link href="/#">Faqs</Link>
+									<Link href="/faq">Faqs</Link>
 								</li>
 							</ul>
-							<ul className="social-top flex-three">
+							{/* <ul className="social-top flex-three">
 								<li>
 									<Link href="/#"><i className="icon-fb" /></Link>
 								</li>
@@ -47,7 +47,7 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, handle
 								<li>
 									<Link href="/#"><i className="icon-ytb" /></Link>
 								</li>
-							</ul>
+							</ul> */}
 						</div>
 					</div>
 				</div>
@@ -74,16 +74,16 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, handle
 											</nav>
 											{/* Main Menu End*/}
 										</div>
-										<div className="header-search" onClick={handleSearch}>
+										{/* <div className="header-search" onClick={handleSearch}>
 											<a> <i className="icon-search-icon" /> </a>
-										</div>
+										</div> */}
 									</div>
 									<div className="header-account flex align-center">
 										<div className="phone-address">
 											<ul className="flex align-center">
 												<li className>
 													<i className="icon-phone2" />
-													<span>+222 (456) 896 22</span>
+													<span>+23332 (456) 896 22</span>
 												</li>
 											</ul>
 										</div>

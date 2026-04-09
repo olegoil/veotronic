@@ -24,17 +24,17 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handle
 						</div>
 						<div className="col-md-5 flex-six">
 							<ul className="menu-left flex-three">
-								<li>
+								{/* <li>
 									<Link href="/#">Help</Link>
+								</li> */}
+								<li>
+									<Link href="/contact-us">Support</Link>
 								</li>
 								<li>
-									<Link href="/#">Support</Link>
-								</li>
-								<li>
-									<Link href="/#">Faqs</Link>
+									<Link href="/faq">Faqs</Link>
 								</li>
 							</ul>
-							<ul className="social-top flex-three">
+							{/* <ul className="social-top flex-three">
 								<li>
 									<Link href="/#"><i className="icon-fb" /></Link>
 								</li>
@@ -47,7 +47,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handle
 								<li>
 									<Link href="/#"><i className="icon-ytb" /></Link>
 								</li>
-							</ul>
+							</ul> */}
 						</div>
 					</div>
 				</div>
@@ -84,9 +84,9 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handle
 												</li>
 											</ul>
 										</div>
-										<div className="header-search" onClick={handleSearch}>
+										{/* <div className="header-search" onClick={handleSearch}>
 											<a> <i className="icon-search-icon" /> </a>
-										</div>
+										</div> */}
 										<div className="flat-bt-top sc-btn-top">
 											<a className="icon-listing" onClick={handleOffcanvas} data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i className="icon-uni" />Menu</a>
 										</div>

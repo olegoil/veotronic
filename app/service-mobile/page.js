@@ -18,7 +18,7 @@ export default function ServiceDetails() {
     return (
         <>
 
-            <Layout breadcrumbTitle="Custom Software Development">
+            <Layout breadcrumbTitle="Mobile App Development">
              <div>
     {/* Hero Section - Custom Software Development заменен на Mobile Development */}
     <section className="pt-130 pb-130 skill-team-member">

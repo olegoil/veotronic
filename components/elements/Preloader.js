@@ -3,8 +3,8 @@ export default function Preloader() {
 		<>
 			<div className="preload preload-container">
 				<div className="loader">
-					<span>Wiatech</span>
-					<span>Wiatech</span>
+					<span>Veotronic</span>
+					<span>Veotronic</span>
 				</div>
 			</div>
 		</>

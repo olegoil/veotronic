@@ -10,23 +10,23 @@ export default function Offcanvas({ handleOffcanvas, isOffcanvas }) {
 				<div className="offcanvas-body">
 					<ul className="menu-service">
 						<li>
-							<Link href="/#">About </Link>
+							<Link href="/service-ai">AI & Machine Learning</Link>
 						</li>
 						<li>
-							<Link href="/#">IT Management</Link>
+							<Link href="/service-auto">Process Automation</Link>
 						</li>
 						<li>
-							<Link href="/#">Help Center</Link>
+							<Link href="/service-api">Unified API Platform</Link>
 						</li>
 						<li>
-							<Link href="/#">Portfolio</Link>
+							<Link href="/service-development">Custom Software Development</Link>
 						</li>
 						<li>
-							<Link href="/#">Blog</Link>
+							<Link href="/service-mobile">Mobile App Development</Link>
 						</li>
 					</ul>
-					<p className="des">Pellentesque mollis nec orci id tincidunt. Sed mollis risus eu nisi aliquet, sit amet
-						fermentum justo dapibus.</p>
+					<p className="des">We understand that every challenge is an opportunity we are here seize
+a team of dedicated professionals and a culture</p>
 					<div className="footer-main-locations">
 						<h5 className="title-footer">Contact</h5>
 						<p className="font-man text-lcation">55 Main Street, 2nd block <br />
@@ -34,7 +34,7 @@ export default function Offcanvas({ handleOffcanvas, isOffcanvas }) {
 						<p className="font-man text-lcation ">support@gmail.com</p>
 						<p className="phone">+880 (123) 456 88</p>
 					</div>
-					<div className="follow-social">
+					{/* <div className="follow-social">
 						<span>Follow Us</span>
 						<ul className="social-footer flex-three">
 							<li>
@@ -50,8 +50,8 @@ export default function Offcanvas({ handleOffcanvas, isOffcanvas }) {
 								<Link href="/#" className="flex-five"><i className="icon-instagram" /></Link>
 							</li>
 						</ul>
-					</div>
-					<p className="des">© 2023 WiaTech - IT Services.</p>
+					</div> */}
+					<p className="des">© 2023 Veotronic — AI & IT Solutions. All rights reserved.</p>
 				</div>
 			</div>
 			{isOffcanvas && <div className="offcanvas-backdrop fade show" onClick={handleOffcanvas} />}

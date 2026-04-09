@@ -27198,3 +27198,64 @@ xpush
   }
 }
 
+/* -------------------------------- 
+
+Privacy Policy
+
+-------------------------------- */
+
+.privacy-policy-page {
+    background-color: #f9f9fb;
+}
+
+.privacy-policy-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.05);
+}
+
+.policy-section {
+    margin-bottom: 40px;
+}
+
+.policy-section h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #0a0a0a;
+}
+
+.policy-section p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.policy-list {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.policy-list li {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.last-updated {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.contact-list {
+    list-style: none;
+    padding-left: 0;
+}
+

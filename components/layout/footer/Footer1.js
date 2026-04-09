@@ -85,7 +85,7 @@ export default function Footer1() {
 									<Link href="/about-company"><i className="icon-right-icon" />About Us</Link>
 								</li>
 								<li>
-									<Link href="/#"><i className="icon-right-icon" />Cookies Policy</Link>
+									<Link href="/privacy-policy"><i className="icon-right-icon" />Cookies Policy</Link>
 								</li>
 							</ul>
 						</div>
@@ -97,7 +97,7 @@ export default function Footer1() {
 								<input type="email" name="email-form" id="subscribe-email" placeholder="Email Address" />
 								<button type="submit" id="subscribe-button">Sign Up <i className="icon-right-icon" /></button>
 							</form>
-							<p className="privacy-policy">By subscribing, you’re accept <Link href="/#">Privacy Policy</Link>
+							<p className="privacy-policy">By subscribing, you’re accept <Link href="/privacy-policy">Privacy Policy</Link>
 							</p>
 						</div>
 					</div>
@@ -119,7 +119,7 @@ export default function Footer1() {
 									<Link href="/contact-us">Contact</Link>
 								</li>
 								<li>
-									<Link href="/#">Privacy</Link>
+									<Link href="/privacy-policy">Privacy</Link>
 								</li>
 								<li>
 									<Link href="/faq">Faqs</Link>

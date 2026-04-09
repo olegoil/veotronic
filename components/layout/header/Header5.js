@@ -31,9 +31,9 @@ export default function Header5({ scroll, isMobileMenu, handleMobileMenu, handle
 											</nav>
 											{/* Main Menu End*/}
 										</div>
-										<div className="header-search" onClick={handleSearch}>
+										{/* <div className="header-search" onClick={handleSearch}>
 											<a> <i className="icon-search-icon" /> </a>
-										</div>
+										</div> */}
 									</div>
 									<div className="header-account flex align-center">
 										<div className="phone-address">

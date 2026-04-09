@@ -18,14 +18,17 @@ export default function Menu() {
 	return (
 		<>
 			<ul className="navigation clearfix">
-				<li className={`dropdown2 ${checkParentActive([
+				<li className={`${pathname === "/" ? "current" : ""}`}>
+					<Link href="/">Home</Link>
+				</li>
+				{/* <li className={`dropdown2 ${checkParentActive([
 					"/home2",
 					"/home3",
 					"/home4",
 					"/home5",
 					"/home6",
 				])}`}>
-					<Link href="/#">Home</Link>
+					<Link  href="/#">Home</Link>
 					<ul>
 						<li className={`${checkCurrentMenuItem("/")}`}>
 							<Link href="/">Home 01</Link>
@@ -47,8 +50,11 @@ export default function Menu() {
 						</li>
 					</ul>
 
+				</li> */}
+				<li className={`${pathname === "/about-company" ? "current" : ""}`}>
+					<Link href="/about-company">About Company</Link>
 				</li>
-				<li className={`dropdown2 ${checkParentActive([
+				{/* <li className={`dropdown2 ${checkParentActive([
 					"/about-company",
 					"/team",
 					"/team-details",
@@ -66,18 +72,21 @@ export default function Menu() {
 						<li className={`${checkCurrentMenuItem("/team-details",)}`}>
 							<Link href="/team-details">Team Details</Link>
 
-						</li></ul>
+						</li>
+						</ul>
 
-				</li>
+				</li> */}
 				<li className={`dropdown2 ${checkParentActive([
-					"/service1",
-					"/service2",
-					"/service-details"
+					"/service-ai",
+						"/service-auto",
+						"/service-api",
+						"/service-development",
+						"/service-mobile"
 
 				])}`}>
-					<Link href="/#">Service</Link>
+					<Link href="/service-ai">Service</Link>
 					<ul>
-						<li className={`${checkCurrentMenuItem("/service1")}`}>
+						{/* <li className={`${checkCurrentMenuItem("/service1")}`}>
 							<Link href="/service1">Service 01</Link>
 						</li>
 						<li className={`${checkCurrentMenuItem("/service2")}`}>
@@ -86,26 +95,26 @@ export default function Menu() {
 						<li className={`${checkCurrentMenuItem("/service-details")}`}>
 							<Link href="/service-details">Service
 								Details</Link>
-						</li>
+						</li> */}
 						<li className={`${checkCurrentMenuItem("/service-ai")}`}>
-							<Link href="/service-ai">01-AI</Link>
+							<Link href="/service-ai">AI & Machine Learning</Link>
 						</li>
 						<li className={`${checkCurrentMenuItem("/service-auto")}`}>
-							<Link href="/service-auto">02-AUTO</Link>
+							<Link href="/service-auto">Process Automation</Link>
 						</li>
 						<li className={`${checkCurrentMenuItem("/service-api")}`}>
-							<Link href="/service-api">03-API</Link>
+							<Link href="/service-api">Unified API Platform</Link>
 						</li>
-						<li className={`${checkCurrentMenuItem("/service-details")}`}>
-							<Link href="/service-development">04-Software Development</Link>
+						<li className={`${checkCurrentMenuItem("/service-development")}`}>
+							<Link href="/service-development">Custom Software Development</Link>
 						</li>
 						<li className={`${checkCurrentMenuItem("/service-mobile")}`}>
-							<Link href="/service-mobile">05-MOBILE</Link>
+							<Link href="/service-mobile">Mobile App Development</Link>
 						</li>
 					</ul>
 
 				</li>
-				<li className={`dropdown2 ${checkParentActive([
+				{/* <li className={`dropdown2 ${checkParentActive([
 					"/project-grid",
 					"/project-mansory",
 					"/project-slider",
@@ -132,8 +141,8 @@ export default function Menu() {
 						</li>
 					</ul>
 
-				</li>
-				<li className={`dropdown2 ${checkParentActive([
+				</li> */}
+				{/* <li className={`dropdown2 ${checkParentActive([
 					"/faq",
 					"/pricing",
 					"/404",
@@ -152,8 +161,8 @@ export default function Menu() {
 						</li>
 					</ul>
 
-				</li>
-				<li className={`dropdown2 ${checkParentActive([
+				</li> */}
+				{/* <li className={`dropdown2 ${checkParentActive([
 					"/blog",
 					"/blog-style2",
 					"/blog-details"
@@ -172,6 +181,9 @@ export default function Menu() {
 						</li>
 					</ul>
 
+				</li> */}
+				<li className={`${pathname === "/faq" ? "current" : ""}`}>
+					<Link href="/faq">Faq</Link>
 				</li>
 				<li className={`${pathname === "/contact-us" ? "current" : ""}`}>
 					<Link href="/contact-us">Contact</Link>
