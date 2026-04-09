@@ -21,15 +21,15 @@ export default function MainSlider1() {
 									<div className="sub-title-slider wow fadeInUpSmall">
 										<i className="icon-angle-downs " />
 										<span className="fw-600 text-white font-man">
-											5m+ Trusted Our Clients</span>
+											80+ Projects Delivered</span>
 									</div>
 									<h1 className="title-slider text-white wow fadeInUpSmall" data-wow-delay=".2s">AI Development &amp; Implementation <br /> for Business Automation
 									</h1>
-									<p className="des text-white fw-500 mb-40 wow fadeInUpSmall" data-wow-delay=".3s">25+ Years Of Experience In Tech
+									<p className="des text-white fw-500 mb-40 wow fadeInUpSmall" data-wow-delay=".3s">10+ Years Of Experience In Tech
 										Services
 									</p>
 									<div className="btn-main wow fadeInUpSmall" data-wow-delay=".4s">
-										<Link href="/service1" className="button-src ">Explore Our Service
+										<Link href="/service-ai" className="button-src ">Explore Our Service
 											<i className="icon-angle-right" /></Link>
 									</div>
 								</div>
@@ -48,16 +48,16 @@ export default function MainSlider1() {
 									<div className="sub-title-slider wow fadeInUpSmall">
 										<i className="icon-angle-downs " />
 										<span className="fw-600 text-white font-man">
-											5m+ Trusted Our Clients</span>
+											80+ Projects Delivered</span>
 									</div>
 									<h1 className="title-slider text-white wow fadeInUpSmall" data-wow-delay=".2s">Business Process Automation
 										<br />When Your Business Runs Itself
 									</h1>
-									<p className="des text-white fw-500 mb-40 wow fadeInUpSmall" data-wow-delay=".3s">25+ Years Of Experience In Tech
+									<p className="des text-white fw-500 mb-40 wow fadeInUpSmall" data-wow-delay=".3s">10+ Years Of Experience In Tech
 										Services
 									</p>
 									<div className="btn-main wow fadeInUpSmall" data-wow-delay=".4s">
-										<Link href="/service2" className="button-src">Explore Our Service <i className="icon-angle-right" /></Link>
+										<Link href="/service-auto" className="button-src">Explore Our Service <i className="icon-angle-right" /></Link>
 									</div>
 								</div>
 							</div>
@@ -75,16 +75,16 @@ export default function MainSlider1() {
 									<div className="sub-title-slider wow fadeInUpSmall">
 										<i className="icon-angle-downs " />
 										<span className="fw-600 text-white font-man">
-											5m+ Trusted Our Clients</span>
+											80+ Projects Delivered</span>
 									</div>
 									<h1 className="title-slider text-white wow fadeInUpSmall" data-wow-delay=".2s">API Integration Platform
 										<br />Connecting Disparate Systems into One
 									</h1>
-									<p className="des text-white fw-500 mb-40 wow fadeInUpSmall" data-wow-delay=".3s">25+ Years Of Experience In Tech
+									<p className="des text-white fw-500 mb-40 wow fadeInUpSmall" data-wow-delay=".3s">10+ Years Of Experience In Tech
 										Services
 									</p>
 									<div className="btn-main wow fadeInUpSmall" data-wow-delay=".4s">
-										<Link href="/service2" className="button-src">Explore Our Service <i className="icon-angle-right" /></Link>
+										<Link href="/service-api" className="button-src">Explore Our Service <i className="icon-angle-right" /></Link>
 									</div>
 								</div>
 							</div>
@@ -102,16 +102,16 @@ export default function MainSlider1() {
 									<div className="sub-title-slider wow fadeInUpSmall">
 										<i className="icon-angle-downs " />
 										<span className="fw-600 text-white font-man">
-											5m+ Trusted Our Clients</span>
+											80+ Projects Delivered</span>
 									</div>
 									<h1 className="title-slider text-white wow fadeInUpSmall" data-wow-delay=".2s">Custom Software Solutions
 										<br />for Business & Industrial Operations
 									</h1>
-									<p className="des text-white fw-500 mb-40 wow fadeInUpSmall" data-wow-delay=".3s">25+ Years Of Experience In Tech
+									<p className="des text-white fw-500 mb-40 wow fadeInUpSmall" data-wow-delay=".3s">10+ Years Of Experience In Tech
 										Services
 									</p>
 									<div className="btn-main wow fadeInUpSmall" data-wow-delay=".4s">
-										<Link href="/service2" className="button-src">Explore Our Service <i className="icon-angle-right" /></Link>
+										<Link href="/service-development" className="button-src">Explore Our Service <i className="icon-angle-right" /></Link>
 									</div>
 								</div>
 							</div>

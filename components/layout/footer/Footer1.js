@@ -30,9 +30,8 @@ export default function Footer1() {
 					<div className="footer-main  flex">
 						<div className="footer-main-item logo-footer wow fadeInUpSmall" data-wow-delay=".2s">
 							<img src="/assets/images/logo2.png" alt="image" className="logo" />
-							<p className="des font-man">Sed ut persiciatis unde omnis natus
-								voluptatem accusantium dolore</p>
-							<div className="follow-social">
+							<p className="des font-man">Veotronic builds smart technology for modern businesses. From AI automation to custom software and API integration — we deliver solutions that solve real problems. Let's build something great together</p>
+							{/* <div className="follow-social">
 								<span>Follow Us</span>
 								<ul className="social-footer flex-three">
 									<li>
@@ -48,25 +47,25 @@ export default function Footer1() {
 										<Link href="/#" className="flex-five"><i className="icon-instagram" /></Link>
 									</li>
 								</ul>
-							</div>
+							</div> */}
 						</div>
 						<div className="footer-main-item menu-services wow fadeInUpSmall" data-wow-delay=".3s">
 							<h4 className="title-footer2 ">IT Services</h4>
 							<ul className="menu-service">
 								<li>
-									<Link href="/#"><i className="icon-right-icon" />IT Consultancy</Link>
+									<Link href="/service-ai"><i className="icon-right-icon" />AI & Machine Learning</Link>
 								</li>
 								<li>
-									<Link href="/#"><i className="icon-right-icon" />IT Management</Link>
+									<Link href="/service-auto"><i className="icon-right-icon" />Process Automation</Link>
 								</li>
 								<li>
-									<Link href="/#"><i className="icon-right-icon" />IT Supports</Link>
+									<Link href="/service-api"><i className="icon-right-icon" />Unified API Platform</Link>
 								</li>
 								<li>
-									<Link href="/#"><i className="icon-right-icon" />Cloud Computing</Link>
+									<Link href="/service-development"><i className="icon-right-icon" />Software Development</Link>
 								</li>
 								<li>
-									<Link href="/#"><i className="icon-right-icon" />Cyber Security</Link>
+									<Link href="/service-mobile"><i className="icon-right-icon" />Mobile App Development</Link>
 								</li>
 							</ul>
 						</div>
@@ -74,16 +73,16 @@ export default function Footer1() {
 							<h4 className="title-footer2 ">Support</h4>
 							<ul className="menu-service">
 								<li>
-									<Link href="/#"><i className="icon-right-icon" />Forum Support</Link>
+									<Link href="/contact-us"><i className="icon-right-icon" />Support</Link>
 								</li>
 								<li>
-									<Link href="/#"><i className="icon-right-icon" />Help &amp; FAQ</Link>
+									<Link href="/faq"><i className="icon-right-icon" />FAQ</Link>
 								</li>
 								<li>
-									<Link href="/#"><i className="icon-right-icon" />Contact Us</Link>
+									<Link href="/contact-us"><i className="icon-right-icon" />Contact Us</Link>
 								</li>
 								<li>
-									<Link href="/#"><i className="icon-right-icon" />Pricing and plans</Link>
+									<Link href="/about-company"><i className="icon-right-icon" />About Us</Link>
 								</li>
 								<li>
 									<Link href="/#"><i className="icon-right-icon" />Cookies Policy</Link>
@@ -109,21 +108,21 @@ export default function Footer1() {
 					</div>
 					<div className="footer-bottom2 row">
 						<div className="col-md-6">
-							<p>© 2023 WiaTech - IT Services. All rights reserved.</p>
+							<p>© 2023 Veotronic — AI & IT Solutions. All rights reserved.</p>
 						</div>
 						<div className="col-md-6">
 							<ul className="menu-right-bottom flex-six">
 								<li>
-									<Link href="/#">Company</Link>
+									<Link href="/about-company">About Company</Link>
 								</li>
 								<li>
-									<Link href="/#">Support</Link>
+									<Link href="/contact-us">Contact</Link>
 								</li>
 								<li>
 									<Link href="/#">Privacy</Link>
 								</li>
 								<li>
-									<Link href="/#">Faqs</Link>
+									<Link href="/faq">Faqs</Link>
 								</li>
 							</ul>
 						</div>

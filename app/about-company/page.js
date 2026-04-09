@@ -158,7 +158,7 @@ export default function AboutCompany() {
 											<i className="icon-ai" />
 										</div>
 										<div className="content">
-											<h3 className="title"><Link href="/#">From Ambiguity to Architecture</Link></h3>
+											<h3 className="title">From Ambiguity to Architecture</h3>
 											<p className="des font-man">We build projects that are both logically correct and visually exceptional. Complex, high-uncertainty problems are our specialty. We deconstruct large challenges into small, actionable steps and guide you through every stage until we reach your final objective
 											</p>
 										</div>
@@ -168,7 +168,7 @@ export default function AboutCompany() {
 											<i className="icon-contract" />
 										</div>
 										<div className="content ">
-											<h3 className="title"><Link href="/#">Deep Immersion</Link></h3>
+											<h3 className="title">Deep Immersion</h3>
 											<p className="des font-man">We deeply immerse ourselves in your workflows and interview stakeholders to uncover true needs. We find synergies, form hypotheses, test them through prototypes, and deliver a final design that ties everything together into a cohesive solution
 											</p>
 										</div>
@@ -178,7 +178,7 @@ export default function AboutCompany() {
 											<i className="icon-milestones" />
 										</div>
 										<div className="content ">
-											<h3 className="title"><Link href="/#">From Discovery to Delivery</Link></h3>
+											<h3 className="title">From Discovery to Delivery</h3>
 											<p className="des font-man">We immerse ourselves in your workflows, interview stakeholders, uncover true needs, identify synergies, test hypotheses, build prototypes, and deliver a final design that ties everything together
 											</p>
 										</div>

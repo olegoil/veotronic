@@ -34,7 +34,7 @@ export default function CaseStudies1() {
 								</div>
 								<h2 className="title-case text-white">AI-Powered Product Listing Automation</h2>
 								<p className="des font-man">The AI automatically selects and processes product photos, then generates complete product cards. It publishes listings to major marketplaces and online stores without manual intervention. From raw images to live products — entirely automated.</p>
-								<Link href="/#" className="button-src">View Details <i className="icon-angle-right" /></Link>
+								<Link href="/service-ai" className="button-src">View Details <i className="icon-angle-right" /></Link>
 							</div>
 						</div>
 					</div>

@@ -68,7 +68,7 @@ export default function ServiceDetails() {
                             <button className={isTab == 2 ? "nav-link active" : "nav-link"} id="retail-tab" data-bs-toggle="tab" data-bs-target="#hybrid-tab-pane" type="button" role="tab" aria-controls="hybrid-tab-pane" aria-selected="false">Hybrid & Cross-Platform</button>
                         </li>
                         <li className="nav-item" onClick={() => handleTab(3)}>
-                            <button className={isTab == 3 ? "nav-link active" : "nav-link"} id="education-tab" data-bs-toggle="tab" data-bs-target="#pwa-tab-pane" type="button" role="tab" aria-controls="pwa-tab-pane" aria-selected="false">Progressive Web Apps (PWA)</button>
+                            <button className={isTab == 3 ? "nav-link active" : "nav-link"} id="education-tab" data-bs-toggle="tab" data-bs-target="#pwa-tab-pane" type="button" role="tab" aria-controls="pwa-tab-pane" aria-selected="false">Progressive Web Apps</button>
                         </li>
                         <li className="nav-item" onClick={() => handleTab(4)}>
                             <button className={isTab == 4 ? "nav-link active" : "nav-link"} id="healthcare-tab" data-bs-toggle="tab" data-bs-target="#ai-tab-pane" type="button" role="tab" aria-controls="ai-tab-pane" aria-selected="false">AI-Powered Mobile Apps</button>
@@ -309,42 +309,42 @@ export default function ServiceDetails() {
                 <div className="col-12 col-sm-6 col-lg-4 mb-30">
                     <div className="tf-performance">
                         <span className="number">01</span>
-                        <h4 className="title"><Link href="/#">E-commerce & Retail</Link></h4>
+                        <h4 className="title">E-commerce & Retail</h4>
                         <p className="des">Mobile stores, loyalty apps, personalized shopping, one-click checkout, and push notifications for promotions.</p>
                     </div>
                 </div>
                 <div className="col-12 col-sm-6 col-lg-4 mb-30">
                     <div className="tf-performance">
                         <span className="number">02</span>
-                        <h4 className="title"><Link href="/#">Finance & Banking</Link></h4>
+                        <h4 className="title">Finance & Banking</h4>
                         <p className="des">Mobile banking, payment apps, expense tracking, biometric authentication, and real-time transaction alerts.</p>
                     </div>
                 </div>
                 <div className="col-12 col-sm-6 col-lg-4 mb-30">
                     <div className="tf-performance">
                         <span className="number">03</span>
-                        <h4 className="title"><Link href="/#">Healthcare & Telemedicine</Link></h4>
+                        <h4 className="title">Healthcare & Telemedicine</h4>
                         <p className="des">Appointment scheduling, video consultations, health tracking, prescription reminders, and patient portals.</p>
                     </div>
                 </div>
                 <div className="col-12 col-sm-6 col-lg-4 mb-30">
                     <div className="tf-performance">
                         <span className="number">04</span>
-                        <h4 className="title"><Link href="/#">Education & EdTech</Link></h4>
+                        <h4 className="title">Education & EdTech</h4>
                         <p className="des">Learning platforms, course apps, interactive quizzes, video lectures, and progress tracking for students.</p>
                     </div>
                 </div>
                 <div className="col-12 col-sm-6 col-lg-4 mb-30">
                     <div className="tf-performance">
                         <span className="number">05</span>
-                        <h4 className="title"><Link href="/#">Logistics & Delivery</Link></h4>
+                        <h4 className="title">Logistics & Delivery</h4>
                         <p className="des">Real-time tracking, driver apps, route optimization, delivery notifications, and proof of delivery.</p>
                     </div>
                 </div>
                 <div className="col-12 col-sm-6 col-lg-4 mb-30">
                     <div className="tf-performance">
                         <span className="number">06</span>
-                        <h4 className="title"><Link href="/#">Entertainment & Media</Link></h4>
+                        <h4 className="title">Entertainment & Media</h4>
                         <p className="des">Streaming apps, social platforms, gaming, content discovery, and personalized recommendations.</p>
                     </div>
                 </div>

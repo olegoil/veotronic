@@ -1,7 +1,10 @@
 {
   "/page": "app/page.js",
-  "/404/page": "app/404/page.js",
-  "/about-company/page": "app/about-company/page.js",
+  "/service-ai/page": "app/service-ai/page.js",
+  "/contact-us/page": "app/contact-us/page.js",
   "/service-mobile/page": "app/service-mobile/page.js",
-  "/faq/page": "app/faq/page.js"
+  "/404/page": "app/404/page.js",
+  "/service-development/page": "app/service-development/page.js",
+  "/service-auto/page": "app/service-auto/page.js",
+  "/service-api/page": "app/service-api/page.js"
 }

@@ -34,7 +34,7 @@ export default function Faq() {
 										<span className="sub-title texts-blue font-man">FAQ</span>
 										<h2 className="title">Frequently Asked Questions</h2>
 										<p className="des mb-40">Have questions about automation, API integration, or custom software development? We've got answers. Here are the most common questions our clients ask.</p>
-										<Link href="/contact" className="button-src">Contact Us <i className="icon-angle-right" /></Link>
+										<Link href="/contact-us" className="button-src">Contact Us <i className="icon-angle-right" /></Link>
 									</div>
 								</div>
 								<div className="col-md-7">

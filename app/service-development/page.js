@@ -206,42 +206,42 @@ This is clear business logic — digitized. Imagine orders from your website aut
 								<div className="col-12 col-sm-6 col-lg-4 mb-30">
 									<div className="tf-performance">
 										<span className="number">01</span>
-										<h4 className="title"><Link href="/#">Sales & Marketing</Link></h4>
+										<h4 className="title">Sales & Marketing</h4>
 										<p className="des">Automated lead processing, trigger-based email campaigns, and real-time customer profile updates.</p>
 									</div>
 								</div>
 								<div className="col-12 col-sm-6 col-lg-4 mb-30">
 									<div className="tf-performance">
 										<span className="number">02</span>
-										<h4 className="title"><Link href="/#">Retail & E-commerce</Link></h4>
+										<h4 className="title">Retail & E-commerce</h4>
 										<p className="des">Automated processing and maintenance of perfect product data — texts, descriptions, photos, updates, and more</p>
 									</div>
 								</div>
 								<div className="col-12 col-sm-6 col-lg-4 mb-30">
 									<div className="tf-performance">
 										<span className="number">03</span>
-										<h4 className="title"><Link href="/#">Finance & Accounting</Link></h4>
+										<h4 className="title">Finance & Accounting</h4>
 										<p className="des">Automated invoicing, debtor reminders, and payment reconciliation. Keep your cash flow healthy and your books balanced</p>
 									</div>
 								</div>
 								<div className="col-12 col-sm-6 col-lg-4 mb-30">
 									<div className="tf-performance">
 										<span className="number">04</span>
-										<h4 className="title"><Link href="/#">HR & Employee Onboarding</Link></h4>
+										<h4 className="title">HR & Employee Onboarding</h4>
 										<p className="des">Automate hiring workflows, document collection, and probation tracking to get new hires productive faster</p>
 									</div>
 								</div>
 								<div className="col-12 col-sm-6 col-lg-4 mb-30">
 									<div className="tf-performance">
 										<span className="number">05</span>
-										<h4 className="title"><Link href="/#">Manufacturing & Logistics</Link></h4>
+										<h4 className="title">Manufacturing & Logistics</h4>
 										<p className="des">Real-time order status tracking, stage-based notifications, and automated document generation</p>
 									</div>
 								</div>
 								<div className="col-12 col-sm-6 col-lg-4 mb-30">
 									<div className="tf-performance">
 										<span className="number">06</span>
-										<h4 className="title"><Link href="/#">Customer Service</Link></h4>
+										<h4 className="title">Customer Service</h4>
 										<p className="des">Smart ticket routing, automated responses, and feedback collection. Resolve issues faster and keep customers happy</p>
 									</div>
 								</div>

@@ -53,7 +53,7 @@ export default function Partner1() {
 									<h3 className="title mb-13"><Link href="/#">Computer Vision & AI Photo Processing</Link></h3>
 									<p className="des mb-26">Turn a mountain of photos into ready-made product cards
 									</p>
-									<Link href="/#" className="btn-icon-box bd-rd-12">Read More <i className="icon-right" />
+									<Link href="/service-ai" className="btn-icon-box bd-rd-12">Read More <i className="icon-right" />
 									</Link>
 								</div>
 							</div>
@@ -72,7 +72,7 @@ export default function Partner1() {
 									<h3 className="title mb-13"><Link href="/#">One API Platform — Instead of Dozens of Integrations</Link></h3>
 									<p className="des mb-26">CRM, ERP, marketplaces — all your systems work as one
 									</p>
-									<Link href="/#" className="btn-icon-box bd-rd-12">Read More <i className="icon-right" />
+									<Link href="/service-api" className="btn-icon-box bd-rd-12">Read More <i className="icon-right" />
 									</Link>
 								</div>
 							</div>
@@ -93,7 +93,7 @@ export default function Partner1() {
 
 
 									</p>
-									<Link href="/#" className="btn-icon-box bd-rd-12">Read More <i className="icon-right" />
+									<Link href="/service-auto" className="btn-icon-box bd-rd-12">Read More <i className="icon-right" />
 									</Link>
 								</div>
 							</div>

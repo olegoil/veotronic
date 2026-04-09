@@ -41,7 +41,7 @@ export default function Feature1() {
 									</div>
 								</div>
 								<div className="btn-wrap-about flex-three wow fadeInUpSmall" data-wow-delay=".5s">
-									<Link href="/#" className="button-src">Read More <i className="icon-angle-right" /></Link>
+									<Link href="/service-api" className="button-src">Read More <i className="icon-angle-right" /></Link>
 									{/* <div className="flex-three">
 										<div className="flex-three">
 											<ul className="image-list flex-three">
