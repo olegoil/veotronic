@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/YanSmet/Work/site_veotronic/wiatech-package/wiatech/app/layout\":[\"static/media/ee40bb094c99a29a-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"

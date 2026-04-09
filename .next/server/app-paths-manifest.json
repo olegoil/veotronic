@@ -1,0 +1,9 @@
+{
+  "/service-auto/page": "app/service-auto/page.js",
+  "/404/page": "app/404/page.js",
+  "/service-development/page": "app/service-development/page.js",
+  "/contact-us/page": "app/contact-us/page.js",
+  "/pricing/page": "app/pricing/page.js",
+  "/not-found": "app/not-found.js",
+  "/page": "app/page.js"
+}
