@@ -22,45 +22,11 @@
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
-    "/team-details/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/team-details/page.js"
-    ],
     "/about-company/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/about-company/page.css",
       "static/chunks/app/about-company/page.js"
-    ],
-    "/service-ai/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/service-ai/page.css",
-      "static/chunks/app/service-ai/page.js"
-    ],
-    "/contact-us/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/contact-us/page.js"
-    ],
-    "/service-auto/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/service-auto/page.css",
-      "static/chunks/app/service-auto/page.js"
-    ],
-    "/service-api/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/service-api/page.css",
-      "static/chunks/app/service-api/page.js"
-    ],
-    "/service-development/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/service-development/page.css",
-      "static/chunks/app/service-development/page.js"
     ],
     "/service-mobile/page": [
       "static/chunks/webpack.js",
@@ -78,11 +44,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/404/page.js"
-    ],
-    "/pricing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/pricing/page.js"
     ]
   }
 }
