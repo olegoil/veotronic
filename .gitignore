@@ -39,3 +39,5 @@ yarn-error.log*
 .env.production
 
 *.psd
+*._*
+.next
