@@ -1,9 +1,7 @@
 {
   "/page": "app/page.js",
-  "/service-mobile/page": "app/service-mobile/page.js",
-  "/service-ai/page": "app/service-ai/page.js",
-  "/about-company/page": "app/about-company/page.js",
-  "/privacy-policy/page": "app/privacy-policy/page.js",
   "/contact-us/page": "app/contact-us/page.js",
-  "/faq/page": "app/faq/page.js"
+  "/faq/page": "app/faq/page.js",
+  "/privacy-policy/page": "app/privacy-policy/page.js",
+  "/about-company/page": "app/about-company/page.js"
 }

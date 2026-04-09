@@ -65,7 +65,7 @@ export default function AboutUs1() {
 										<div className="icon">
 											<i className="icon-costumer-11" />
 										</div>
-										<div className="number-counter number-kplus numbers" data-to={200} data-speed={2000} data-waypoint-active="yes"><CounterNumber count={220} /></div>
+										<div className="number-counter number-kplus numbers" data-to={80} data-speed={2000} data-waypoint-active="yes"><CounterNumber count={100} /></div>
 										<p className="des">Completed projects</p>
 									</div>
 									<div className="counter-style1 tf-counters">
