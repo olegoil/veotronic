@@ -1,3 +1,10 @@
+cat >> .gitignore << 'EOF'
+
+# Next.js build output
+.next/
+.next/**/*.pack.gz
+out/
+
 # Quasar core related directories
 .quasar
 /dist
@@ -40,7 +47,6 @@ yarn-error.log*
 
 *.psd
 *._*
-.next
-.next/*
-out
-out/*
+.next/
+.next/**/*.pack.gz
+out/
