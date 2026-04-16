@@ -16,7 +16,7 @@ export default function FunFact3() {
 						<div className="heading-title">
 							<span className="sub-title text-white font-man">Company Fun Fact</span>
 							<h2 className="title text-white">Behind the Scenes <br /> Surprising Fun Facts <br /> About
-								<span className="text-blue2 mask"> Wiatech</span>
+								<span className="text-blue2 mask"> Veotronic</span>
 							</h2>
 						</div>
 						<div className="counter-area flex">

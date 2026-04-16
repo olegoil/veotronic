@@ -1,6 +1,81 @@
 import Link from "next/link"
+import { useState } from "react"
 
 export default function Footer1() {
+	
+	const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        website: '',
+        url: '',
+        services: '',
+        comment: '',
+        message: ''
+    });
+    
+    // State for submission status
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
+    
+    // Handle input changes
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+    
+    // Handle form submission
+    const handleSubmit = async (e) => {
+        e.preventDefault(); // Prevents page reload
+        
+        // Optional: Validate form
+        if (!formData.email) {
+            setSubmitStatus({ type: 'error', message: 'Please fill in Email' });
+            return;
+        }
+        
+        setIsSubmitting(true);
+        setSubmitStatus({ type: '', message: '' });
+        
+        try {
+            // Send email via your API (Method 1 from previous answer)
+            const response = await fetch('https://admin.olegtronics.com/xapi/sendmailfree/veotronic', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+            
+            if (response.ok) {
+                // Show success message
+                setSubmitStatus({ type: 'success', message: 'Message sent successfully!' });
+                
+                // Clear form after successful submission
+                setFormData({
+                    name: '',
+					email: '',
+					website: '',
+					url: '',
+					services: '',
+					comment: '',
+					message: ''
+                });
+                
+                // Optional: Hide success message after 5 seconds
+                setTimeout(() => {
+                    setSubmitStatus({ type: '', message: '' });
+                }, 5000);
+            } else {
+                throw new Error('Failed to send');
+            }
+        } catch (error) {
+            setSubmitStatus({ type: 'error', message: 'Failed to send message. Please try again.' });
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+	
 	return (
 		<>
 
@@ -92,9 +167,9 @@ export default function Footer1() {
 						<div className="footer-main-item newsletter wow fadeInUpSmall" data-wow-delay=".5s">
 							<h4 className="title-footer2 ">Newsletter</h4>
 							<p className="mb-20">Subscribe our newsletter to get more updates</p>
-							<form action="/" className="form-footer2 relative flex-two" id="subscribe-form" method="post" acceptCharset="utf-8" data-mailchimp="true">
+							<form onSubmit={handleSubmit} className="form-footer2 relative flex-two" id="subscribe-form" method="post" acceptCharset="utf-8" data-mailchimp="true">
 								<i className="icon-envelope" />
-								<input type="email" name="email-form" id="subscribe-email" placeholder="Email Address" />
+								<input type="email" name="email" id="subscribe-email" placeholder="Email Address" value={formData.email} onChange={handleChange} />
 								<button type="submit" id="subscribe-button">Sign Up <i className="icon-right-icon" /></button>
 							</form>
 							<p className="privacy-policy">By subscribing, you’re accept <Link href="/privacy-policy">Privacy Policy</Link>
@@ -108,7 +183,7 @@ export default function Footer1() {
 					</div>
 					<div className="footer-bottom2 row">
 						<div className="col-md-6">
-							<p>© 2023 Veotronic — AI & IT Solutions. All rights reserved.</p>
+							<p>&copy; {new Date().getFullYear()} Veotronic — Digital solutions. All rights reserved.</p>
 						</div>
 						<div className="col-md-6">
 							<ul className="menu-right-bottom flex-six">
@@ -122,7 +197,7 @@ export default function Footer1() {
 									<Link href="/privacy-policy">Privacy</Link>
 								</li>
 								<li>
-									<Link href="/faq">Faqs</Link>
+									<Link href="/faq">Faq</Link>
 								</li>
 							</ul>
 						</div>

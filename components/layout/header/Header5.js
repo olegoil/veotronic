@@ -38,9 +38,9 @@ export default function Header5({ scroll, isMobileMenu, handleMobileMenu, handle
 									<div className="header-account flex align-center">
 										<div className="phone-address">
 											<ul className="flex align-center">
-												<li className>
+												<li>
 													<i className="icon-phone2" />
-													<span>+555 (456) 896 22</span>
+													<span><a href="tel:+1 (224) 206-0034" className='text-white'>+1 (224) 206-0034</a></span>
 												</li>
 											</ul>
 										</div>
@@ -62,11 +62,11 @@ export default function Header5({ scroll, isMobileMenu, handleMobileMenu, handle
 				<div className="mobile-menu">
 					<div className="menu-backdrop" onClick={handleMobileMenu} />
 					<nav className="menu-box">
-						<div className="nav-logo"><Link href="/">
+						<div className="nav-logo" onClick={handleMobileMenu}><Link href="/">
 							<img src="/assets/images/logo-footer.png" alt="" /></Link></div>
 						<div className="bottom-canvas">
 						<div className="menu-outer">
-								<MobileMenu />
+								<MobileMenu closeMenu={handleMobileMenu} />
 							</div>
 						</div>
 					</nav>

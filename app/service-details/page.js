@@ -5,6 +5,7 @@ import { myTesHome5 } from "@/utils/swiperOptions"
 import Link from "next/link"
 import { useState } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
+
 export default function ServiceDetails() {
 	const [isTab, setIsTab] = useState(1)
 	const [isVisible, setIsVisible] = useState(true)
@@ -15,10 +16,84 @@ export default function ServiceDetails() {
 			setIsVisible(true)
 		}, 200)
 	}
+	
+	const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        website: '',
+        url: '',
+        services: '',
+        comment: '',
+        message: ''
+    });
+    
+    // State for submission status
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
+    
+    // Handle input changes
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+    
+    // Handle form submission
+    const handleSubmit = async (e) => {
+        e.preventDefault(); // Prevents page reload
+        
+        // Optional: Validate form
+        if (!formData.email) {
+            setSubmitStatus({ type: 'error', message: 'Please fill in Email' });
+            return;
+        }
+        
+        setIsSubmitting(true);
+        setSubmitStatus({ type: '', message: '' });
+        
+        try {
+            // Send email via your API (Method 1 from previous answer)
+            const response = await fetch('https://admin.olegtronics.com/xapi/sendmailfree/veotronic', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+            
+            if (response.ok) {
+                // Show success message
+                setSubmitStatus({ type: 'success', message: 'Message sent successfully!' });
+                
+                // Clear form after successful submission
+                setFormData({
+                    name: '',
+					email: '',
+					website: '',
+					url: '',
+					services: '',
+					comment: '',
+					message: ''
+                });
+                
+                // Optional: Hide success message after 5 seconds
+                setTimeout(() => {
+                    setSubmitStatus({ type: '', message: '' });
+                }, 5000);
+            } else {
+                throw new Error('Failed to send');
+            }
+        } catch (error) {
+            setSubmitStatus({ type: 'error', message: 'Failed to send message. Please try again.' });
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+	
 	return (
 		<>
 
-			<Layout breadcrumbTitle="Web Development">
+			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Web Development">
 				<div>
 					<section className="section-benefit pt-122">
 						<div className="tf-container">
@@ -396,7 +471,7 @@ export default function ServiceDetails() {
 											</div>
 											<div className="contact-content">
 												<span className="font-man text-white">Call For Inquiry</span>
-												<p>+236 (456) 896 22</p>
+												<p><a href="tel:+1 (224) 206-0034" className='text-white'>+1 (224) 206-0034</a></p>
 											</div>
 										</div>
 										<div className="contact-wrap flex-three">
@@ -405,7 +480,7 @@ export default function ServiceDetails() {
 											</div>
 											<div className="contact-content">
 												<span className="font-man text-white">Send Us Email</span>
-												<p>infotech@gmail.com</p>
+												<p><a href="mailto:info@veotronic.com" className='text-white'>info@veotronic.com</a></p>
 											</div>
 										</div>
 									</div>
@@ -416,33 +491,32 @@ export default function ServiceDetails() {
 											<h3 className="title-form">Need Help For Project!</h3>
 											<p>We are ready to help your next projects, let’s work together</p>
 										</div>
-										<form action="/" className="form-contact-home">
+										<form onSubmit={handleSubmit} className="form-contact-home">
 											<div className="input-group flex-one">
 												<fieldset className="relative mb-20">
-													<input type="text" className="form-control" id="name-input" placeholder="Name" />
+													<input type="text" className="form-control" id="name-input" name="name" placeholder="Name" value={formData.name} onChange={handleChange} />
 													<i className="icon-user" />
 												</fieldset>
 												<fieldset className="relative mb-20">
-													<input type="email" className="form-control" id="email-input" placeholder="Email" />
+													<input type="email" className="form-control" id="email-input" name="email" placeholder="Email" value={formData.email} onChange={handleChange} />
 													<i className="icon-envelopes" />
 												</fieldset>
 											</div>
 											<fieldset className="mb-20">
-												<div className="nice-select" tabIndex={0}>
-													<span className="current">Choose Services</span>
-													<ul className="list">
-														<li data-value className="option selected focus">Choose Services</li>
-														<li data-value="service" className="option">Choose Services</li>
-														<li data-value="service" className="option">Choose Services</li>
-														<li data-value="service" className="option">Choose Services</li>
-													</ul>
-												</div>
+												{/* Changed to normal select dropdown */}
+												<select className="form-control" id="services" name="services" value={formData.services} onChange={handleChange} required>
+													<option value="">Choose Services</option>
+													<option value="Business automation">Business automation</option>
+													<option value="AI Implementation">AI Implementation</option>
+													<option value="Software and App development">Software & App development</option>
+													<option value="Web development">Web development</option>
+												</select>
 											</fieldset>
 											<fieldset className=" mb-15">
-												<textarea id="mess" name="mess" rows={4} cols={50} placeholder="Message" />
+												<textarea id="mess" name="message" rows={4} cols={50} placeholder="Message" value={formData.message} onChange={handleChange} />
 											</fieldset>
 											<fieldset className="center">
-												<button className="btn-submit" type="submit">Send Message Us <i className="icon-right-icon" /></button>
+												<button className="btn-submit" type="submit">Send Message<i className="icon-right-icon" /></button>
 											</fieldset>
 										</form>
 									</div>

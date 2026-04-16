@@ -5,6 +5,7 @@ import { myTesHome5 } from "@/utils/swiperOptions"
 import Link from "next/link"
 import { useState } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
+
 export default function ServiceDetails() {
 	const [isTab, setIsTab] = useState(1)
 	const [isVisible, setIsVisible] = useState(true)
@@ -15,10 +16,84 @@ export default function ServiceDetails() {
 			setIsVisible(true)
 		}, 200)
 	}
+	
+	const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        website: '',
+        url: '',
+        services: '',
+        comment: '',
+        message: ''
+    });
+    
+    // State for submission status
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
+    
+    // Handle input changes
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+    
+    // Handle form submission
+    const handleSubmit = async (e) => {
+        e.preventDefault(); // Prevents page reload
+        
+        // Optional: Validate form
+        if (!formData.email) {
+            setSubmitStatus({ type: 'error', message: 'Please fill in Email' });
+            return;
+        }
+        
+        setIsSubmitting(true);
+        setSubmitStatus({ type: '', message: '' });
+        
+        try {
+            // Send email via your API (Method 1 from previous answer)
+            const response = await fetch('https://admin.olegtronics.com/xapi/sendmailfree/veotronic', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+            
+            if (response.ok) {
+                // Show success message
+                setSubmitStatus({ type: 'success', message: 'Message sent successfully!' });
+                
+                // Clear form after successful submission
+                setFormData({
+                    name: '',
+					email: '',
+					website: '',
+					url: '',
+					services: '',
+					comment: '',
+					message: ''
+                });
+                
+                // Optional: Hide success message after 5 seconds
+                setTimeout(() => {
+                    setSubmitStatus({ type: '', message: '' });
+                }, 5000);
+            } else {
+                throw new Error('Failed to send');
+            }
+        } catch (error) {
+            setSubmitStatus({ type: 'error', message: 'Failed to send message. Please try again.' });
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+	
 	return (
 		<>
 
-			<Layout breadcrumbTitle="AI & Machine Learning">
+			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="AI & Machine Learning">
 				<div>
 					<section className="section-benefit pt-122">
 						<div className="tf-container">
@@ -31,7 +106,13 @@ export default function ServiceDetails() {
 											<p className="des">
 We embrace a flexible approach and support innovation within our team. In the field of AI and machine learning, we explore image and video processing, object and face recognition, and computer vision. We use these technologies to automate routine data analysis, forecast trends and risks, and help businesses streamline processes, improve prediction accuracy, and build intelligent products</p>
 										</div>
-										<img src="/assets/images/page/dvl-deatils_new.jpg" alt="image" />
+										{/* <img src="/assets/images/page/dvl-deatils_new.jpg" alt="image" /> */}
+										<div className="video-background">
+											<video autoPlay muted loop playsInline disablePictureInPicture>
+												<source src="/assets/videos/office_programming.mp4" type="video/mp4"/>
+												Your browser does not support HTML5 video. But the background experience is still beautiful.
+											</video>
+										</div>
 									</div>
 								</div>
 								<div className="col-md-6">
@@ -73,92 +154,92 @@ We embrace a flexible approach and support innovation within our team. In the fi
 					</section>
 
 					<section className="feature-home2 pt-122 pb-130">
-				<div className="tf-container">
-					<div className="row">
-						<div className="col-lg-12">
-							<div className="heading-title center w-650 m0-auto mb-130">
-								<span className="sub-title texts-blue font-man wow fadeInUpSmall" data-wow-delay=".2s">Industries We Serve</span>
-								<h2 className="title wow fadeInUpSmall" data-wow-delay=".3s">Tailored automation solutions for your industry</h2>
+						<div className="tf-container">
+							<div className="row">
+								<div className="col-lg-12">
+									<div className="heading-title center w-650 m0-auto mb-130">
+										<span className="sub-title texts-blue font-man wow fadeInUpSmall" data-wow-delay=".2s">Industries We Serve</span>
+										<h2 className="title wow fadeInUpSmall" data-wow-delay=".3s">Tailored automation solutions for your industry</h2>
+									</div>
+								</div>
+							</div>
+							<div className="feature-h2-wrap">
+								<div className="row mt--70 mb-70">
+									<div className=" col-12 col-md-6 col-lg-3 wow fadeInUpSmall" data-wow-delay=".2s">
+										<div className="icon-box3">
+											<div className="flex-two icon-box-wrap">
+												<span className="number">01</span>
+												<div className="icons">
+													<i className="icon-vector-dev" />
+												</div>
+											</div>
+											<h3 className="title">E-commerce</h3>
+											<div className="inner-bottom">
+												<p className="des font-man">Auto-filling product cards, purchase flow customization, and advanced product search
+												</p>
+												<div className="icon-bottom">
+													<i className="icon-arrow-right" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div className="col-12 col-md-6 col-lg-3 wow fadeInUpSmall" data-wow-delay=".3s">
+										<div className="icon-box3">
+											<div className="flex-two icon-box-wrap">
+												<span className="number">02</span>
+												<div className="icons">
+													<i className="icon-cloud-computing" />
+												</div>
+											</div>
+											<h3 className="title">EdTech</h3>
+											<div className="inner-bottom">
+												<p className="des font-man">Personalized educational journeys, simplified administrative workflows
+												</p>
+												<div className="icon-bottom">
+													<i className="icon-arrow-right" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div className="col-12 col-md-6 col-lg-3 wow fadeInUpSmall" data-wow-delay=".4s">
+										<div className="icon-box3">
+											<div className="flex-two icon-box-wrap">
+												<span className="number">03</span>
+												<div className="icons">
+													<i className="icon-planning-2" />
+												</div>
+											</div>
+											<h3 className="title">Big Data Processing</h3>
+											<div className="inner-bottom">
+												<p className="des font-man">Information retrieval, intelligent data processing, and sorting in a user-friendly format
+												</p>
+												<div className="icon-bottom">
+													<i className="icon-arrow-right" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div className="col-12 col-md-6 col-lg-3 wow fadeInUpSmall" data-wow-delay=".5s">
+										<div className="icon-box3">
+											<div className="flex-two icon-box-wrap">
+												<span className="number">04</span>
+												<div className="icons">
+													<i className="icon-vector-dev" />
+												</div>
+											</div>
+											<h3 className="title">Business Automation</h3>
+											<div className="inner-bottom">
+												<p className="des font-man">Automate document workflows — from accounting to contracts
+												</p>
+												<div className="icon-bottom">
+													<i className="icon-arrow-right" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div className="feature-h2-wrap">
-						<div className="row mt--70 mb-70">
-							<div className=" col-12 col-md-6 col-lg-3 wow fadeInUpSmall" data-wow-delay=".2s">
-								<div className="icon-box3">
-									<div className="flex-two icon-box-wrap">
-										<span className="number">01</span>
-										<div className="icons">
-											<i className="icon-vector-dev" />
-										</div>
-									</div>
-									<h3 className="title">E-commerce</h3>
-									<div className="inner-bottom">
-										<p className="des font-man">Auto-filling product cards, purchase flow customization, and advanced product search
-										</p>
-										<div className="icon-bottom">
-											<i className="icon-arrow-right" />
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className="col-12 col-md-6 col-lg-3 wow fadeInUpSmall" data-wow-delay=".3s">
-								<div className="icon-box3">
-									<div className="flex-two icon-box-wrap">
-										<span className="number">02</span>
-										<div className="icons">
-											<i className="icon-cloud-computing" />
-										</div>
-									</div>
-									<h3 className="title">EdTech</h3>
-									<div className="inner-bottom">
-										<p className="des font-man">Personalized educational journeys, simplified administrative workflows
-										</p>
-										<div className="icon-bottom">
-											<i className="icon-arrow-right" />
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className="col-12 col-md-6 col-lg-3 wow fadeInUpSmall" data-wow-delay=".4s">
-								<div className="icon-box3">
-									<div className="flex-two icon-box-wrap">
-										<span className="number">03</span>
-										<div className="icons">
-											<i className="icon-planning-2" />
-										</div>
-									</div>
-									<h3 className="title">Big Data Processing</h3>
-									<div className="inner-bottom">
-										<p className="des font-man">Information retrieval, intelligent data processing, and sorting in a user-friendly format
-										</p>
-										<div className="icon-bottom">
-											<i className="icon-arrow-right" />
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className="col-12 col-md-6 col-lg-3 wow fadeInUpSmall" data-wow-delay=".5s">
-								<div className="icon-box3">
-									<div className="flex-two icon-box-wrap">
-										<span className="number">04</span>
-										<div className="icons">
-											<i className="icon-vector-dev" />
-										</div>
-									</div>
-									<h3 className="title">Business Automation</h3>
-									<div className="inner-bottom">
-										<p className="des font-man">Automate document workflows — from accounting to contracts
-										</p>
-										<div className="icon-bottom">
-											<i className="icon-arrow-right" />
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 					</section>
 
 					<section className="section-it-manager pt-130 pb-130">
@@ -217,7 +298,7 @@ We embrace a flexible approach and support innovation within our team. In the fi
 											</div>
 											<div className={isTab == 3 ? "tab-pane fade show active" : "tab-pane fade"} id="advisory-tab-pane" role="tabpanel" aria-labelledby="advisory-tab" tabIndex={0}>
 												<div className="content-tab-service-details">
-													<p className="des">The WiaTech team thoroughly researches the ML model implementation process to build modern AI solutions and seamlessly integrate them into enterprise software products. Our ML engineers collect and prepare data, train models, and handle deployment. We ensure high model accuracy through real-world testing, continuous error correction, and ongoing refinement.
+													<p className="des">The Veotronic team thoroughly researches the ML model implementation process to build modern AI solutions and seamlessly integrate them into enterprise software products. Our ML engineers collect and prepare data, train models, and handle deployment. We ensure high model accuracy through real-world testing, continuous error correction, and ongoing refinement.
 													</p>
 												
 												</div>
@@ -251,7 +332,7 @@ We embrace a flexible approach and support innovation within our team. In the fi
 											</div>
 											<div className="contact-content">
 												<span className="font-man text-white">Call For Inquiry</span>
-												<p>+236 (456) 896 22</p>
+												<p><a href="tel:+1 (224) 206-0034" className='text-white'>+1 (224) 206-0034</a></p>
 											</div>
 										</div>
 										<div className="contact-wrap flex-three">
@@ -260,7 +341,7 @@ We embrace a flexible approach and support innovation within our team. In the fi
 											</div>
 											<div className="contact-content">
 												<span className="font-man text-white">Send Us Email</span>
-												<p>infotech@gmail.com</p>
+												<p><a href="mailto:info@veotronic.com" className='text-white'>info@veotronic.com</a></p>
 											</div>
 										</div>
 									</div>
@@ -271,33 +352,32 @@ We embrace a flexible approach and support innovation within our team. In the fi
 											<h3 className="title-form">Need Help With Your Project?</h3>
 											<p>We're ready to help. Let's discuss your goals and build something great together</p>
 										</div>
-										<form action="/" className="form-contact-home">
+										<form onSubmit={handleSubmit} className="form-contact-home">
 											<div className="input-group flex-one">
 												<fieldset className="relative mb-20">
-													<input type="text" className="form-control" id="name-input" placeholder="Name" />
+													<input type="text" className="form-control" id="name-input" name="name" placeholder="Name" value={formData.name} onChange={handleChange} />
 													<i className="icon-user" />
 												</fieldset>
 												<fieldset className="relative mb-20">
-													<input type="email" className="form-control" id="email-input" placeholder="Email" />
+													<input type="email" className="form-control" id="email-input" name="email" placeholder="Email" value={formData.email} onChange={handleChange} />
 													<i className="icon-envelopes" />
 												</fieldset>
 											</div>
 											<fieldset className="mb-20">
-												<div className="nice-select" tabIndex={0}>
-													<span className="current">Choose Services</span>
-													<ul className="list">
-														<li data-value className="option selected focus">Choose Services</li>
-														<li data-value="service" className="option">Choose Services</li>
-														<li data-value="service" className="option">Choose Services</li>
-														<li data-value="service" className="option">Choose Services</li>
-													</ul>
-												</div>
+												{/* Changed to normal select dropdown */}
+												<select className="form-control" id="services" name="services" value={formData.services} onChange={handleChange} required>
+													<option value="">Choose Services</option>
+													<option value="Business automation">Business automation</option>
+													<option value="AI Implementation">AI Implementation</option>
+													<option value="Software and App development">Software & App development</option>
+													<option value="Web development">Web development</option>
+												</select>
 											</fieldset>
 											<fieldset className=" mb-15">
-												<textarea id="mess" name="mess" rows={4} cols={50} placeholder="Message" />
+												<textarea id="mess" name="message" rows={4} cols={50} placeholder="Message" value={formData.message} onChange={handleChange} />
 											</fieldset>
 											<fieldset className="center">
-												<button className="btn-submit" type="submit">Send Message Us <i className="icon-right-icon" /></button>
+												<button className="btn-submit" type="submit">Send Message<i className="icon-right-icon" /></button>
 											</fieldset>
 										</form>
 									</div>

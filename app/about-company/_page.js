@@ -10,7 +10,7 @@ export default function AboutCompany() {
 	return (
 		<>
 
-			<Layout breadcrumbTitle="About Company">
+			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="About Company">
 				
 				<div>
 					<section className="section-about-us about-us-page pd-section relative">
@@ -21,7 +21,7 @@ export default function AboutCompany() {
 										<div className="heading-title">
 											<span className="sub-title texts-blue font-man">About Company</span>
 											<h2 className="title">Make your life easier with help
-												from <span className="texts-blue">Wiatech</span></h2>
+												from <span className="texts-blue">Veotronic</span></h2>
 										</div>
 										<ul className="icon-listing">
 											<li className="flex-three">
@@ -455,7 +455,7 @@ export default function AboutCompany() {
 								<div className="heading-title">
 									<span className="sub-title text-white font-man">Company Fun Fact</span>
 									<h2 className="title text-white">Behind the Scenes <br /> Surprising Fun Facts <br /> About
-										Wiatech</h2>
+										Veotronic</h2>
 								</div>
 								<div className="counter-area flex">
 									<div className="counter-items tf-counters">

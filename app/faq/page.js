@@ -23,7 +23,7 @@ export default function Faq() {
 
 	return (
 		<>
-			<Layout breadcrumbTitle="FAQ">
+			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="FAQ">
 				<div>
 					{/* FAQ Section */}
 					<section className="faq-section pt-130 pb-130">
@@ -372,7 +372,7 @@ export default function Faq() {
 					</section>
 
 					{/* Video Section */}
-					{/* <section className="pt-122 bg-2">
+					<section className="pt-122 bg-2">
 						<div className="tf-container">
 							<div className="row mb-60">
 								<div className="col-md-12">
@@ -385,13 +385,13 @@ export default function Faq() {
 							<div className="row">
 								<div className="col-md-12">
 									<div className="video-faq relative">
-										<img src="/assets/images/page/video-faq.jpg" alt="Veotronic video" />
+										<img src="/assets/images/page/video-dvl_new.jpg" alt="Veotronic video" />
 										<VideoPopup />
 									</div>
 								</div>
 							</div>
 						</div>
-					</section> */}
+					</section>
 
 					{/* Second FAQ Section - Still Have Questions? */}
 					{/* <section className="faq-section faq2-section pb-130">

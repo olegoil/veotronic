@@ -8,7 +8,7 @@ export default function TeamDetails() {
 	return (
 		<>
 
-			<Layout breadcrumbTitle="Team Details">
+			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Team Details">
 				<section className="team-member-details pt-122 pb-130">
 					<div className="tf-container">
 						<div className="row mb-70">

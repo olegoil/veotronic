@@ -17,7 +17,7 @@ export default function FunFact2() {
 						<div className="heading-title">
 							<span className="sub-title text-white font-man">Company Fun Fact</span>
 							<h2 className="title text-white">Behind the Scenes <br /> Surprising Fun Facts <br /> About
-								Wiatech</h2>
+								Veotronic</h2>
 						</div>
 						<div className="counter-area flex">
 							<div className="counter-items tf-counters">

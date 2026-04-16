@@ -48,6 +48,7 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
 		window.addEventListener("scroll", onScroll)
 		return () => window.removeEventListener("scroll", onScroll)
 	}, [])
+
 	return (
 		<><div id="top" />
 			{/* <AddClassBody /> */}

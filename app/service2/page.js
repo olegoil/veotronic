@@ -16,7 +16,7 @@ export default function Service2() {
 	return (
 		<>
 
-			<Layout breadcrumbTitle="Popular Services">
+			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Popular Services">
 				<div>
 					<section className="pd-section feature-service2">
 						<div className="tf-container">
@@ -500,7 +500,7 @@ export default function Service2() {
 												<i className="icon-start" />
 												<i className="icon-start" />
 												<i className="icon-start" />
-												<span>Trustpoint</span>
+												<span>customer reviews</span>
 											</div>
 											<div className="start">
 												<span>4.9</span>

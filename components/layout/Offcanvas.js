@@ -25,14 +25,12 @@ export default function Offcanvas({ handleOffcanvas, isOffcanvas }) {
 							<Link href="/service-mobile">Mobile App Development</Link>
 						</li>
 					</ul>
-					<p className="des">We understand that every challenge is an opportunity we are here seize
-a team of dedicated professionals and a culture</p>
+					<p className="des">We understand that every challenge is an opportunity we are here seize a team of dedicated professionals and a culture</p>
 					<div className="footer-main-locations">
 						<h5 className="title-footer">Contact</h5>
-						<p className="font-man text-lcation">55 Main Street, 2nd block <br />
-							Malborne, Australia</p>
-						<p className="font-man text-lcation ">support@gmail.com</p>
-						<p className="phone">+880 (123) 456 88</p>
+						<p className="font-man text-lcation">23587 n field rd lake Zurich IL 60047, United States</p>
+						<p className="font-man text-lcation "><a href="mailto:info@veotronic.com" className='text-white'>info@veotronic.com</a></p>
+						<p className="phone"><a href="tel:+1 (224) 206-0034" className='text-white'>+1 (224) 206-0034</a></p>
 					</div>
 					{/* <div className="follow-social">
 						<span>Follow Us</span>
@@ -51,7 +49,7 @@ a team of dedicated professionals and a culture</p>
 							</li>
 						</ul>
 					</div> */}
-					<p className="des">© 2023 Veotronic — AI & IT Solutions. All rights reserved.</p>
+					<p className="des">&copy; {new Date().getFullYear()} Veotronic — Digital solutions. All rights reserved.</p>
 				</div>
 			</div>
 			{isOffcanvas && <div className="offcanvas-backdrop fade show" onClick={handleOffcanvas} />}

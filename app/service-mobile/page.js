@@ -5,6 +5,7 @@ import { myTesHome5 } from "@/utils/swiperOptions"
 import Link from "next/link"
 import { useState } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
+
 export default function ServiceDetails() {
     const [isTab, setIsTab] = useState(1)
     const [isVisible, setIsVisible] = useState(true)
@@ -15,10 +16,84 @@ export default function ServiceDetails() {
             setIsVisible(true)
         }, 200)
     }
+    
+	const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        website: '',
+        url: '',
+        services: '',
+        comment: '',
+        message: ''
+    });
+    
+    // State for submission status
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
+    
+    // Handle input changes
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+    
+    // Handle form submission
+    const handleSubmit = async (e) => {
+        e.preventDefault(); // Prevents page reload
+        
+        // Optional: Validate form
+        if (!formData.email) {
+            setSubmitStatus({ type: 'error', message: 'Please fill in Email' });
+            return;
+        }
+        
+        setIsSubmitting(true);
+        setSubmitStatus({ type: '', message: '' });
+        
+        try {
+            // Send email via your API (Method 1 from previous answer)
+            const response = await fetch('https://admin.olegtronics.com/xapi/sendmailfree/veotronic', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+            
+            if (response.ok) {
+                // Show success message
+                setSubmitStatus({ type: 'success', message: 'Message sent successfully!' });
+                
+                // Clear form after successful submission
+                setFormData({
+                    name: '',
+					email: '',
+					website: '',
+					url: '',
+					services: '',
+					comment: '',
+					message: ''
+                });
+                
+                // Optional: Hide success message after 5 seconds
+                setTimeout(() => {
+                    setSubmitStatus({ type: '', message: '' });
+                }, 5000);
+            } else {
+                throw new Error('Failed to send');
+            }
+        } catch (error) {
+            setSubmitStatus({ type: 'error', message: 'Failed to send message. Please try again.' });
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+	
     return (
         <>
 
-            <Layout breadcrumbTitle="Mobile App Development">
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Mobile App Development">
              <div>
     {/* Hero Section - Custom Software Development заменен на Mobile Development */}
     <section className="pt-130 pb-130 skill-team-member">
@@ -35,12 +110,12 @@ export default function ServiceDetails() {
                 </div>
                 <div className="col-12 col-sm-6 col-lg-4">
                     <div className="skill-team-image-center">
-                        <img src="/assets/images/team/team-skill.jpg" alt="mobile development" />
+                        <img src="/assets/images/service/service-app.jpg" alt="mobile development" />
                     </div>
                 </div>
                 <div className="col-12 col-sm-6 col-lg-3">
                     <div className="skill-team-image-right">
-                        <img src="/assets/images/team/team-skill1.jpg" alt="mobile apps" />
+                        <img src="/assets/images/service/service-app1.jpg" alt="mobile apps" />
                     </div>
                 </div>
             </div>
@@ -107,8 +182,8 @@ export default function ServiceDetails() {
                                 </div>
                                 <div className="col-lg-5">
                                     <div className="tab-service-image relative">
-                                        <img src="/assets/images/service/service-h41.jpg" alt="native mobile apps" />
-                                        <img src="/assets/images/service/service-h42.jpg" alt="iOS Android development" className="service1" />
+                                        <img src="/assets/images/service/service-h41_new3.jpg" alt="native mobile apps" />
+                                        <img src="/assets/images/service/service-h42_new2.jpg" alt="iOS Android development" className="service1" />
                                         <div className="clip" />
                                     </div>
                                 </div>
@@ -147,8 +222,8 @@ export default function ServiceDetails() {
                                 </div>
                                 <div className="col-lg-5">
                                     <div className="tab-service-image relative">
-                                        <img src="/assets/images/service/service-h41.jpg" alt="hybrid mobile apps" />
-                                        <img src="/assets/images/service/service-h42.jpg" alt="React Native Flutter" className="service1" />
+                                        <img src="/assets/images/service/service-h41_new3.jpg" alt="hybrid mobile apps" />
+                                        <img src="/assets/images/service/service-h42_new3.jpg" alt="React Native Flutter" className="service1" />
                                         <div className="clip" />
                                     </div>
                                 </div>
@@ -187,8 +262,8 @@ export default function ServiceDetails() {
                                 </div>
                                 <div className="col-lg-5">
                                     <div className="tab-service-image relative">
-                                        <img src="/assets/images/service/service-h41.jpg" alt="PWA progressive web apps" />
-                                        <img src="/assets/images/service/service-h42.jpg" alt="progressive web apps" className="service1" />
+                                        <img src="/assets/images/service/service-h41_new3.jpg" alt="PWA progressive web apps" />
+                                        <img src="/assets/images/service/service-h42_new4.jpg" alt="progressive web apps" className="service1" />
                                         <div className="clip" />
                                     </div>
                                 </div>
@@ -227,8 +302,8 @@ export default function ServiceDetails() {
                                 </div>
                                 <div className="col-lg-5">
                                     <div className="tab-service-image relative">
-                                        <img src="/assets/images/service/service-h41.jpg" alt="AI mobile apps" />
-                                        <img src="/assets/images/service/service-h42.jpg" alt="AI chatbots mobile" className="service1" />
+                                        <img src="/assets/images/service/service-h41_new3.jpg" alt="AI mobile apps" />
+                                        <img src="/assets/images/service/service-h42_new5.jpg" alt="AI chatbots mobile" className="service1" />
                                         <div className="clip" />
                                     </div>
                                 </div>
@@ -253,7 +328,7 @@ export default function ServiceDetails() {
                                 Your customers expect seamless mobile experiences. Slow apps get uninstalled. Clunky UIs drive users away. We build mobile applications that are fast, intuitive, and reliable — keeping users engaged and your business growing. From performance optimization to pixel-perfect design, every detail matters.
                             </p>
                         </div>
-                        <img src="/assets/images/page/dvl-deatils.jpg" alt="mobile development benefits" />
+                        <img src="/assets/images/page/dvl-deatils_new2.jpg" alt="mobile development benefits" />
                     </div>
                 </div>
                 <div className="col-md-6">
@@ -360,7 +435,7 @@ export default function ServiceDetails() {
                     <div className="team-member-details-wrap">
                         <div className="widget-team-single bb-blog">
                             <span>Quality Mobile Apps Pay for Themselves</span>
-                            <p>A great mobile app isn't a cost — it's an investment in customer engagement and business growth. It automates interactions, improves accessibility, and opens new revenue channels. Off-the-shelf apps force you to adapt. Custom mobile apps adapt to your users. <span class="text-blue2"> That's the difference between an app that sits unused and an app that drives results.</span></p>
+                            <p>A great mobile app isn't a cost — it's an investment in customer engagement and business growth. It automates interactions, improves accessibility, and opens new revenue channels. Off-the-shelf apps force you to adapt. Custom mobile apps adapt to your users. <span className="text-blue2"> That's the difference between an app that sits unused and an app that drives results.</span></p>
                         </div>
                     </div>
                 </div>
@@ -385,7 +460,7 @@ export default function ServiceDetails() {
                             </div>
                             <div className="contact-content">
                                 <span className="font-man text-white">Call For Inquiry</span>
-                                <p>+236 (456) 896 22</p>
+                                <p><a href="tel:+1 (224) 206-0034" className='text-white'>+1 (224) 206-0034</a></p>
                             </div>
                         </div>
                         <div className="contact-wrap flex-three">
@@ -394,7 +469,7 @@ export default function ServiceDetails() {
                             </div>
                             <div className="contact-content">
                                 <span className="font-man text-white">Send Us Email</span>
-                                <p>infotech@gmail.com</p>
+                                <p><a href="mailto:info@veotronic.com" className='text-white'>info@veotronic.com</a></p>
                             </div>
                         </div>
                     </div>
@@ -405,34 +480,32 @@ export default function ServiceDetails() {
                             <h3 className="title-form">Need Help For Your Mobile Project?</h3>
                             <p>We are ready to help with your next mobile app — let's work together</p>
                         </div>
-                        <form action="/" className="form-contact-home">
+                        <form onSubmit={handleSubmit} className="form-contact-home">
                             <div className="input-group flex-one">
                                 <fieldset className="relative mb-20">
-                                    <input type="text" className="form-control" id="name-input" placeholder="Name" />
+                                    <input type="text" className="form-control" id="name-input" name="name" placeholder="Name" value={formData.name} onChange={handleChange} />
                                     <i className="icon-user" />
                                 </fieldset>
                                 <fieldset className="relative mb-20">
-                                    <input type="email" className="form-control" id="email-input" placeholder="Email" />
+                                    <input type="email" className="form-control" id="email-input" name="email" placeholder="Email" value={formData.email} onChange={handleChange} />
                                     <i className="icon-envelopes" />
                                 </fieldset>
                             </div>
                             <fieldset className="mb-20">
-                                <div className="nice-select" tabIndex={0}>
-                                    <span className="current">Choose Services</span>
-                                    <ul className="list">
-                                        <li data-value className="option selected focus">Choose Services</li>
-                                        <li data-value="service" className="option">Native iOS / Android</li>
-                                        <li data-value="service" className="option">Hybrid / Cross-Platform</li>
-                                        <li data-value="service" className="option">Progressive Web App (PWA)</li>
-                                        <li data-value="service" className="option">AI-Powered Mobile App</li>
-                                    </ul>
-                                </div>
+                                {/* Changed to normal select dropdown */}
+                                <select className="form-control" id="services" name="services" value={formData.services} onChange={handleChange} required>
+                                    <option value="">Choose Services</option>
+                                    <option value="Business automation">Business automation</option>
+                                    <option value="AI Implementation">AI Implementation</option>
+                                    <option value="Software and App development">Software & App development</option>
+                                    <option value="Web development">Web development</option>
+                                </select>
                             </fieldset>
                             <fieldset className="mb-15">
-                                <textarea id="mess" name="mess" rows={4} cols={50} placeholder="Tell us about your mobile app idea..." />
+                                <textarea id="mess" name="message" rows={4} cols={50} placeholder="Tell us about your mobile app idea..." value={formData.message} onChange={handleChange} />
                             </fieldset>
                             <fieldset className="center">
-                                <button className="btn-submit" type="submit">Send Message Us <i className="icon-right-icon" /></button>
+                                <button className="btn-submit" type="submit">Send Message<i className="icon-right-icon" /></button>
                             </fieldset>
                         </form>
                     </div>

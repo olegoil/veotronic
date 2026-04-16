@@ -8,7 +8,7 @@ export default function Pricing() {
 	return (
 		<>
 
-			<Layout breadcrumbTitle="Pricing Plan">
+			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Pricing Plan">
 				<div>
 					<section className="pt-130 bg-2 pricing-plan">
 						<div className="tf-container">

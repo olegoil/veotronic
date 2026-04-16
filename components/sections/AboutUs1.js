@@ -5,7 +5,6 @@ import TextAnimation from "../elements/TextAnimation"
 export default function AboutUs1() {
 	return (
 		<>
-
 			<section className="section-about-us relative">
 				<div className="tf-container">
 					<div className="row">
@@ -27,7 +26,7 @@ export default function AboutUs1() {
 									</h2>
 									<h2 className="title">
 										<span className="animationtext clip texts-blue">
-											{/* <TextAnimation text1="Wiatech" text2="Wetech" /> */}
+											{/* <TextAnimation text1="Veotronic" text2="Wetech" /> */}
 										</span>
 									</h2>
 								</div>
@@ -54,7 +53,7 @@ export default function AboutUs1() {
 						</div>
 						<div className="col-12 col-md-12 col-lg-12 col-xl-4">
 							<div className="about-us-counter wow fadeInUpSmall" data-wow-delay=".3s">
-								<h3 className="title">Innovative Business Technologies. Wiatech.
+								<h3 className="title">Innovative Business Technologies. Veotronic.
 									Where Quality is Guaranteed.
 								</h3>
 								<p className="des">We build products that lead the market and reshape entire industries. For us, it's not just about code — it's about making your business run flawlessly. We uphold the highest standards, treating every project as our own.
@@ -65,7 +64,7 @@ export default function AboutUs1() {
 										<div className="icon">
 											<i className="icon-costumer-11" />
 										</div>
-										<div className="number-counter number-kplus numbers" data-to={80} data-speed={2000} data-waypoint-active="yes"><CounterNumber count={100} /></div>
+										<div className="number-counter number-kplus numbers" data-to={80} data-speed={2000} data-waypoint-active="yes"><CounterNumber count={50} /></div>
 										<p className="des">Completed projects</p>
 									</div>
 									<div className="counter-style1 tf-counters">

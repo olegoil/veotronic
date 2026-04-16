@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function PrivacyPolicy() {
 	return (
 		<>
-			<Layout breadcrumbTitle="Privacy Policy">
+			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Privacy Policy">
 				<div>
 					<section className="privacy-policy-page pt-130 pb-130">
 						<div className="tf-container">
@@ -134,8 +134,8 @@ export default function PrivacyPolicy() {
 											<p>If you have any questions about this Privacy Policy or how we handle your personal data, please contact us:</p>
 											<ul className="policy-list contact-list">
 												<li><strong>Email:</strong> <Link href="mailto:hello@veotronic.com">hello@veotronic.com</Link></li>
-												<li><strong>Phone:</strong> +1 (368) 567 89 54</li>
-												<li><strong>Address:</strong> 55 Main street, 2nd block, Melbourne, Australia</li>
+												<li><strong>Phone:</strong> <a href="tel:+1 (224) 206-0034" className='text-white'>+1 (224) 206-0034</a></li>
+												<li><strong>Address:</strong> 23587 n field rd lake Zurich IL 60047, United States</li>
 											</ul>
 										</div>
 

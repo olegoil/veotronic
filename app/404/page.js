@@ -5,7 +5,7 @@ export default function Error() {
 
 	return (
 		<>
-			<Layout breadcrumbTitle="Oops! 404">
+			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Oops! 404">
 				<section className="pt-130 pb-130">
 					<div className="tf-container">
 						<div className="row">

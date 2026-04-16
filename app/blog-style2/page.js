@@ -6,7 +6,7 @@ export default function BlogStyle2() {
 	return (
 		<>
 
-			<Layout breadcrumbTitle="Blog Standard">
+			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Blog Standard">
 				<section className="our-blog pd-section">
 					<div className="tf-container">
 						<div className="row">
@@ -112,13 +112,13 @@ export default function BlogStyle2() {
 							</div>
 							<div className="col-lg-4 col-12">
 								<div className="sidebar-blog">
-									<div className="widget mb-50">
+									{/* <div className="widget mb-50">
 										<h4 className="title-blog">Search </h4>
 										<form action="/" className="search-form-blog relative">
 											<input type="search" placeholder="Keywords" className="input-search" />
 											<button type="button"><i className="icon-search2" /></button>
 										</form>
-									</div>
+									</div> */}
 									<div className="widget mb-50">
 										<h4 className="title-blog bb-blog mb-30">Categories</h4>
 										<ul className="category-blog">

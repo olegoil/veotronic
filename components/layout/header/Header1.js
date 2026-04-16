@@ -14,11 +14,13 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handle
 							<ul className="address-top-header flex-three">
 								<li className="flex-three">
 									<i className="icon-location-dot1" />
-									<span>55 Main Street, 2nd block, Malborne ,Australia</span>
+									<span className="text-white">23587 n field rd lake Zurich IL 60047, United States</span>
 								</li>
 								<li className="flex-three">
-									<i className="icon-envelope4" />
-									<span>support@gmail.com</span>
+									{/* <i className="icon-envelope4" />
+									<span className="text-white"><a href="mailto:info@veotronic.com" className='text-white'>info@veotronic.com</a></span> */}
+									<i className="icon-phone" />
+									<a href="tel:+1 (224) 206-0034" className='text-white'>Questions? Call Us: +1 (224) 206-0034</a>
 								</li>
 							</ul>
 						</div>
@@ -28,10 +30,10 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handle
 									<Link href="/#">Help</Link>
 								</li> */}
 								<li>
-									<Link href="/contact-us">Support</Link>
+									<Link href="/contact-us" className="text-white">Contact</Link>
 								</li>
 								<li>
-									<Link href="/faq">Faqs</Link>
+									<Link href="/faq" className="text-white">Faq</Link>
 								</li>
 							</ul>
 							{/* <ul className="social-top flex-three">
@@ -61,7 +63,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handle
 										<div className="logo-box">
 											<div className="logo">
 												<Link href="/">
-													<img src="/assets/images/logo-footer.png" alt="Logo" />
+													<img src="/assets/images/logo2.png" alt="Logo" />
 												</Link>
 											</div>
 										</div>
@@ -78,9 +80,9 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handle
 										</div>
 										<div className="phone-address">
 											<ul className="flex align-center">
-												<li className>
+												<li>
 													<i className="icon-phone2" />
-													<span>+111 (456) 896 22</span>
+													<span><a href="tel:+1 (224) 206-0034" className='text-white'>+1 (224) 206-0034</a></span>
 												</li>
 											</ul>
 										</div>
@@ -105,11 +107,11 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handle
 				<div className="mobile-menu">
 					<div className="menu-backdrop" onClick={handleMobileMenu} />
 					<nav className="menu-box">
-						<div className="nav-logo"><Link href="/">
+						<div className="nav-logo" onClick={handleMobileMenu}><Link href="/">
 							<img src="/assets/images/logo-footer.png" alt="" /></Link></div>
 						<div className="bottom-canvas">
 							<div className="menu-outer">
-								<MobileMenu />
+								<MobileMenu closeMenu={handleMobileMenu} />
 							</div>
 						</div>
 					</nav>

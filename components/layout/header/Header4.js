@@ -54,11 +54,11 @@ export default function Header4({ scroll, isMobileMenu, handleMobileMenu, handle
 				<div className="mobile-menu">
 					<div className="menu-backdrop" onClick={handleMobileMenu} />
 					<nav className="menu-box">
-						<div className="nav-logo"><Link href="/">
+						<div className="nav-logo" onClick={handleMobileMenu}><Link href="/">
 							<img src="/assets/images/logo-footer.png" alt="" /></Link></div>
 						<div className="bottom-canvas">
 						<div className="menu-outer">
-								<MobileMenu />
+								<MobileMenu closeMenu={handleMobileMenu} />
 							</div>
 						</div>
 					</nav>

@@ -5,6 +5,7 @@ import { myTesHome5 } from "@/utils/swiperOptions"
 import Link from "next/link"
 import { useState } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
+
 export default function ServiceDetails() {
 	const [isTab, setIsTab] = useState(1)
 	const [isVisible, setIsVisible] = useState(true)
@@ -15,10 +16,84 @@ export default function ServiceDetails() {
 			setIsVisible(true)
 		}, 200)
 	}
+	
+	const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        website: '',
+        url: '',
+        services: '',
+        comment: '',
+        message: ''
+    });
+    
+    // State for submission status
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
+    
+    // Handle input changes
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+    
+    // Handle form submission
+    const handleSubmit = async (e) => {
+        e.preventDefault(); // Prevents page reload
+        
+        // Optional: Validate form
+        if (!formData.email) {
+            setSubmitStatus({ type: 'error', message: 'Please fill in Email' });
+            return;
+        }
+        
+        setIsSubmitting(true);
+        setSubmitStatus({ type: '', message: '' });
+        
+        try {
+            // Send email via your API (Method 1 from previous answer)
+            const response = await fetch('https://admin.olegtronics.com/xapi/sendmailfree/veotronic', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+            
+            if (response.ok) {
+                // Show success message
+                setSubmitStatus({ type: 'success', message: 'Message sent successfully!' });
+                
+                // Clear form after successful submission
+                setFormData({
+                    name: '',
+					email: '',
+					website: '',
+					url: '',
+					services: '',
+					comment: '',
+					message: ''
+                });
+                
+                // Optional: Hide success message after 5 seconds
+                setTimeout(() => {
+                    setSubmitStatus({ type: '', message: '' });
+                }, 5000);
+            } else {
+                throw new Error('Failed to send');
+            }
+        } catch (error) {
+            setSubmitStatus({ type: 'error', message: 'Failed to send message. Please try again.' });
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+	
 	return (
 		<>
 
-			<Layout breadcrumbTitle="Process Automation">
+			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Process Automation">
 				<div>
 					<section className="section-benefit pt-122 pb-130">
 						<div className="tf-container">
@@ -31,7 +106,13 @@ export default function ServiceDetails() {
 											<p className="des">
 This is clear business logic — digitized. Imagine orders from your website automatically landing in your CRM and accounting system, while the customer receives a personalized email. Imagine a payment reminder triggering exactly on the right day, and a management report generating with a single click. Automation connects your disconnected tools into a single, logical, self-managing workflow. The result: speed, zero errors, and complete transparency at every stage</p>
 										</div>
-										<img src="/assets/images/page/dvl-deatils3_new.jpg" alt="image" />
+										{/* <img src="/assets/images/page/dvl-deatils3_new.jpg" alt="image" /> */}
+										<div className="video-background">
+											<video autoPlay muted loop playsInline disablePictureInPicture>
+												<source src="/assets/videos/n8n_workflow.mp4" type="video/mp4"/>
+												Your browser does not support HTML5 video. But the background experience is still beautiful.
+											</video>
+										</div>
 									</div>
 								</div>
 								<div className="col-md-6">
@@ -268,7 +349,7 @@ This is clear business logic — digitized. Imagine orders from your website aut
 								<div className="team-member-details-wrap">
 									<div className="widget-team-single bb-blog">
 										<span>Break free from routine</span>
-										<p>How many hours a day does your team spend on routine, repetitive tasks? Data entry, approvals, reports, notifications… Workflow automation is not the future — it's the reality of an efficient business today. We help you identify these bottlenecks, digitize them, and set them to work autonomously. <span class="text-blue2"> Let your processes serve you — not the other way around</span></p>
+										<p>How many hours a day does your team spend on routine, repetitive tasks? Data entry, approvals, reports, notifications… Workflow automation is not the future — it's the reality of an efficient business today. We help you identify these bottlenecks, digitize them, and set them to work autonomously. <span className="text-blue2"> Let your processes serve you — not the other way around</span></p>
 									</div>
 								</div>
 							</div>
@@ -399,7 +480,7 @@ This is clear business logic — digitized. Imagine orders from your website aut
 											</div>
 											<div className="contact-content">
 												<span className="font-man text-white">Call For Inquiry</span>
-												<p>+236 (456) 896 22</p>
+												<p><a href="tel:+1 (224) 206-0034" className='text-white'>+1 (224) 206-0034</a></p>
 											</div>
 										</div>
 										<div className="contact-wrap flex-three">
@@ -408,7 +489,7 @@ This is clear business logic — digitized. Imagine orders from your website aut
 											</div>
 											<div className="contact-content">
 												<span className="font-man text-white">Send Us Email</span>
-												<p>infotech@gmail.com</p>
+												<p><a href="mailto:info@veotronic.com" className='text-white'>info@veotronic.com</a></p>
 											</div>
 										</div>
 									</div>
@@ -419,33 +500,32 @@ This is clear business logic — digitized. Imagine orders from your website aut
 											<h3 className="title-form">Need Help With Your Project?</h3>
 											<p>We're ready to help. Let's discuss your goals and build something great together.</p>
 										</div>
-										<form action="/" className="form-contact-home">
+										<form onSubmit={handleSubmit} className="form-contact-home">
 											<div className="input-group flex-one">
 												<fieldset className="relative mb-20">
-													<input type="text" className="form-control" id="name-input" placeholder="Name" />
+													<input type="text" className="form-control" id="name-input" name="name" placeholder="Name" value={formData.name} onChange={handleChange} />
 													<i className="icon-user" />
 												</fieldset>
 												<fieldset className="relative mb-20">
-													<input type="email" className="form-control" id="email-input" placeholder="Email" />
+													<input type="email" className="form-control" id="email-input" name="email" placeholder="Email" value={formData.email} onChange={handleChange} />
 													<i className="icon-envelopes" />
 												</fieldset>
 											</div>
 											<fieldset className="mb-20">
-												<div className="nice-select" tabIndex={0}>
-													<span className="current">Choose Services</span>
-													<ul className="list">
-														<li data-value className="option selected focus">Choose Services</li>
-														<li data-value="service" className="option">Choose Services</li>
-														<li data-value="service" className="option">Choose Services</li>
-														<li data-value="service" className="option">Choose Services</li>
-													</ul>
-												</div>
+												{/* Changed to normal select dropdown */}
+												<select className="form-control" id="services" name="services" value={formData.services} onChange={handleChange} required>
+													<option value="">Choose Services</option>
+													<option value="Business automation">Business automation</option>
+													<option value="AI Implementation">AI Implementation</option>
+													<option value="Software and App development">Software & App development</option>
+													<option value="Web development">Web development</option>
+												</select>
 											</fieldset>
 											<fieldset className=" mb-15">
-												<textarea id="mess" name="mess" rows={4} cols={50} placeholder="Message" />
+												<textarea id="mess" name="message" rows={4} cols={50} placeholder="Message" value={formData.message} onChange={handleChange} />
 											</fieldset>
 											<fieldset className="center">
-												<button className="btn-submit" type="submit">Send Message Us <i className="icon-right-icon" /></button>
+												<button className="btn-submit" type="submit">Send Message<i className="icon-right-icon" /></button>
 											</fieldset>
 										</form>
 									</div>

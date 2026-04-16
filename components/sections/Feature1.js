@@ -22,7 +22,7 @@ export default function Feature1() {
 									<div className="progress-box1 flex-three">
 										<div className="progress-skill">
 											<div className="couter2">
-											<CircleProgress percentage={15} />
+											<CircleProgress percentage={30} />
 											</div>
 										</div>
 										<div className="content-progress">
@@ -83,7 +83,7 @@ export default function Feature1() {
 										<i className="icon-start" />
 										<i className="icon-start" />
 										<i className="icon-start" />
-										<span>Trustpoint</span>
+										<span>customer reviews</span>
 									</div>
 									<div className="start">
 										<span>4.9</span>

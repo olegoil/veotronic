@@ -15,7 +15,7 @@ export default function ProjectGrid() {
 	return (
 		<>
 
-			<Layout breadcrumbTitle="Project Grid">
+			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Project Grid">
 				<section className="project-section pt-122 pb-130">
 					<div className="tf-container">
 						<div className="row">

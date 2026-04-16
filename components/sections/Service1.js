@@ -179,7 +179,7 @@ export default function Service1() {
 						<div className="service-cta">
 							<img src="/assets/images/page/chat1.png" alt="image" />
 							<p className="font-man">Get Free Consultations For Tech Solutions</p>
-							<Link href="/contact-us">Get A Quote <i className="icon-right-icon" /></Link>
+							<Link href="/contact-us">Contact <i className="icon-right-icon" /></Link>
 						</div>
 					</div>
 				</div>

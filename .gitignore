@@ -41,3 +41,6 @@ yarn-error.log*
 *.psd
 *._*
 .next
+.next/*
+out
+out/*

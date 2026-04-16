@@ -15,7 +15,7 @@ export default function FunFact1() {
 								<h2 className="title wow fadeInUpSmall" data-wow-delay=".3s">Behind the Scenes Surprising
 									Fun Facts About
 									<span className=" text-blue1 mask">
-										<TextAnimation text1="Wiatech" text2="Wetech" />
+										<TextAnimation text1="Veotronic" text2="Wetech" />
 									</span>
 								</h2>
 							</div>

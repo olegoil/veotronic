@@ -1,6 +1,81 @@
 import Link from "next/link"
+import { useState } from "react"
 
 export default function Footer3() {
+	
+	const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        website: '',
+        url: '',
+        services: '',
+        comment: '',
+        message: ''
+    });
+    
+    // State for submission status
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
+    
+    // Handle input changes
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+    
+    // Handle form submission
+    const handleSubmit = async (e) => {
+        e.preventDefault(); // Prevents page reload
+        
+        // Optional: Validate form
+        if (!formData.email) {
+            setSubmitStatus({ type: 'error', message: 'Please fill in Email' });
+            return;
+        }
+        
+        setIsSubmitting(true);
+        setSubmitStatus({ type: '', message: '' });
+        
+        try {
+            // Send email via your API (Method 1 from previous answer)
+            const response = await fetch('https://admin.olegtronics.com/xapi/sendmailfree/veotronic', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+            
+            if (response.ok) {
+                // Show success message
+                setSubmitStatus({ type: 'success', message: 'Message sent successfully!' });
+                
+                // Clear form after successful submission
+                setFormData({
+                    name: '',
+					email: '',
+					website: '',
+					url: '',
+					services: '',
+					comment: '',
+					message: ''
+                });
+                
+                // Optional: Hide success message after 5 seconds
+                setTimeout(() => {
+                    setSubmitStatus({ type: '', message: '' });
+                }, 5000);
+            } else {
+                throw new Error('Failed to send');
+            }
+        } catch (error) {
+            setSubmitStatus({ type: 'error', message: 'Failed to send message. Please try again.' });
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+	
 	return (
 		<>
 
@@ -13,9 +88,9 @@ export default function Footer3() {
 								<img src="/assets/images/logo-footer2.png" alt="image" className="logo" />
 								<p className="des">IT professionals, we work closely with
 									you to understand your objectives and challenges, and develop tailor</p>
-								<form action="/" className="form-footer3 relative flex" id="subscribe-form" method="post" acceptCharset="utf-8" data-mailchimp="true">
+								<form onSubmit={handleSubmit} className="form-footer3 relative flex" id="subscribe-form" method="post" acceptCharset="utf-8" data-mailchimp="true">
 									<i className="icon-envelope" />
-									<input type="email" placeholder="Email Address" name="email-form" id="subscribe-email" />
+									<input type="email" placeholder="Email Address" name="email" id="subscribe-email" value={formData.email} onChange={handleChange} />
 									<button type="submit" id="subscribe-button"><i className="icon-arrow-right" /></button>
 								</form>
 							</div>
@@ -48,11 +123,10 @@ export default function Footer3() {
 						<div className="col-12 col-sm-6 col-lg-3">
 							<div className="footer-main-locations">
 								<h5 className="title-footer text-white">Locations</h5>
-								<p className="font-man text-lcation text-white mb-20">55 Main Street, 2nd block <br />
-									Malborne, Australia</p>
+								<p className="font-man text-lcation text-white mb-20">23587 n field rd lake Zurich IL 60047, United States</p>
 								<h5 className="title-footer text-white">Contact</h5>
-								<p className="font-man text-lcation ">support@gmail.com</p>
-								<p className="phone text-white">+880 (123) 456 88</p>
+								<p className="font-man text-lcation "><a href="mailto:info@veotronic.com" className='text-white'>info@veotronic.com</a></p>
+								<p className="phone text-white"><a href="tel:+1 (224) 206-0034" className='text-white'>+1 (224) 206-0034</a></p>
 							</div>
 						</div>
 						<div className="col-12 col-sm-6 col-lg-3">

@@ -15,7 +15,7 @@ export default function AboutUs2() {
 								<h2 className="title wow fadeInUpSmall" data-wow-delay=".3s">Guardians of the Digital Realm Our
 									Mission and
 									<span className="animationtext clip text-blue1 mask">
-										<TextAnimation text1="Wiatech" text2="Expertise" />
+										<TextAnimation text1="Veotronic" text2="Expertise" />
 									</span>
 								</h2>
 							</div>
@@ -33,7 +33,7 @@ export default function AboutUs2() {
 							<div className="about-content">
 								<h3 className="title wow fadeInUpSmall" data-wow-delay=".2s">Safeguarding the Future Our Mission in
 									the Digital Landscape</h3>
-								<p className="wow fadeInUpSmall" data-wow-delay=".3s">We approached WiaTech with complex project Designing a website can
+								<p className="wow fadeInUpSmall" data-wow-delay=".3s">We approached Veotronic with complex project Designing a website can
 									involve various aspects such as layout, graphics, content, and experience
 									For a more specific response, could you please elaborate</p>
 								<div className="about-content-wrapper flex-three wow fadeInUpSmall" data-wow-delay=".4s">

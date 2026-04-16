@@ -8,7 +8,7 @@ export default function ProjectSlider() {
 	return (
 		<>
 
-			<Layout breadcrumbTitle="Project Grid">
+			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Project Grid">
 				<section className="project-slider pt-122">
 					<div className="tf-container">
 						<div className="row mb-60 al-i-end">

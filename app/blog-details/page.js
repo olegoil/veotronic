@@ -1,7 +1,82 @@
-
+'use client'
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import { useState } from "react"
+
 export default function BlogDetails() {
+
+	const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        website: '',
+        url: '',
+        services: '',
+        comment: '',
+        message: ''
+    });
+    
+    // State for submission status
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
+    
+    // Handle input changes
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+    
+    // Handle form submission
+    const handleSubmit = async (e) => {
+        e.preventDefault(); // Prevents page reload
+        
+        // Optional: Validate form
+        if (!formData.email) {
+            setSubmitStatus({ type: 'error', message: 'Please fill in Email' });
+            return;
+        }
+        
+        setIsSubmitting(true);
+        setSubmitStatus({ type: '', message: '' });
+        
+        try {
+            // Send email via your API (Method 1 from previous answer)
+            const response = await fetch('https://admin.olegtronics.com/xapi/sendmailfree/veotronic', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+            
+            if (response.ok) {
+                // Show success message
+                setSubmitStatus({ type: 'success', message: 'Message sent successfully!' });
+                
+                // Clear form after successful submission
+                setFormData({
+                    name: '',
+					email: '',
+					website: '',
+					url: '',
+					services: '',
+					comment: '',
+					message: ''
+                });
+                
+                // Optional: Hide success message after 5 seconds
+                setTimeout(() => {
+                    setSubmitStatus({ type: '', message: '' });
+                }, 5000);
+            } else {
+                throw new Error('Failed to send');
+            }
+        } catch (error) {
+            setSubmitStatus({ type: 'error', message: 'Failed to send message. Please try again.' });
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
 
 	return (
 		<>
@@ -175,23 +250,23 @@ export default function BlogDetails() {
 								</div>
 								<div className="comment-form bg-2">
 									<h3 className="title bb-blog mb-30"> Leave a Reply</h3>
-									<form action="/" id="form-comment-blog">
+									<form onSubmit={handleSubmit} id="form-comment-blog">
 										<div className="row">
 											<div className="col-md-6 mb-20">
 												<label className="mb-20">Full Name</label>
-												<input type="text" name="name" className="input-group" placeholder="Enter your name" />
+												<input type="text" name="name" value={formData.name} onChange={handleChange} className="input-group" placeholder="Enter your name" />
 											</div>
 											<div className="col-md-6 mb-20">
 												<label className="mb-20">Email Address</label>
-												<input type="email" name="email" className="input-group" placeholder="Enter your email" />
+												<input type="email" name="email" value={formData.email} onChange={handleChange} className="input-group" placeholder="Enter your email" />
 											</div>
 											<div className="col-lg-12 mb-20">
 												<label className="mb-20">Website</label>
-												<input type="url" name="website" className="input-group" placeholder="Enter your website" />
+												<input type="url" name="website" value={formData.website} onChange={handleChange} className="input-group" placeholder="Enter your website" />
 											</div>
 											<div className="col-lg-12 mb-20">
 												<label className="mb-20">Comment</label>
-												<textarea name="comment" placeholder="Write your comment" rows={4} cols={50} />
+												<textarea name="comment" value={formData.comment} onChange={handleChange} placeholder="Write your comment" rows={4} cols={50} />
 											</div>
 											<div className="col-lg-12">
 												<button type="submit">Send Comments <i className="icon-right" /></button>
@@ -202,13 +277,13 @@ export default function BlogDetails() {
 							</div>
 							<div className="col-lg-4 col-12">
 								<div className="sidebar-blog">
-									<div className="widget mb-50">
+									{/* <div className="widget mb-50">
 										<h4 className="title-blog">Search </h4>
-										<form action="/" className="search-form-blog relative">
+										<form onSubmit={handleSubmit} className="search-form-blog relative">
 											<input type="search" placeholder="Keywords" className="input-search" />
 											<button type="button"><i className="icon-search2" /></button>
 										</form>
-									</div>
+									</div> */}
 									<div className="widget mb-50">
 										<h4 className="title-blog bb-blog mb-30">Categories</h4>
 										<ul className="category-blog">

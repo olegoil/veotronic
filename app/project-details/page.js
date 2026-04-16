@@ -6,7 +6,7 @@ export default function ProjectDetails() {
 	return (
 		<>
 
-			<Layout breadcrumbTitle="Project Details">
+			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Project Details">
 				<section className="project-details pt-130 pb-130">
 					<div className="tf-container">
 						<div className="row align-center mb-100">
@@ -39,7 +39,7 @@ export default function ProjectDetails() {
 										</li>
 										<li>
 											<h4>Website</h4>
-											<p><Link href="/#">wiatech.com</Link></p>
+											<p><Link href="/#">Veotronic.com</Link></p>
 										</li>
 									</ul>
 								</div>

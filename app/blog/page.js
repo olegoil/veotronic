@@ -6,7 +6,7 @@ export default function Blog() {
 	return (
 		<>
 
-			<Layout breadcrumbTitle="Blog Grid">
+			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Blog Grid">
 				<section className="our-blog pd-section">
 					<div className="tf-container">
 						<div className="row">

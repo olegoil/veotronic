@@ -29,7 +29,7 @@ export default function CanDoIt1() {
 										<i className="icon-start" />
 										<i className="icon-start" />
 										<i className="icon-start" />
-										<span>Trustpoint</span>
+										<span>customer reviews</span>
 									</div>
 									<div className="start">
 										<span>4.9</span>
@@ -42,7 +42,7 @@ export default function CanDoIt1() {
 								<h2 className="title mb-50">We Make Building an App So Easy, Anyone
 									<span className="text-black mask ms-2">Can Do IT</span>
 								</h2>
-								<p className="cdit-text mb-40">We approached WiaTech complex project Designing website
+								<p className="cdit-text mb-40">We approached Veotronic complex project Designing website
 									can involve various aspects such as layout, graphics, content
 									experience For a more specific response elaborate
 								</p>

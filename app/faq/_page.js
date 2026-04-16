@@ -68,7 +68,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapseOne" className={isAccordion == 16 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -83,7 +83,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapseTwo" className={isAccordion == 17 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -98,7 +98,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapseThree" className={isAccordion == 18 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -113,7 +113,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapsefore" className={isAccordion == 19 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -128,7 +128,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapsefire" className={isAccordion == 20 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -147,7 +147,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapseOne" className={isAccordion == 21 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -162,7 +162,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapseTwo" className={isAccordion == 22 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -177,7 +177,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapseThree" className={isAccordion == 23 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -192,7 +192,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapsefore" className={isAccordion == 24 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -207,7 +207,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapsefire" className={isAccordion == 25 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -226,7 +226,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapseOne" className={isAccordion == 26 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -241,7 +241,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapseTwo" className={isAccordion == 27 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -256,7 +256,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapseThree" className={isAccordion == 28 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -271,7 +271,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapsefore" className={isAccordion == 29 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -286,7 +286,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapsefire" className={isAccordion == 30 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -305,7 +305,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapseOne" className={isAccordion == 1 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -320,7 +320,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapseTwo" className={isAccordion == 2 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -335,7 +335,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapseThree" className={isAccordion == 3 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -350,7 +350,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapsefore" className={isAccordion == 4 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -365,7 +365,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapsefire" className={isAccordion == 5 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -384,7 +384,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapseOne" className={isAccordion == 6 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -399,7 +399,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapseTwo" className={isAccordion == 7 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -414,7 +414,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapseThree" className={isAccordion == 8 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -429,7 +429,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapsefore" className={isAccordion == 9 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -444,7 +444,7 @@ export default function Faq() {
 														</h3>
 														<div id="collapsefire" className={isAccordion == 10 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 															<div className="accordion-body">
-																We approached WiaTech with complex project Designing a website can
+																We approached Veotronic with complex project Designing a website can
 																involve various such
 																as layout, graphics, content, and experience more specific response
 																elaborate
@@ -504,7 +504,7 @@ export default function Faq() {
 												</h3>
 												<div id="collapseOne" className={isAccordion == 11 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 													<div className="accordion-body">
-														We approached WiaTech with complex project Designing a website can
+														We approached Veotronic with complex project Designing a website can
 														involve various such
 														as layout, graphics, content, and experience more specific response
 														elaborate
@@ -519,7 +519,7 @@ export default function Faq() {
 												</h3>
 												<div id="collapseTwo" className={isAccordion == 12 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 													<div className="accordion-body">
-														We approached WiaTech with complex project Designing a website can
+														We approached Veotronic with complex project Designing a website can
 														involve various such
 														as layout, graphics, content, and experience more specific response
 														elaborate
@@ -534,7 +534,7 @@ export default function Faq() {
 												</h3>
 												<div id="collapseThree" className={isAccordion == 13 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 													<div className="accordion-body">
-														We approached WiaTech with complex project Designing a website can
+														We approached Veotronic with complex project Designing a website can
 														involve various such
 														as layout, graphics, content, and experience more specific response
 														elaborate
@@ -549,7 +549,7 @@ export default function Faq() {
 												</h3>
 												<div id="collapsefore" className={isAccordion == 14 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 													<div className="accordion-body">
-														We approached WiaTech with complex project Designing a website can
+														We approached Veotronic with complex project Designing a website can
 														involve various such
 														as layout, graphics, content, and experience more specific response
 														elaborate
@@ -564,7 +564,7 @@ export default function Faq() {
 												</h3>
 												<div id="collapsefire" className={isAccordion == 15 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 													<div className="accordion-body">
-														We approached WiaTech with complex project Designing a website can
+														We approached Veotronic with complex project Designing a website can
 														involve various such
 														as layout, graphics, content, and experience more specific response
 														elaborate

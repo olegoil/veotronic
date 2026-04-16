@@ -29,7 +29,7 @@ export default function Feature3() {
 									</div>
 									<h3 className="title">Customer Software Development</h3>
 									<div className="inner-bottom">
-										<p className="des font-man">We approached WiaTech with complex project deliver
+										<p className="des font-man">We approached Veotronic with complex project deliver
 										</p>
 										<div className="icon-bottom">
 											<i className="icon-arrow-right" />
@@ -48,7 +48,7 @@ export default function Feature3() {
 									<h3 className="title">Desktop Computing
 										Services</h3>
 									<div className="inner-bottom">
-										<p className="des font-man">We approached WiaTech with complex project deliver
+										<p className="des font-man">We approached Veotronic with complex project deliver
 										</p>
 										<div className="icon-bottom">
 											<i className="icon-arrow-right" />
@@ -66,7 +66,7 @@ export default function Feature3() {
 									</div>
 									<h3 className="title">Infrastructure Plan &amp; Business Reform</h3>
 									<div className="inner-bottom">
-										<p className="des font-man">We approached WiaTech with complex project deliver
+										<p className="des font-man">We approached Veotronic with complex project deliver
 										</p>
 										<div className="icon-bottom">
 											<i className="icon-arrow-right" />
@@ -84,7 +84,7 @@ export default function Feature3() {
 									</div>
 									<h3 className="title">Data and Cyber Management</h3>
 									<div className="inner-bottom">
-										<p className="des font-man">We approached WiaTech with complex project deliver
+										<p className="des font-man">We approached Veotronic with complex project deliver
 										</p>
 										<div className="icon-bottom">
 											<i className="icon-arrow-right" />

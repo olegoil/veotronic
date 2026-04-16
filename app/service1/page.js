@@ -14,7 +14,7 @@ const handleAccordion = (key) => {
 	return (
 		<>
 
-			<Layout breadcrumbTitle="Popular Services">
+			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Popular Services">
 				<div>
 					<section className="pt-122 pb-130 ">
 						<div className="tf-container">
@@ -154,7 +154,7 @@ const handleAccordion = (key) => {
 											</div>
 											<h3 className="title">Product Design</h3>
 											<div className="inner-bottom">
-												<p className="des font-man">We approached WiaTech with complex project deliver</p>
+												<p className="des font-man">We approached Veotronic with complex project deliver</p>
 												<div className="icon-bottom">
 													<i className="icon-arrow-right" />
 												</div>
@@ -171,7 +171,7 @@ const handleAccordion = (key) => {
 											</div>
 											<h3 className="title">IT Management</h3>
 											<div className="inner-bottom">
-												<p className="des font-man">We approached WiaTech with complex project deliver</p>
+												<p className="des font-man">We approached Veotronic with complex project deliver</p>
 												<div className="icon-bottom">
 													<i className="icon-arrow-right" />
 												</div>
@@ -188,7 +188,7 @@ const handleAccordion = (key) => {
 											</div>
 											<h3 className="title">Data Security</h3>
 											<div className="inner-bottom">
-												<p className="des font-man">We approached WiaTech with complex project deliver</p>
+												<p className="des font-man">We approached Veotronic with complex project deliver</p>
 												<div className="icon-bottom">
 													<i className="icon-arrow-right" />
 												</div>
@@ -205,7 +205,7 @@ const handleAccordion = (key) => {
 											</div>
 											<h3 className="title">Infrastructure Plan</h3>
 											<div className="inner-bottom">
-												<p className="des font-man">We approached WiaTech with complex project deliver</p>
+												<p className="des font-man">We approached Veotronic with complex project deliver</p>
 												<div className="icon-bottom">
 													<i className="icon-arrow-right" />
 												</div>
@@ -222,7 +222,7 @@ const handleAccordion = (key) => {
 											</div>
 											<h3 className="title">Firewall Advancement</h3>
 											<div className="inner-bottom">
-												<p className="des font-man">We approached WiaTech with complex project deliver</p>
+												<p className="des font-man">We approached Veotronic with complex project deliver</p>
 												<div className="icon-bottom">
 													<i className="icon-arrow-right" />
 												</div>
@@ -239,7 +239,7 @@ const handleAccordion = (key) => {
 											</div>
 											<h3 className="title">Desktop Computing</h3>
 											<div className="inner-bottom">
-												<p className="des font-man">We approached WiaTech with complex project deliver</p>
+												<p className="des font-man">We approached Veotronic with complex project deliver</p>
 												<div className="icon-bottom">
 													<i className="icon-arrow-right" />
 												</div>
@@ -256,7 +256,7 @@ const handleAccordion = (key) => {
 											</div>
 											<h3 className="title">Market research</h3>
 											<div className="inner-bottom">
-												<p className="des font-man">We approached WiaTech with complex project deliver</p>
+												<p className="des font-man">We approached Veotronic with complex project deliver</p>
 												<div className="icon-bottom">
 													<i className="icon-arrow-right" />
 												</div>
@@ -273,7 +273,7 @@ const handleAccordion = (key) => {
 											</div>
 											<h3 className="title">Web Development</h3>
 											<div className="inner-bottom">
-												<p className="des font-man">We approached WiaTech with complex project deliver</p>
+												<p className="des font-man">We approached Veotronic with complex project deliver</p>
 												<div className="icon-bottom">
 													<i className="icon-arrow-right" />
 												</div>
@@ -503,7 +503,7 @@ const handleAccordion = (key) => {
 												<i className="icon-start" />
 												<i className="icon-start" />
 												<i className="icon-start" />
-												<span>Trustpoint</span>
+												<span>customer reviews</span>
 											</div>
 											<div className="start">
 												<span>4.9</span>

@@ -16,7 +16,7 @@ export default function OptimizeSolutions() {
 								<h2 className="title text-white wow fadeInUpSmall" data-wow-delay=".3s">Comprehensive Protection
 									for your
 									<span className=" text-blue2 mask">
-										<TextAnimation text1="Wiatech" text2="Business" />
+										<TextAnimation text1="Veotronic" text2="Business" />
 									</span>
 								</h2>
 							</div>

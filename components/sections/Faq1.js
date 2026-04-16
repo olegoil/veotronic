@@ -21,7 +21,7 @@ const handleAccordion = (key) => {
 						<div className="col-lg-8">
 							<div className="faq-main">
 								<div className="heading-title center mb-60">
-									<span className="sub-title text-blue1 font-man wow fadeInUpSmall" data-wow-delay=".2s">FAQs</span>
+									<span className="sub-title text-blue1 font-man wow fadeInUpSmall" data-wow-delay=".2s">FAQ</span>
 									<h2 className="title wow fadeInUpSmall" data-wow-delay=".3s">Frequently Ask
 										<span className="text-black mask"> Questions</span>
 									</h2>
@@ -35,7 +35,7 @@ const handleAccordion = (key) => {
 										</h3>
 										<div id="collapseOne" className={isAccordion == 1 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 											<div className="accordion-body">
-												We approached WiaTech with complex project Designing a website can
+												We approached Veotronic with complex project Designing a website can
 												involve various such
 												as layout, graphics, content, and experience more specific response
 												elaborate
@@ -50,7 +50,7 @@ const handleAccordion = (key) => {
 										</h3>
 										<div id="collapseTwo" className={isAccordion == 2 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 											<div className="accordion-body">
-												We approached WiaTech with complex project Designing a website can
+												We approached Veotronic with complex project Designing a website can
 												involve various such
 												as layout, graphics, content, and experience more specific response
 												elaborate
@@ -65,7 +65,7 @@ const handleAccordion = (key) => {
 										</h3>
 										<div id="collapseThree" className={isAccordion == 3 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 											<div className="accordion-body">
-												We approached WiaTech with complex project Designing a website can
+												We approached Veotronic with complex project Designing a website can
 												involve various such
 												as layout, graphics, content, and experience more specific response
 												elaborate
@@ -80,7 +80,7 @@ const handleAccordion = (key) => {
 										</h3>
 										<div id="collapsefore" className={isAccordion == 4 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 											<div className="accordion-body">
-												We approached WiaTech with complex project Designing a website can
+												We approached Veotronic with complex project Designing a website can
 												involve various such
 												as layout, graphics, content, and experience more specific response
 												elaborate
@@ -95,7 +95,7 @@ const handleAccordion = (key) => {
 										</h3>
 										<div id="collapsefire" className={isAccordion == 5 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
 											<div className="accordion-body">
-												We approached WiaTech with complex project Designing a website can
+												We approached Veotronic with complex project Designing a website can
 												involve various such
 												as layout, graphics, content, and experience more specific response
 												elaborate

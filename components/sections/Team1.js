@@ -42,8 +42,8 @@ export default function Team1() {
 								<div className="flex">
 									<span className="number">01</span>
 									<div className="box-wrap">
-										<h3 className="name">George C. Anderson</h3>
-										<p className="job font-man">Senior Manager</p>
+										<h3 className="name">Egor Lasitsa</h3>
+										<p className="job font-man">Chief Executive Officer</p>
 									</div>
 								</div>
 								{/* <Link href="/team-details" className="link-team flex-five"><i className="icon-top" /></Link> */}
@@ -52,8 +52,8 @@ export default function Team1() {
 								<div className="flex">
 									<span className="number">02</span>
 									<div className="box-wrap">
-										<h3 className="name">Brandon D. Garcia</h3>
-										<p className="job font-man">IT Consultant</p>
+										<h3 className="name">Vlady Lasitsa</h3>
+										<p className="job font-man">Sales Department</p>
 									</div>
 								</div>
 								{/* <Link href="/team-details" className="link-team flex-five"><i className="icon-top" /></Link> */}
@@ -62,8 +62,8 @@ export default function Team1() {
 								<div className="flex">
 									<span className="number">03</span>
 									<div className="box-wrap">
-										<h3 className="name">William A. Rogers</h3>
-										<p className="job font-man">Product Designer</p>
+										<h3 className="name">Yan Smetanskiy</h3>
+										<p className="job font-man">Senior Developer</p>
 									</div>
 								</div>
 								{/* <Link href="/team-details" className="link-team flex-five"><i className="icon-top" /></Link> */}
@@ -72,8 +72,8 @@ export default function Team1() {
 								<div className="flex">
 									<span className="number">04</span>
 									<div className="box-wrap">
-										<h3 className="name">Matthew R. Howard</h3>
-										<p className="job font-man">IT Manager</p>
+										<h3 className="name">Oleg Kono</h3>
+										<p className="job font-man">Senior Developer</p>
 									</div>
 								</div>
 								{/* <Link href="/team-details" className="link-team flex-five"><i className="icon-top" /></Link> */}
@@ -102,7 +102,7 @@ export default function Team1() {
 								</div>
 								<div className={`item-team-member team-post team-post-22 item2 relative ${isHover == 2 ? "active-thumb" : ""}`} data-id={22}>
 									
-										<img src="/assets/images/team/teamh1_new2.jpg" alt="image" />
+										<img src="/assets/images/team/teamh1_new4.jpg" alt="image" />
 									
 									{/* <ul className="social-team flex-three">
 										<li>
@@ -121,7 +121,7 @@ export default function Team1() {
 								</div>
 								<div className={`item-team-member team-post team-post-33 item3 relative ${isHover == 3 ? "active-thumb" : ""}`} data-id={33}>
 									
-										<img src="/assets/images/team/teamh1_new3.jpg" alt="image" />
+										<img src="/assets/images/team/teamh1_new2.jpg" alt="image" />
 									
 									{/* <ul className="social-team flex-three">
 										<li>
@@ -140,7 +140,7 @@ export default function Team1() {
 								</div>
 								<div className={`item-team-member team-post team-post-44 item4 relative ${isHover == 4 ? "active-thumb" : ""}`} data-id={44}>
 									
-										<img src="/assets/images/team/teamh1_new4.jpg" alt="image" />
+										<img src="/assets/images/team/teamh1_new3.jpg" alt="image" />
 									
 									{/* <ul className="social-team flex-three">
 										<li>

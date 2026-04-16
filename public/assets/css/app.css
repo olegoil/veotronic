@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /**
-  * Name: Veotronic - IT Services & Development HTML Template
+  * Name: Veotronic - Digital solutions
   * Version: 1.0.2
   * Author: Themesflat
   * Author URI: http://www.themesflat.com
@@ -57,9 +57,9 @@
   gap: 0;
 }
 .main-header.header-style1 .header-lower .header-account .nav-outer {
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
   padding: 0px 60px;
-  margin-bottom: -7px;
+  /* margin-bottom: -7px; */
   margin-right: 47px;
   margin-left: 0px;
 }
@@ -69,7 +69,7 @@
   transition: all 0.3s;
 }
 .main-header.header-style1 .header-lower .header-account .nav-outer .main-menu .navigation > li > a {
-  padding: 35px 0;
+  padding: 32px 0;
   border-bottom: 4px solid transparent;
 }
 .main-header.header-style1 .header-lower .header-account .header-search {
@@ -398,7 +398,7 @@
 }
 
 .main-header .header-lower {
-  background-color: #F6F2ED;
+  /* background-color: #F6F2ED; */
   position: relative;
   padding-left: 115px;
   padding-right: 115px;
@@ -518,9 +518,9 @@
   text-align: center;
   line-height: 21.78px;
   font-weight: 600;
-  padding: 35px 0px;
+  padding: 32px 0px;
   letter-spacing: 0px;
-  color: #222222;
+  color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 18px;
   text-transform: capitalize;
@@ -1239,7 +1239,7 @@
 .breadcumb-section {
   padding-top: 157px;
   padding-bottom: 161px;
-  background-image: url(../../assets/images/page/page-title.jpg);
+  background-image: url(../../assets/images/page/back_code.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3777,7 +3777,7 @@
 
 .map-page .map,
 .map-page #map {
-  height: 765px;
+  /* height: 765px; */
 }
 
 .erro-page {
@@ -9916,6 +9916,10 @@ body .dribbble img {
   }
 }
 @media only screen and (max-width: 1300px) {
+  .tf-container.full {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .section-testimonial .tes-shape {
     object-fit: cover;
     width: 50%;
@@ -9970,6 +9974,10 @@ body .dribbble img {
   }
 }
 @media only screen and (max-width: 1200px) {
+  .tf-container.full {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .section-feature .content {
     padding-left: 1em;
     padding-bottom: 3em;
@@ -10090,6 +10098,10 @@ body .dribbble img {
   }
 }
 @media only screen and (max-width: 1199px) {
+  .tf-container.full {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .section-about-us .about-us-counter .counter-wrap-about {
     gap: 50px;
     justify-content: flex-start;
@@ -10137,6 +10149,10 @@ body .dribbble img {
   }
 }
 @media only screen and (max-width: 1180px) {
+  .tf-container.full {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .banner-home2 .banner-home2-wrap .image .shape1 {
     left: 0px;
     top: 32%;
@@ -10154,6 +10170,10 @@ body .dribbble img {
   }
 }
 @media only screen and (max-width: 1140px) {
+  .tf-container.full {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .pricing-plan .pricing-plan-content .heading-title {
     padding-right: 0em;
     margin-bottom: 0px;
@@ -10197,6 +10217,10 @@ body .dribbble img {
   }
 }
 @media only screen and (max-width: 1024px) {
+  .tf-container.full {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .grid-col-project {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -10318,6 +10342,10 @@ body .dribbble img {
   }
 }
 @media only screen and (max-width: 991px) {
+  .tf-container.full {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .our-blog .sidebar-blog {
     margin-bottom: 50px;
   }
@@ -10617,6 +10645,10 @@ body .dribbble img {
   }
 }
 @media only screen and (max-width: 768px) {
+  .tf-container.full {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .grid-col-project {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -11058,6 +11090,10 @@ body .dribbble img {
   }
 }
 @media only screen and (max-width: 600px) {
+  .tf-container.full {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .banner-home2 .banner-home2-wrap .image .shape {
     padding-left: 0px;
     margin-bottom: 0px;
@@ -11210,6 +11246,10 @@ body .dribbble img {
   }
 }
 @media only screen and (max-width: 575px) {
+  .tf-container.full {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .skill-team-member .skill-team-image-center {
     padding-left: 0px;
     margin-bottom: 30px;
@@ -11241,6 +11281,10 @@ body .dribbble img {
   }
 }
 @media only screen and (max-width: 480px) {
+  .tf-container.full {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .brand-item {
     width: 150px;
     height: 150px;
@@ -11424,6 +11468,10 @@ body .dribbble img {
   }
 }
 @media only screen and (max-width: 414px) {
+  .tf-container.full {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .can-do-it .can-do-it-image .cdit-image1 {
     display: none;
   }
@@ -11448,11 +11496,19 @@ body .dribbble img {
   }
 }
 @media only screen and (max-width: 400px) {
+  .tf-container.full {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .main-header .header-account {
     gap: 15px;
   }
 }
 @media only screen and (max-width: 390px) {
+  .tf-container.full {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .slider-it-main .mask-slider {
     top: 16%;
     right: 3%;
@@ -11469,6 +11525,10 @@ body .dribbble img {
   }
 }
 @media only screen and (max-width: 360px) {
+  .tf-container.full {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .close-btn {
     left: 260px;
     top: 25px;
@@ -11480,3 +11540,28 @@ body .dribbble img {
 }
 
 /*# sourceMappingURL=app.css.map */
+.video-background {
+  /* position: fixed; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* VIDEO ELEMENT */
+.video-background video {
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  /* transform: translate(-50%, -50%); */
+  object-fit: cover;   /* Ensures video covers entire screen without distortion */
+   /* subtle dark overlay for text readability */
+  /* filter: brightness(0.65) contrast(1.05); */
+  transition: filter 0.3s ease;
+}

@@ -23,7 +23,7 @@ export default function Feature7() {
 															<path d="M1 13C41.9721 2.92057 142.246 -3.87406 194 9.2668" stroke="currentcolor" strokeWidth={4} />
 														</svg>
 													</div>
-													<p className="des mb-40">We approached WiaTech complex project
+													<p className="des mb-40">We approached Veotronic complex project
 														Designing website
 														can involve various aspects such as layout, graphics,
 														content
@@ -46,7 +46,7 @@ export default function Feature7() {
 															<path d="M1 13C41.9721 2.92057 142.246 -3.87406 194 9.2668" stroke="currentcolor" strokeWidth={4} />
 														</svg>
 													</div>
-													<p className="des mb-40">We approached WiaTech complex project
+													<p className="des mb-40">We approached Veotronic complex project
 														Designing website
 														can involve various aspects such as layout, graphics,
 														content
@@ -69,7 +69,7 @@ export default function Feature7() {
 															<path d="M1 13C41.9721 2.92057 142.246 -3.87406 194 9.2668" stroke="currentcolor" strokeWidth={4} />
 														</svg>
 													</div>
-													<p className="des mb-40">We approached WiaTech complex project
+													<p className="des mb-40">We approached Veotronic complex project
 														Designing website
 														can involve various aspects such as layout, graphics,
 														content
@@ -92,7 +92,7 @@ export default function Feature7() {
 															<path d="M1 13C41.9721 2.92057 142.246 -3.87406 194 9.2668" stroke="currentcolor" strokeWidth={4} />
 														</svg>
 													</div>
-													<p className="des mb-40">We approached WiaTech complex project
+													<p className="des mb-40">We approached Veotronic complex project
 														Designing website
 														can involve various aspects such as layout, graphics,
 														content

@@ -14,24 +14,26 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, handle
 							<ul className="address-top-header flex-three">
 								<li className="flex-three">
 									<i className="icon-location-dot1" />
-									<span>55 Main Street, Melbourne, Australia</span>
+									<span className="text-white">23587 n field rd lake Zurich IL 60047, United States</span>
 								</li>
 								<li className="flex-three">
-									<i className="icon-envelope4" />
-									<span>infowiatech@gmail.com</span>
+									{/* <i className="icon-envelope4" />
+									<span><a href="mailto:info@veotronic.com" className='text-white'>info@veotronic.com</a></span> */}
+									<i className="icon-phone" />
+									<a href="tel:+1 (224) 206-0034" className='text-white'>Questions? Call Us: +1 (224) 206-0034</a>
 								</li>
 							</ul>
 						</div>
 						<div className="col-md-5 flex-six">
 							<ul className="menu-left flex-three">
 								<li>
-									<Link href="/#">Company</Link>
+									<Link href="/#" className="text-white">Company</Link>
 								</li>
 								<li>
-									<Link href="/#">Support</Link>
+									<Link href="/#" className="text-white">Support</Link>
 								</li>
 								<li>
-									<Link href="/#">Faqs</Link>
+									<Link href="/#" className="text-white">Faq</Link>
 								</li>
 							</ul>
 							<ul className="social-top flex-three">
@@ -81,15 +83,15 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, handle
 									<div className="header-account flex align-center">
 										<div className="phone-address">
 											<ul className="flex align-center">
-												<li className>
+												<li>
 													<i className="icon-phone2" />
-													<span>+333 (456) 896 22</span>
+													<span><a href="tel:+1 (224) 206-0034" className='text-white'>+1 (224) 206-0034</a></span>
 												</li>
 											</ul>
 										</div>
-										<div className="btn-login">
+										{/* <div className="btn-login">
 											<Link href="/#" className="button-src">Sign Up <i className="icon-angle-right" /></Link>
-										</div>
+										</div> */}
 										<div className="flat-bt-top sc-btn-top">
 											<a className="icon-listing" onClick={handleOffcanvas} data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i className="icon-uni" /></a>
 										</div>
@@ -108,11 +110,11 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, handle
 				<div className="mobile-menu">
 					<div className="menu-backdrop" onClick={handleMobileMenu} />
 					<nav className="menu-box">
-						<div className="nav-logo"><Link href="/">
+						<div className="nav-logo" onClick={handleMobileMenu}><Link href="/">
 							<img src="/assets/images/logo-footer.png" alt="" /></Link></div>
 						<div className="bottom-canvas">
 						<div className="menu-outer">
-								<MobileMenu />
+								<MobileMenu closeMenu={handleMobileMenu} />
 							</div>
 						</div>
 					</nav>

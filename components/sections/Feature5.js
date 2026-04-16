@@ -23,7 +23,7 @@ const handleAccordion = (key) => {
 									<h2 className="title wow fadeInUpSmall" data-wow-delay=".3s">Highly Tailored IT Design, Management
 										&amp; Support
 										<span className=" text-blue1 mask">
-											<TextAnimation text1="Wiatech" text2="Services" />
+											<TextAnimation text1="Veotronic" text2="Services" />
 										</span>
 									</h2>
 								</div>

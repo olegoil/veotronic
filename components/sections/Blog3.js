@@ -14,7 +14,7 @@ export default function Blog3() {
 								<span className="sub-title text-blue1 font-man wow fadeInUpSmall" data-wow-delay=".2s">News &amp; Blog</span>
 								<h2 className="title wow fadeInUpSmall" data-wow-delay=".3s">Get Every Single
 									<span className=" text-blue1 mask">
-										<TextAnimation text1="Wiatech" text2="Updates" />
+										<TextAnimation text1="Veotronic" text2="Updates" />
 									</span>
 								</h2>
 							</div>

@@ -1,6 +1,81 @@
 import Link from "next/link"
+import { useState } from "react"
 
 export default function Footer4() {
+	
+	const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        website: '',
+        url: '',
+        services: '',
+        comment: '',
+        message: ''
+    });
+    
+    // State for submission status
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
+    
+    // Handle input changes
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+    
+    // Handle form submission
+    const handleSubmit = async (e) => {
+        e.preventDefault(); // Prevents page reload
+        
+        // Optional: Validate form
+        if (!formData.email) {
+            setSubmitStatus({ type: 'error', message: 'Please fill in Email' });
+            return;
+        }
+        
+        setIsSubmitting(true);
+        setSubmitStatus({ type: '', message: '' });
+        
+        try {
+            // Send email via your API (Method 1 from previous answer)
+            const response = await fetch('https://admin.olegtronics.com/xapi/sendmailfree/veotronic', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+            
+            if (response.ok) {
+                // Show success message
+                setSubmitStatus({ type: 'success', message: 'Message sent successfully!' });
+                
+                // Clear form after successful submission
+                setFormData({
+                    name: '',
+					email: '',
+					website: '',
+					url: '',
+					services: '',
+					comment: '',
+					message: ''
+                });
+                
+                // Optional: Hide success message after 5 seconds
+                setTimeout(() => {
+                    setSubmitStatus({ type: '', message: '' });
+                }, 5000);
+            } else {
+                throw new Error('Failed to send');
+            }
+        } catch (error) {
+            setSubmitStatus({ type: 'error', message: 'Failed to send message. Please try again.' });
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+	
 	return (
 		<>
 
@@ -10,12 +85,10 @@ export default function Footer4() {
 						<div className="col-lg-5">
 							<div className="footer-top-left">
 								<h2 className="title">Start your journey to better business</h2>
-								<form action="/" id="form-footer" className="form-footer flex mb-15">
-									<div className="input-group relative">
-										<input type="email" placeholder="Email Address" />
-										<i className="icon-envelope4" />
-									</div>
-									<button className="submit-footer-form" type="submit">Sign Up <i className="icon-angle-right1" /></button>
+								<form onSubmit={handleSubmit} className="form-footer2 relative flex-two" id="subscribe-form" method="post" acceptCharset="utf-8" data-mailchimp="true">
+									<i className="icon-envelope" />
+									<input type="email" name="email" id="subscribe-email" placeholder="Email Address" value={formData.email} onChange={handleChange} />
+									<button type="submit" id="subscribe-button">Sign Up <i className="icon-right-icon" /></button>
 								</form>
 								<p className="accept font-man fw-400 ">By subscribing, you’re accept <Link href="/#" className=" fw-700 text-blue1">Privacy Policy</Link></p>
 							</div>
@@ -23,7 +96,7 @@ export default function Footer4() {
 						<div className="col-lg-4">
 							<div className="footer-map">
 								<div className="map2 relative">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.6895046810805!2d-122.52642526124438!3d38.00014098339506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085976736097a2f%3A0xbe014d20e6e22654!2sSan Rafael%2C California%2C Hoa Kỳ!5e0!3m2!1svi!2s!4v1678975266976!5m2!1svi!2s" height={300} style={{ border: 0, width: "100%" }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4097.593409660467!2d-88.05533545497997!3d42.20689123399579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fa263ede292f1%3A0xaa370f159ae2bb7a!2s23587%20N%20Field%20Rd%2C%20Lake%20Zurich%2C%20IL%2060047%2C%20USA!5e0!3m2!1sde!2sby!4v1776235183243!5m2!1sde!2sby" height={300} style={{ border: 0, width: "100%" }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
 								</div>
 							</div>
 						</div>
@@ -33,11 +106,11 @@ export default function Footer4() {
 								<ul className="address">
 									<li className="flex">
 										<i className="icon-maps" />
-										<p>55 Main Street, 2nd block Malborne, Australia</p>
+										<p>23587 n field rd lake Zurich IL 60047, United States</p>
 									</li>
 									<li className="flex">
 										<i className="icon-envelope5" />
-										<p>support@gmail.com</p>
+										<p><a href="mailto:info@veotronic.com" className='text-white'>info@veotronic.com</a></p>
 									</li>
 								</ul>
 							</div>
