@@ -135,7 +135,7 @@ export default function PrivacyPolicy() {
 											<ul className="policy-list contact-list">
 												<li><strong>Email:</strong> <Link href="mailto:hello@veotronic.com">hello@veotronic.com</Link></li>
 												<li><strong>Phone:</strong> <a href="tel:+1 (224) 206-0034" className='text-white'>+1 (224) 206-0034</a></li>
-												<li><strong>Address:</strong> 23587 n field rd lake Zurich IL 60047, United States</li>
+												<li><strong>Address:</strong> 23587 N Field Rd, Lake Zurich, IL 60047, United States</li>
 											</ul>
 										</div>
 

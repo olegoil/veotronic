@@ -14,7 +14,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handle
 							<ul className="address-top-header flex-three">
 								<li className="flex-three">
 									<i className="icon-location-dot1" />
-									<span className="text-white">23587 n field rd lake Zurich IL 60047, United States</span>
+									<span className="text-white">23587 N Field Rd, Lake Zurich, IL 60047, United States</span>
 								</li>
 								<li className="flex-three">
 									{/* <i className="icon-envelope4" />

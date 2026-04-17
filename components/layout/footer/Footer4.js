@@ -106,7 +106,7 @@ export default function Footer4() {
 								<ul className="address">
 									<li className="flex">
 										<i className="icon-maps" />
-										<p>23587 n field rd lake Zurich IL 60047, United States</p>
+										<p>23587 N Field Rd, Lake Zurich, IL 60047, United States</p>
 									</li>
 									<li className="flex">
 										<i className="icon-envelope5" />

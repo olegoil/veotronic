@@ -141,7 +141,7 @@ export default function Footer2() {
 							</div>
 							<div className="footer-main-locations">
 								<h5 className="title-footer text-white">Locations</h5>
-								<p className="font-man text-lcation text-white mb-20">23587 n field rd lake Zurich IL 60047, United States</p>
+								<p className="font-man text-lcation text-white mb-20">23587 N Field Rd, Lake Zurich, IL 60047, United States</p>
 								<h5 className="title-footer text-white">Contact</h5>
 								<p className="font-man text-lcation "><a href="mailto:info@veotronic.com" className='text-white'>info@veotronic.com</a></p>
 								<p className="phone text-white"><a href="tel:+1 (224) 206-0034" className='text-white'>+1 (224) 206-0034</a></p>

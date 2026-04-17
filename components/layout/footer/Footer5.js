@@ -152,7 +152,7 @@ export default function Footer5() {
 								<div className="flex-one address-wrap">
 									<div className="address">
 										<h5 className="title-footer text-white">Locations</h5>
-										<p className="font-man text-lcation text-white mb-20">23587 n field rd lake Zurich IL 60047, United States</p>
+										<p className="font-man text-lcation text-white mb-20">23587 N Field Rd, Lake Zurich, IL 60047, United States</p>
 									</div>
 									<div className="address">
 										<h5 className="title-footer text-white">Contact</h5>

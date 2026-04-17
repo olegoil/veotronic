@@ -102,7 +102,7 @@ export default function ContactUs() {
 													</div>
 													<div className="content">
 														<h4>Location</h4>
-														<p className='text-black'>23587 n field rd lake Zurich IL 60047, United States</p>
+														<p className='text-black'>23587 N Field Rd, Lake Zurich, IL 60047, United States</p>
 													</div>
 												</div>
 											</div>
@@ -126,7 +126,7 @@ export default function ContactUs() {
 													<div className="content">
 														<h4>Email</h4>
 														<p><a href="mailto:info@veotronic.com" className='text-black'>info@veotronic.com</a></p>
-														<p className='text-black'>www.veotronic.com</p>
+														<p className='text-black'><a href="https://veotronic.com" className='text-black'>www.veotronic.com</a></p>
 													</div>
 												</div>
 											</div>
@@ -172,11 +172,11 @@ export default function ContactUs() {
 											</fieldset>
 											<fieldset className="mb-18">
 												<label>Website</label>
-												<input type="url" className="form-control" id="url" name="url" placeholder="Enter your website" value={formData.url} onChange={handleChange} required />
+												<input type="text" className="form-control" id="website" name="website" placeholder="Enter your website" value={formData.website} onChange={handleChange} />
 											</fieldset>
 											<fieldset className=" mb-18">
 												<label>Message</label>
-												<textarea rows={5} cols={50} placeholder="Write message" value={formData.message} onChange={handleChange} name="message" id="message" />
+												<textarea rows={5} cols={50} placeholder="Write message" value={formData.message} onChange={handleChange} name="message" id="message" required />
 											</fieldset>
 											<fieldset>
 												<button className="btn-submit" type="submit">Send Message <i className="icon-right-icon" /></button>
