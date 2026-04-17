@@ -3,7 +3,7 @@ import VideoPopup from "@/components/elements/VideoPopup"
 import Layout from "@/components/layout/Layout"
 import { myTesHome5 } from "@/utils/swiperOptions"
 import Link from "next/link"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
 
 export default function ServiceDetails() {
@@ -31,6 +31,16 @@ export default function ServiceDetails() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
     
+    // Auto-hide message after 5 seconds
+    useEffect(() => {
+        if (submitStatus.message) {
+            const timer = setTimeout(() => {
+                setSubmitStatus({ type: '', message: '' });
+            }, 5000);
+            return () => clearTimeout(timer);
+        }
+    }, [submitStatus]);
+    
     // Handle input changes
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -44,9 +54,31 @@ export default function ServiceDetails() {
     const handleSubmit = async (e) => {
         e.preventDefault(); // Prevents page reload
         
-        // Optional: Validate form
+        // Validate form
+        if (!formData.name) {
+            setSubmitStatus({ type: 'error', message: 'Please enter your name' });
+            return;
+        }
+        
         if (!formData.email) {
-            setSubmitStatus({ type: 'error', message: 'Please fill in Email' });
+            setSubmitStatus({ type: 'error', message: 'Please enter your email address' });
+            return;
+        }
+        
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(formData.email)) {
+            setSubmitStatus({ type: 'error', message: 'Please enter a valid email address' });
+            return;
+        }
+        
+        if (!formData.services) {
+            setSubmitStatus({ type: 'error', message: 'Please select a service' });
+            return;
+        }
+        
+        if (!formData.message) {
+            setSubmitStatus({ type: 'error', message: 'Please enter your message' });
             return;
         }
         
@@ -54,37 +86,40 @@ export default function ServiceDetails() {
         setSubmitStatus({ type: '', message: '' });
         
         try {
-            // Send email via your API (Method 1 from previous answer)
+            // Send email via API
             const response = await fetch('https://admin.olegtronics.com/xapi/sendmailfree/veotronic', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: { 
+                    'Content-Type': 'application/json',
+                },
                 body: JSON.stringify(formData)
             });
             
-            if (response.ok) {
+            const data = await response.json();
+            
+            if (response.ok && data.ok) {
                 // Show success message
-                setSubmitStatus({ type: 'success', message: 'Message sent successfully!' });
+                setSubmitStatus({ type: 'success', message: '✓ Message sent successfully! We will get back to you soon.' });
                 
                 // Clear form after successful submission
                 setFormData({
                     name: '',
-					email: '',
-					website: '',
-					url: '',
-					services: '',
-					comment: '',
-					message: ''
+                    email: '',
+                    website: '',
+                    url: '',
+                    services: '',
+                    comment: '',
+                    message: ''
                 });
-                
-                // Optional: Hide success message after 5 seconds
-                setTimeout(() => {
-                    setSubmitStatus({ type: '', message: '' });
-                }, 5000);
             } else {
-                throw new Error('Failed to send');
+                throw new Error(data.message || 'Failed to send message');
             }
         } catch (error) {
-            setSubmitStatus({ type: 'error', message: 'Failed to send message. Please try again.' });
+            console.error('Submission error:', error);
+            setSubmitStatus({ 
+                type: 'error', 
+                message: '✗ Failed to send message. Please try again or contact us directly.' 
+            });
         } finally {
             setIsSubmitting(false);
         }
@@ -154,125 +189,7 @@ This is clear business logic — digitized. Imagine orders from your website aut
 							</div>
 						</div>
 					</section>
-					{/* <section className="section-it-manager pt-130 pb-130">
-						<div className="tf-container">
-							<div className="row">
-								<div className="col-md-7">
-									<div className="it-manager-content">
-										<div className="heading-title mb-20">
-											<span className="sub-title texts-blue font-man">How to Manage</span>
-											<h2 className="title">Our Managed IT Services let you Concentrate on What Matters
-											</h2>
-										</div>
-										<ul className="nav nav-tabs-pricing nav-tabs-pricing-service" id="myTab" role="tablist">
-											<li className="nav-item" onClick={() => handleTab(1)}>
-												<button className={isTab == 1 ? "nav-link active" : "nav-link"} id="approach-tab" data-bs-toggle="tab" data-bs-target="#approach-tab-pane" type="button" role="tab" aria-controls="approach-tab-pane" aria-selected="true">Our
-													Approach</button>
-											</li>
-											<li className="nav-item" onClick={() => handleTab(2)}>
-												<button className={isTab == 2 ? "nav-link active" : "nav-link"} id="goals-tab" data-bs-toggle="tab" data-bs-target="#goals-tab-pane" type="button" role="tab" aria-controls="goals-tab-pane" aria-selected="false">Project
-													Goals</button>
-											</li>
-											<li className="nav-item" onClick={() => handleTab(3)}>
-												<button className={isTab == 3 ? "nav-link active" : "nav-link"} id="advisory-tab" data-bs-toggle="tab" data-bs-target="#advisory-tab-pane" type="button" role="tab" aria-controls="advisory-tab-pane" aria-selected="false">Advisory</button>
-											</li>
-										</ul>
-										<div className="tab-content" id="myTabContent">
-											<div className={isTab == 1 ? "tab-pane fade show active" : "tab-pane fade"} id="approach-tab-pane" role="tabpanel" aria-labelledby="approach-tab" tabIndex={0}>
-												<div className="content-tab-service-details">
-													<p className="des">At veroeos accusamus dignissimos ducimus blanditiis
-														volupta
-														delenite atque
-														corrupti quos dolores et quas molestias excepturi sint occaecatie
-													</p>
-													<ul className="icon-listing">
-														<li className="flex-three">
-															<i className="icon-Check" />
-															<p className="font-man">Efficient Sprint Planning</p>
-														</li>
-														<li className="flex-three">
-															<i className="icon-Check" />
-															<p className="font-man">Iterative Delivery Approach</p>
-														</li>
-														<li className="flex-three">
-															<i className="icon-Check" />
-															<p className="font-man">Standups and Demos</p>
-														</li>
-														<li className="flex-three">
-															<i className="icon-Check" />
-															<p className="font-man">Problem-solving</p>
-														</li>
-													</ul>
-													<Link href="/#" className="button-src">Learn More <i className="icon-angle-right" /></Link>
-												</div>
-											</div>
-											<div className={isTab == 2 ? "tab-pane fade show active" : "tab-pane fade"} id="goals-tab-pane" role="tabpanel" aria-labelledby="goals-tab" tabIndex={0}>
-												<div className="content-tab-service-details">
-													<p className="des">At veroeos accusamus dignissimos ducimus blanditiis
-														volupta
-														delenite atque
-														corrupti quos dolores et quas molestias excepturi sint occaecatie
-													</p>
-													<ul className="icon-listing">
-														<li className="flex-three">
-															<i className="icon-Check" />
-															<p className="font-man">Efficient Sprint Planning</p>
-														</li>
-														<li className="flex-three">
-															<i className="icon-Check" />
-															<p className="font-man">Iterative Delivery Approach</p>
-														</li>
-														<li className="flex-three">
-															<i className="icon-Check" />
-															<p className="font-man">Standups and Demos</p>
-														</li>
-														<li className="flex-three">
-															<i className="icon-Check" />
-															<p className="font-man">Problem-solving</p>
-														</li>
-													</ul>
-													<Link href="/#" className="button-src">Learn More <i className="icon-angle-right" /></Link>
-												</div>
-											</div>
-											<div className={isTab == 3 ? "tab-pane fade show active" : "tab-pane fade"} id="advisory-tab-pane" role="tabpanel" aria-labelledby="advisory-tab" tabIndex={0}>
-												<div className="content-tab-service-details">
-													<p className="des">At veroeos accusamus dignissimos ducimus blanditiis
-														volupta
-														delenite atque
-														corrupti quos dolores et quas molestias excepturi sint occaecatie
-													</p>
-													<ul className="icon-listing">
-														<li className="flex-three">
-															<i className="icon-Check" />
-															<p className="font-man">Efficient Sprint Planning</p>
-														</li>
-														<li className="flex-three">
-															<i className="icon-Check" />
-															<p className="font-man">Iterative Delivery Approach</p>
-														</li>
-														<li className="flex-three">
-															<i className="icon-Check" />
-															<p className="font-man">Standups and Demos</p>
-														</li>
-														<li className="flex-three">
-															<i className="icon-Check" />
-															<p className="font-man">Problem-solving</p>
-														</li>
-													</ul>
-													<Link href="/#" className="button-src">Learn More <i className="icon-angle-right" /></Link>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div className="col-md-5">
-									<div className="it-manager-image">
-										<img src="/assets/images/page/dvl-deatils2.jpg" alt="image" />
-									</div>
-								</div>
-							</div>
-						</div>
-					</section> */}
+					
 					<section className="section-performance-auto pt-122 bg-2">
 						<div className="tf-container">
 							<div className="row">
@@ -329,140 +246,22 @@ This is clear business logic — digitized. Imagine orders from your website aut
 							</div>
 						</div>
 					</section>
-					{/* <section className="video-service ">
-						<div className="tf-container">
-							<div className="row">
-								<div className="col-lg-12">
-									<div className="video-about relative">
-										<img src="/assets/images/page/video-dvl.jpg" alt="image" />
-										<VideoPopup />
-									</div>
-								</div>
-							</div>
-						</div>
-					</section> */}
-					{/*  Testimonial */}
+					
 					<section className="team-member-details pt-30 pb-30">
-					<div className="tf-container">						
-						<div className="row">
-							<div className="col-lg-12">
-								<div className="team-member-details-wrap">
-									<div className="widget-team-single bb-blog">
-										<span>Break free from routine</span>
-										<p>How many hours a day does your team spend on routine, repetitive tasks? Data entry, approvals, reports, notifications… Workflow automation is not the future — it's the reality of an efficient business today. We help you identify these bottlenecks, digitize them, and set them to work autonomously. <span className="text-blue2"> Let your processes serve you — not the other way around</span></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-					{/* <section className="pt-122 pb-130">
-						<div className="tf-container">
-							<div className="row mb-70">
-								<div className="col-lg-12">
-									<div className="heading-title center">
-										<span className="sub-title text-blue1 font-man">Our Testimonials</span>
-										<h2 className="title">1250+ Clients Say <span className="text-blue1">About Us</span></h2>
-									</div>
-								</div>
-							</div>
+						<div className="tf-container">						
 							<div className="row">
-								<div className="col-lg-12 relative">
-									<div className="myteshome5-wrap overflow-hiden">
-										<Swiper {...myTesHome5} className="swiper myteshome5 ">
-											<div className="swiper-wrapper">
-												<SwiperSlide>
-													<div className="testimonial-style3 style3-h5 flex-three">
-														<div className="image">
-															<img src="/assets/images/testimonial/avt.jpg" alt="image" />
-														</div>
-														<div className="content">
-															<p className="des">Climb the mountain not to plant your flag but to
-																embrace
-																the ways challenge, enjoy the air, and behold the. Climb it
-																see the world, not so the world can see you.
-															</p>
-															<div className="testimonial-bottom flex-two">
-																<div className="testimonial-top flex-three">
-																	<i className="icon-des" />
-																	<p className="name">Robert J. Hare/<span className="job font-man">Graphics Designer</span>
-																	</p>
-																</div>
-																<div className="review">
-																	<i className="icon-start" />
-																	<i className="icon-start" />
-																	<i className="icon-start" />
-																	<i className="icon-start" />
-																	<i className="icon-start" />
-																</div>
-															</div>
-														</div>
-													</div>
-												</SwiperSlide>
-												<SwiperSlide>
-													<div className="testimonial-style3 style3-h5 flex-three">
-														<div className="image">
-															<img src="/assets/images/testimonial/avt.jpg" alt="image" />
-														</div>
-														<div className="content">
-															<p className="des">Climb the mountain not to plant your flag but to
-																embrace
-																the ways challenge, enjoy the air, and behold the. Climb it
-																see the world, not so the world can see you.
-															</p>
-															<div className="testimonial-bottom flex-two">
-																<div className="testimonial-top flex-three">
-																	<i className="icon-des" />
-																	<p className="name">Robert J. Hare/<span className="job font-man">Graphics Designer</span>
-																	</p>
-																</div>
-																<div className="review">
-																	<i className="icon-start" />
-																	<i className="icon-start" />
-																	<i className="icon-start" />
-																	<i className="icon-start" />
-																	<i className="icon-start" />
-																</div>
-															</div>
-														</div>
-													</div>
-												</SwiperSlide>
-												<SwiperSlide>
-													<div className="testimonial-style3 style3-h5 flex-three">
-														<div className="image">
-															<img src="/assets/images/testimonial/avt.jpg" alt="image" />
-														</div>
-														<div className="content">
-															<p className="des">Climb the mountain not to plant your flag but to
-																embrace
-																the ways challenge, enjoy the air, and behold the. Climb it
-																see the world, not so the world can see you.
-															</p>
-															<div className="testimonial-bottom flex-two">
-																<div className="testimonial-top flex-three">
-																	<i className="icon-des" />
-																	<p className="name">Robert J. Hare/<span className="job font-man">Graphics Designer</span>
-																	</p>
-																</div>
-																<div className="review">
-																	<i className="icon-start" />
-																	<i className="icon-start" />
-																	<i className="icon-start" />
-																	<i className="icon-start" />
-																	<i className="icon-start" />
-																</div>
-															</div>
-														</div>
-													</div>
-												</SwiperSlide>
-											</div>
-											<div className="swiper-pagination" />
-										</Swiper>
+								<div className="col-lg-12">
+									<div className="team-member-details-wrap">
+										<div className="widget-team-single bb-blog">
+											<span>Break free from routine</span>
+											<p>How many hours a day does your team spend on routine, repetitive tasks? Data entry, approvals, reports, notifications… Workflow automation is not the future — it's the reality of an efficient business today. We help you identify these bottlenecks, digitize them, and set them to work autonomously. <span className="text-blue2"> Let your processes serve you — not the other way around</span></p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</section> */}
+					</section>
+					
 					{/* Contact */}
 					<section className="section-contact contact-service-details bg-5 pt-130 pb-130">
 						<div className="tf-container">
@@ -500,20 +299,55 @@ This is clear business logic — digitized. Imagine orders from your website aut
 											<h3 className="title-form">Need Help With Your Project?</h3>
 											<p>We're ready to help. Let's discuss your goals and build something great together.</p>
 										</div>
+										
+										{/* Success/Error Message Display */}
+										{submitStatus.message && (
+											<div className={`alert-message ${submitStatus.type} mb-20`}>
+												{submitStatus.message}
+											</div>
+										)}
+										
 										<form onSubmit={handleSubmit} className="form-contact-home">
 											<div className="input-group flex-one">
 												<fieldset className="relative mb-20">
-													<input type="text" className="form-control" id="name-input" name="name" placeholder="Name" value={formData.name} onChange={handleChange} />
+													<input 
+														type="text" 
+														className="form-control" 
+														id="name-input" 
+														name="name" 
+														placeholder="Name" 
+														value={formData.name} 
+														onChange={handleChange}
+														disabled={isSubmitting}
+														required 
+													/>
 													<i className="icon-user" />
 												</fieldset>
 												<fieldset className="relative mb-20">
-													<input type="email" className="form-control" id="email-input" name="email" placeholder="Email" value={formData.email} onChange={handleChange} />
+													<input 
+														type="email" 
+														className="form-control" 
+														id="email-input" 
+														name="email" 
+														placeholder="Email" 
+														value={formData.email} 
+														onChange={handleChange}
+														disabled={isSubmitting}
+														required 
+													/>
 													<i className="icon-envelopes" />
 												</fieldset>
 											</div>
 											<fieldset className="mb-20">
-												{/* Changed to normal select dropdown */}
-												<select className="form-control" id="services" name="services" value={formData.services} onChange={handleChange} required>
+												<select 
+													className="form-control" 
+													id="services" 
+													name="services" 
+													value={formData.services} 
+													onChange={handleChange}
+													disabled={isSubmitting}
+													required
+												>
 													<option value="">Choose Services</option>
 													<option value="Business automation">Business automation</option>
 													<option value="AI Implementation">AI Implementation</option>
@@ -521,11 +355,37 @@ This is clear business logic — digitized. Imagine orders from your website aut
 													<option value="Web development">Web development</option>
 												</select>
 											</fieldset>
-											<fieldset className=" mb-15">
-												<textarea id="mess" name="message" rows={4} cols={50} placeholder="Message" value={formData.message} onChange={handleChange} />
+											<fieldset className="mb-15">
+												<textarea 
+													id="mess" 
+													name="message" 
+													rows={4} 
+													cols={50} 
+													placeholder="Message" 
+													value={formData.message} 
+													onChange={handleChange}
+													disabled={isSubmitting}
+													required 
+												/>
 											</fieldset>
 											<fieldset className="center">
-												<button className="btn-submit" type="submit">Send Message<i className="icon-right-icon" /></button>
+												<button 
+													className="btn-submit" 
+													type="submit"
+													disabled={isSubmitting}
+												>
+													{isSubmitting ? (
+														<>
+															<span className="spinner"></span>
+															Sending...
+														</>
+													) : (
+														<>
+															Send Message
+															<i className="icon-right-icon" />
+														</>
+													)}
+												</button>
 											</fieldset>
 										</form>
 									</div>
@@ -536,6 +396,79 @@ This is clear business logic — digitized. Imagine orders from your website aut
 				</div>
 
 			</Layout>
+			
+			<style jsx>{`
+				.alert-message {
+					padding: 12px 20px;
+					border-radius: 8px;
+					font-size: 14px;
+					font-weight: 500;
+					animation: slideIn 0.3s ease-out;
+				}
+				
+				.alert-message.success {
+					background-color: #d4edda;
+					color: #155724;
+					border: 1px solid #c3e6cb;
+				}
+				
+				.alert-message.error {
+					background-color: #f8d7da;
+					color: #721c24;
+					border: 1px solid #f5c6cb;
+				}
+				
+				@keyframes slideIn {
+					from {
+						opacity: 0;
+						transform: translateY(-10px);
+					}
+					to {
+						opacity: 1;
+						transform: translateY(0);
+					}
+				}
+				
+				button:disabled {
+					opacity: 0.7;
+					cursor: not-allowed;
+				}
+				
+				.spinner {
+					display: inline-block;
+					width: 16px;
+					height: 16px;
+					border: 2px solid #ffffff;
+					border-top: 2px solid transparent;
+					border-radius: 50%;
+					animation: spin 0.8s linear infinite;
+					margin-right: 8px;
+					vertical-align: middle;
+				}
+				
+				@keyframes spin {
+					0% { transform: rotate(0deg); }
+					100% { transform: rotate(360deg); }
+				}
+				
+				input:disabled, textarea:disabled, select:disabled {
+					background-color: #f5f5f5;
+					cursor: not-allowed;
+					opacity: 0.7;
+				}
+				
+				/* Style adjustments for the form */
+				.form-contact-home1.style2 {
+					position: relative;
+				}
+				
+				.btn-submit {
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					gap: 8px;
+				}
+			`}</style>
 		</>
 	)
 }
