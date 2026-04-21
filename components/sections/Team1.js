@@ -43,7 +43,7 @@ export default function Team1() {
 									<span className="number">01</span>
 									<div className="box-wrap">
 										<h3 className="name">Egor Lasitsa</h3>
-										<p className="job font-man">Chief Executive Officer</p>
+										<p className="job font-man">Account Executive</p>
 									</div>
 								</div>
 								{/* <Link href="/team-details" className="link-team flex-five"><i className="icon-top" /></Link> */}
@@ -53,7 +53,7 @@ export default function Team1() {
 									<span className="number">02</span>
 									<div className="box-wrap">
 										<h3 className="name">Vlady Lasitsa</h3>
-										<p className="job font-man">Sales Department</p>
+										<p className="job font-man">Chief Financial Officer</p>
 									</div>
 								</div>
 								{/* <Link href="/team-details" className="link-team flex-five"><i className="icon-top" /></Link> */}

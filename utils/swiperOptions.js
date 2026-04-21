@@ -10,7 +10,7 @@ export const brandLogo = {
 	},
 	freeMode: true,
 	speed: 4000,
-	disableOnInteraction: true,
+	disableoninteraction: "true",
 	breakpoints: {
 		0: {
 			slidesPerView: 2,
@@ -84,7 +84,7 @@ export const marqueTextSlide = {
 	},
 	freeMode: true,
 	speed: 4000,
-	disableOnInteraction: true,
+	disableoninteraction: "true",
 	breakpoints: {
 		0: {
 			slidesPerView: 2,
@@ -121,7 +121,7 @@ export const mySwiperTestimonial1 = {
 	loop: true,
 	autoplay: {
 		delay: 1500,
-		disableOnInteraction: false,
+		disableoninteraction: "false",
 	},
 	pagination: {
 		el: ".swiper-pagination",
@@ -150,7 +150,7 @@ export const mySwiperTes3 = {
 	loop: true,
 	autoplay: {
 		delay: 1500,
-		disableOnInteraction: false,
+		disableoninteraction: "false",
 	},
 	pagination: {
 		el: ".swiper-pagination",
@@ -167,7 +167,7 @@ export const myProjectSlider = {
 	loop: true,
 	autoplay: {
 		delay: 1500,
-		disableOnInteraction: false,
+		disableoninteraction: "false",
 	},
 	pagination: {
 		el: ".swiper-pagination",
@@ -182,7 +182,7 @@ export const myFeedBack = {
 	loop: true,
 	autoplay: {
 		delay: 1500,
-		disableOnInteraction: false,
+		disableoninteraction: "false",
 	},
 	spaceBetween: 30,
 	loop: true,
@@ -234,7 +234,7 @@ export const collection1 = {
 	},
 	freeMode: true,
 	speed: 4000,
-	disableOnInteraction: true
+	disableoninteraction: "true"
 }
 
 export const collection2 = {
@@ -267,7 +267,7 @@ export const collection2 = {
 	},
 	freeMode: true,
 	speed: 5000,
-	disableOnInteraction: true
+	disableoninteraction: "true"
 }
 
 export const myFeature4 = {
@@ -278,7 +278,7 @@ export const myFeature4 = {
 	loop: true,
 	autoplay: {
 		delay: 5000,
-		disableOnInteraction: false,
+		disableoninteraction: "false",
 	},
 	pagination: {
 		el: ".swiper-pagination",
@@ -310,7 +310,7 @@ export const brandHome4 = {
 	speed: 1500,
 	autoplay: {
 		delay: 5000,
-		disableOnInteraction: false,
+		disableoninteraction: "false",
 	},
 	breakpoints: {
 		0: {
@@ -336,7 +336,7 @@ export const myPortfolio = {
 	loop: true,
 	autoplay: {
 		delay: 5000,
-		disableOnInteraction: false,
+		disableoninteraction: "false",
 	},
 	breakpoints: {
 		0: {
@@ -360,7 +360,7 @@ export const myTesHome5 = {
 	loop: true,
 	autoplay: {
 		delay: 5000,
-		disableOnInteraction: false,
+		disableoninteraction: "false",
 	},
 	pagination: {
 		el: ".swiper-pagination",
@@ -374,7 +374,7 @@ export const sliderSwiperIt = {
 	effect: "fade",
 	// autoplay: {
 	//     delay: 6000,
-	//     disableOnInteraction: false,
+	//     disableoninteraction: "false",
 	// },
 	navigation: {
 		nextEl: ".swiper-button-next",
@@ -390,7 +390,7 @@ export const myTeamMember = {
 	loop: true,
 	autoplay: {
 		delay: 5000,
-		disableOnInteraction: false,
+		disableoninteraction: "false",
 	},
 	breakpoints: {
 		0: {

@@ -1,3 +1,6 @@
+'use client'
+import { useEffect } from 'react'
+import { useSearchParams, useRouter } from 'next/navigation'
 import Layout from "@/components/layout/Layout"
 import AboutUs1 from "@/components/sections/AboutUs1"
 import Blog1 from "@/components/sections/Blog1"
@@ -13,6 +16,15 @@ import Service1 from "@/components/sections/Service1"
 import Team1 from "@/components/sections/Team1"
 import Testimonial1 from "@/components/sections/Testimonial1"
 export default function Home() {
+	const searchParams = useSearchParams()
+	const router = useRouter()
+
+	useEffect(() => {
+		const search = searchParams.toString()
+		if (search == '%5Bobject+Object%5D=') {
+			router.replace('/')
+		}
+	}, [searchParams, router])
 
 	return (
 		<>
