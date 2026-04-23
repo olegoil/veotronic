@@ -188,6 +188,9 @@ export default function Menu() {
 				<li className={`${pathname === "/contact-us" ? "current" : ""}`}>
 					<Link href="/contact-us">Contact</Link>
 				</li>
+				{/* <li className={`${pathname === "/portfolio" ? "current" : ""}`}>
+					<Link href="/portfolio">Portfolio</Link>
+				</li> */}
 			</ul>
 		</>
 	)

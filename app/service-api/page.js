@@ -312,8 +312,8 @@ Without a unified API platform, your systems work in silos — manual data entry
 											</div>
 											<div className="col-lg-5">
 												<div className="tab-service-image relative">
-													<img src="/assets/images/service/service-h41.jpg" alt="image" />
-													<img src="/assets/images/service/service-h42.jpg" alt="image" className="service1" />
+													<img src="/assets/images/service/api-retail.jpg" alt="image" />
+													{/* <img src="/assets/images/service/service-h42_new3.jpg" alt="image" className="service1" /> */}
 													<div className="clip" />
 												</div>
 											</div>
@@ -345,8 +345,8 @@ Without a unified API platform, your systems work in silos — manual data entry
 											</div>
 											<div className="col-lg-5">
 												<div className="tab-service-image relative">
-													<img src="/assets/images/service/service-h41.jpg" alt="image" />
-													<img src="/assets/images/service/service-h42.jpg" alt="image" className="service1" />
+													<img src="/assets/images/service/api-finans.jpg" alt="image" />
+													{/* <img src="/assets/images/service/service-h42_new4.jpg" alt="image" className="service1" /> */}
 													<div className="clip" />
 												</div>
 											</div>
@@ -378,8 +378,8 @@ Without a unified API platform, your systems work in silos — manual data entry
 											</div>
 											<div className="col-lg-5">
 												<div className="tab-service-image relative">
-													<img src="/assets/images/service/service-h41.jpg" alt="image" />
-													<img src="/assets/images/service/service-h42.jpg" alt="image" className="service1" />
+													<img src="/assets/images/service/api-med.jpg" alt="image" />
+													{/* <img src="/assets/images/service/api-med2.jpg" alt="image" className="service1" /> */}
 													<div className="clip" />
 												</div>
 											</div>
