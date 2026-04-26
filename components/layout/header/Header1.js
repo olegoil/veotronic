@@ -22,6 +22,10 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handle
 									<i className="icon-phone" />
 									<a href="tel:+1 (224) 206-0034" className='text-white'>Questions? Call Us: +1 (224) 206-0034</a>
 								</li>
+								<li className="flex-three">
+									<i className="icon-ins" />
+									<a href="https://www.linkedin.com/company/113454316" className='text-white'>LinkedIn</a>
+								</li>
 							</ul>
 						</div>
 						<div className="col-md-5 flex-six">
