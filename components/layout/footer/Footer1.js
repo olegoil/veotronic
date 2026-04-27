@@ -177,7 +177,10 @@ export default function Footer1() {
 						</div>
 					</div>
 					<div className="row">
-						<div className="col-lg-12 ">
+						<div className="col-sm-12 col-lg-6" style={{padding:"16px"}}>
+							<a href="https://www.linkedin.com/company/113454316"><i className="icon-ins" style={{display: "inline-block", width: "50px", height: "50px", borderRadius: "50%", border: "5px solid #fff", textAlign: "center", lineHeight: "40px", backgroundColor: "#086AD8", color: "#fff"}} /> <span  style={{color: "#086AD8", fontWeight: "bold"}}>LinkedIn</span></a>
+						</div>
+						<div className="col-sm-12 col-lg-6">
 							<a id="scroll-top" className="button-go go-top-h1 relative" />
 						</div>
 					</div>

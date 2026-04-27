@@ -19,9 +19,10 @@ export default function MainSlider1() {
 							<div className="tf-container">
 								<div className="slider-content-it relative z-index-3">
 									<div className="sub-title-slider wow fadeInUpSmall">
-										<i className="icon-angle-downs " />
-										<span className="fw-600 text-white font-man">
-											50+ Projects Delivered</span>
+										<span className="text-white font-man">
+											<a href="https://www.linkedin.com/company/113454316" className='text-white'>
+											<i className="icon-ins" />LinkedIn</a>
+										</span>
 									</div>
 									<h1 className="title-slider text-white wow fadeInUpSmall" data-wow-delay=".2s">AI Development &amp; Implementation <br /> for Business Automation
 									</h1>
@@ -46,9 +47,10 @@ export default function MainSlider1() {
 							<div className="tf-container">
 								<div className="slider-content-it relative z-index-3">
 									<div className="sub-title-slider wow fadeInUpSmall">
-										<i className="icon-angle-downs " />
-										<span className="fw-600 text-white font-man">
-											50+ Projects Delivered</span>
+										<span className="text-white font-man">
+											<a href="https://www.linkedin.com/company/113454316" className='text-white'>
+											<i className="icon-ins" />LinkedIn</a>
+										</span>
 									</div>
 									<h1 className="title-slider text-white wow fadeInUpSmall" data-wow-delay=".2s">Business Process Automation
 										<br />When Your Business Runs Itself
@@ -73,9 +75,10 @@ export default function MainSlider1() {
 							<div className="tf-container">
 								<div className="slider-content-it relative z-index-3">
 									<div className="sub-title-slider wow fadeInUpSmall">
-										<i className="icon-angle-downs " />
-										<span className="fw-600 text-white font-man">
-											50+ Projects Delivered</span>
+										<span className="text-white font-man">
+											<a href="https://www.linkedin.com/company/113454316" className='text-white'>
+											<i className="icon-ins" />LinkedIn</a>
+										</span>
 									</div>
 									<h1 className="title-slider text-white wow fadeInUpSmall" data-wow-delay=".2s">API Integration Platform
 										<br />Connecting Disparate Systems into One
@@ -100,9 +103,10 @@ export default function MainSlider1() {
 							<div className="tf-container">
 								<div className="slider-content-it relative z-index-3">
 									<div className="sub-title-slider wow fadeInUpSmall">
-										<i className="icon-angle-downs " />
-										<span className="fw-600 text-white font-man">
-											50+ Projects Delivered</span>
+										<span className="text-white font-man">
+											<a href="https://www.linkedin.com/company/113454316" className='text-white'>
+											<i className="icon-ins" />LinkedIn</a>
+										</span>
 									</div>
 									<h1 className="title-slider text-white wow fadeInUpSmall" data-wow-delay=".2s">Custom Software Solutions
 										<br />for Business & Industrial Operations
