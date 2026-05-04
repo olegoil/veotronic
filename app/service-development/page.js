@@ -5,6 +5,7 @@ import { myTesHome5 } from "@/utils/swiperOptions"
 import Link from "next/link"
 import { useState, useEffect } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
+import Head from "next/head"
 
 export default function ServiceDetails() {
 	const [isTab, setIsTab] = useState(1)
@@ -127,6 +128,40 @@ export default function ServiceDetails() {
 	
 	return (
 		<>
+			<Head>
+				{/* Основные мета-теги */}
+				<title>Custom Software Development — Tailored Solutions for Your Business | Veotronic</title>
+				<meta name="description" content="Custom software development tailored to your business needs. Web apps, enterprise systems, mobile apps, API development, legacy modernization, and AI-powered solutions. Scalable, secure, and built to grow with you." />
+				<meta name="keywords" content="custom software development, tailored software, web development, enterprise systems, mobile apps, API development, legacy modernization, AI solutions, Veotronic" />
+				<meta name="robots" content="index, follow" />
+				<meta name="author" content="Veotronic" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				
+				{/* Canonical URL */}
+				<link rel="canonical" href="https://veotronic.com/services/custom-software-development" />
+				
+				{/* Open Graph / Facebook */}
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://veotronic.com/services/custom-software-development" />
+				<meta property="og:title" content="Custom Software Development — Tailored Solutions | Veotronic" />
+				<meta property="og:description" content="Custom software tailored to your business. Web apps, enterprise systems, mobile apps, APIs, legacy modernization, and AI solutions. Scalable and secure." />
+				<meta property="og:image" content="https://veotronic.com/og-image-software.jpg" />
+				<meta property="og:image:width" content="1200" />
+				<meta property="og:image:height" content="630" />
+				<meta property="og:site_name" content="Veotronic" />
+				<meta property="og:locale" content="en_US" />
+				
+				{/* Twitter */}
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta name="twitter:url" content="https://veotronic.com/services/custom-software-development" />
+				<meta name="twitter:title" content="Custom Software Development | Veotronic" />
+				<meta name="twitter:description" content="Tailored software solutions for your business. Web, mobile, enterprise, APIs, and AI." />
+				<meta name="twitter:image" content="https://veotronic.com/og-image-software.jpg" />
+				
+				{/* Favicon */}
+				<link rel="icon" href="/favicon.ico" sizes="any" />
+				<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+			</Head>
 
 			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Custom Software Development">
 				<div>
@@ -142,7 +177,7 @@ export default function ServiceDetails() {
 Every business is unique — so should be its software. Off-the-shelf solutions force you to adapt your processes to fit the tool. We build custom software that adapts to you. From web applications to complex enterprise platforms, we deliver clean, maintainable, and secure code that solves your specific challenges, integrates with your existing systems, and scales as you grow.
 </p>
 										</div>
-										<img src="/assets/images/page/dvl-deatils5_new.jpg" alt="custom software development" />
+										<img src="/assets/images/page/dvl-deatils5_new.jpg" alt="Veotronic custom software development team at work" />
 									</div>
 								</div>
 								<div className="col-md-6">
@@ -248,7 +283,7 @@ Every business is unique — so should be its software. Off-the-shelf solutions 
 									<div className="team-member-details-wrap">
 										<div className="widget-team-single bb-blog">
 											<span>Invest in Software That Works for You</span>
-											<p>Custom software isn't a cost — it's an investment. It eliminates inefficiencies, automates repetitive work, and scales with your business. Off-the-shelf solutions force you to adapt. Custom software adapts to you. <span class="text-blue2"> That's the difference between surviving and thriving.</span></p>
+											<p>Custom software isn't a cost — it's an investment. It eliminates inefficiencies, automates repetitive work, and scales with your business. Off-the-shelf solutions force you to adapt. Custom software adapts to you. <span className="text-blue2"> That's the difference between surviving and thriving.</span></p>
 										</div>
 									</div>
 								</div>
@@ -264,8 +299,8 @@ Every business is unique — so should be its software. Off-the-shelf solutions 
 									<div className="content">
 										<div className="heading-title mb-40">
 											<span className="sub-title text-white font-man">Work Inquiry</span>
-											<h2 className="title text-white">Let's Work on Your Next Project?</h2>
-											<p className="des font-man text-white">Ready to automate your business or build a custom solution? Our team is here to bring your ideas to life. Let's discuss your project</p>
+											<h2 className="title text-white">Let's Build Your Custom Software</h2>
+											<p className="des font-man text-white">Ready to build software that fits your business perfectly? Our team is here to bring your ideas to life. Let's discuss your project.</p>
 										</div>
 										<div className="contact-wrap flex-three mb-40">
 											<div className="icon text-white">
@@ -290,8 +325,8 @@ Every business is unique — so should be its software. Off-the-shelf solutions 
 								<div className="col-md-7">
 									<div className="form-contact-home1 style2">
 										<div className="inner-title-form center mb-30">
-											<h3 className="title-form">Need Help With Your Project?</h3>
-											<p>We're ready to help. Let's discuss your goals and build something great together</p>
+											<h3 className="title-form">Tell Us About Your Project</h3>
+											<p>We'll get back to you within 24 hours to discuss your needs.</p>
 										</div>
 										
 										{/* Success/Error Message Display */}
@@ -343,10 +378,12 @@ Every business is unique — so should be its software. Off-the-shelf solutions 
 													required
 												>
 													<option value="">Choose Services</option>
-													<option value="Business automation">Business automation</option>
-													<option value="AI Implementation">AI Implementation</option>
-													<option value="Software and App development">Software & App development</option>
-													<option value="Web development">Web development</option>
+													<option value="Web Application">Web Application</option>
+													<option value="Mobile Application">Mobile Application</option>
+													<option value="Enterprise System">Enterprise System</option>
+													<option value="API Development">API Development</option>
+													<option value="AI Integration">AI Integration</option>
+													<option value="Legacy Modernization">Legacy Modernization</option>
 												</select>
 											</fieldset>
 											<fieldset className="mb-15">
@@ -355,7 +392,7 @@ Every business is unique — so should be its software. Off-the-shelf solutions 
 													name="message" 
 													rows={4} 
 													cols={50} 
-													placeholder="Message" 
+													placeholder="Tell us about your project..." 
 													value={formData.message} 
 													onChange={handleChange}
 													disabled={isSubmitting}

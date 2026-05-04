@@ -1,3 +1,4 @@
+// app/services/ai-machine-learning/page.js
 'use client'
 import VideoPopup from "@/components/elements/VideoPopup"
 import Layout from "@/components/layout/Layout"
@@ -5,6 +6,7 @@ import { myTesHome5 } from "@/utils/swiperOptions"
 import Link from "next/link"
 import { useState, useEffect } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
+import Head from "next/head"
 
 export default function ServiceDetails() {
 	const [isTab, setIsTab] = useState(1)
@@ -127,6 +129,40 @@ export default function ServiceDetails() {
 	
 	return (
 		<>
+			<Head>
+				{/* Basic meta tags */}
+				<title>AI & Machine Learning Services — Computer Vision, NLP, Predictive Analytics | Veotronic</title>
+				<meta name="description" content="Custom AI and machine learning solutions: image and video processing, object and face recognition, computer vision, NLP chatbots, predictive analytics, and autonomous systems. Transform your business with AI." />
+				<meta name="keywords" content="AI services, machine learning, computer vision, NLP, predictive analytics, image recognition, face recognition, chatbots, autonomous systems, Veotronic" />
+				<meta name="robots" content="index, follow" />
+				<meta name="author" content="Veotronic" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				
+				{/* Canonical URL */}
+				<link rel="canonical" href="https://veotronic.com/services/ai-machine-learning" />
+				
+				{/* Open Graph / Facebook */}
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://veotronic.com/services/ai-machine-learning" />
+				<meta property="og:title" content="AI & Machine Learning Services — Veotronic" />
+				<meta property="og:description" content="Custom AI and ML solutions: computer vision, NLP, predictive analytics, autonomous systems. Build intelligent products with Veotronic." />
+				<meta property="og:image" content="https://veotronic.com/og-image-ai.jpg" />
+				<meta property="og:image:width" content="1200" />
+				<meta property="og:image:height" content="630" />
+				<meta property="og:site_name" content="Veotronic" />
+				<meta property="og:locale" content="en_US" />
+				
+				{/* Twitter */}
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta name="twitter:url" content="https://veotronic.com/services/ai-machine-learning" />
+				<meta name="twitter:title" content="AI & Machine Learning Services | Veotronic" />
+				<meta name="twitter:description" content="Custom AI solutions: computer vision, NLP, predictive analytics, and autonomous systems for your business." />
+				<meta name="twitter:image" content="https://veotronic.com/og-image-ai.jpg" />
+				
+				{/* Favicon */}
+				<link rel="icon" href="/favicon.ico" sizes="any" />
+				<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+			</Head>
 
 			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="AI & Machine Learning">
 				<div>
@@ -321,7 +357,6 @@ We embrace a flexible approach and support innovation within our team. In the fi
 															<p className="font-man">Data Insights</p>
 														</li>
 													</ul>
-													{/* <Link href="/#" className="button-src">Learn More <i className="icon-angle-right" /></Link> */}
 												</div>
 											</div>
 											<div className={isTab == 2 ? "tab-pane fade show active" : "tab-pane fade"} id="goals-tab-pane" role="tabpanel" aria-labelledby="goals-tab" tabIndex={0}>
@@ -343,7 +378,7 @@ We embrace a flexible approach and support innovation within our team. In the fi
 								</div>
 								<div className="col-md-5">
 									<div className="it-manager-image">
-										<img src="/assets/images/page/dvl-deatils2_new.jpg" alt="image" />
+										<img src="/assets/images/page/dvl-deatils2_new.jpg" alt="Veotronic AI and machine learning development process" />
 									</div>
 								</div>
 							</div>

@@ -191,7 +191,7 @@ export default function Footer1() {
 						<div className="col-md-6">
 							<ul className="menu-right-bottom flex-six">
 								<li>
-									<Link href="/about-company">About Company</Link>
+									<Link href="/Impressum">Impressum</Link>
 								</li>
 								<li>
 									<Link href="/contact-us">Contact</Link>

@@ -1,10 +1,34 @@
 'use client'
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import Head from "next/head"
 
 export default function PrivacyPolicy() {
 	return (
 		<>
+			<Head>
+				{/* Мета-теги для юридической страницы — noindex */}
+				<meta name="robots" content="noindex, follow" />
+				<title>Privacy Policy | Veotronic</title>
+				<meta name="description" content="Privacy Policy for Veotronic. Learn how we collect, use, and protect your personal information when using our IT services and website." />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				
+				{/* Canonical URL */}
+				<link rel="canonical" href="https://veotronic.com/privacy-policy" />
+				
+				{/* Open Graph / Facebook */}
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://veotronic.com/privacy-policy" />
+				<meta property="og:title" content="Privacy Policy | Veotronic" />
+				<meta property="og:description" content="Privacy Policy for Veotronic. Information about data collection, usage, and protection." />
+				<meta property="og:site_name" content="Veotronic" />
+				<meta property="og:locale" content="en_US" />
+				
+				{/* Favicon */}
+				<link rel="icon" href="/favicon.ico" sizes="any" />
+				<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+			</Head>
+
 			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Privacy Policy">
 				<div>
 					<section className="privacy-policy-page pt-130 pb-130">
@@ -95,7 +119,7 @@ export default function PrivacyPolicy() {
 												<li>Request data portability</li>
 												<li>Withdraw consent at any time</li>
 											</ul>
-											<p>To exercise these rights, please contact us at <Link href="mailto:hello@veotronic.com">hello@veotronic.com</Link>.</p>
+											<p>To exercise these rights, please contact us at <Link href="mailto:info@veotronic.com">info@veotronic.com</Link>.</p>
 										</div>
 
 										{/* Cookies */}
@@ -133,8 +157,8 @@ export default function PrivacyPolicy() {
 											<h3>14. Contact Us</h3>
 											<p>If you have any questions about this Privacy Policy or how we handle your personal data, please contact us:</p>
 											<ul className="policy-list contact-list">
-												<li><strong>Email:</strong> <Link href="mailto:hello@veotronic.com">hello@veotronic.com</Link></li>
-												<li><strong>Phone:</strong> <a href="tel:+1 (224) 206-0034" className='text-white'>+1 (224) 206-0034</a></li>
+												<li><strong>Email:</strong> <Link href="mailto:info@veotronic.com">info@veotronic.com</Link></li>
+												<li><strong>Phone:</strong> <a href="tel:+1 (224) 206-0034">+1 (224) 206-0034</a></li>
 												<li><strong>Address:</strong> 23587 N Field Rd, Lake Zurich, IL 60047, United States</li>
 											</ul>
 										</div>

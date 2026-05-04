@@ -3,6 +3,7 @@ import VideoPopup from "@/components/elements/VideoPopup"
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { useState } from "react"
+import Head from "next/head"
 
 export default function Faq() {
 	const [isTab, setIsTab] = useState(1)
@@ -23,6 +24,41 @@ export default function Faq() {
 
 	return (
 		<>
+			<Head>
+				{/* Основные мета-теги */}
+				<title>FAQ — Frequently Asked Questions | Veotronic</title>
+				<meta name="description" content="Find answers to common questions about Veotronic's services: business process automation, AI integration, custom software development, mobile apps, API platforms, pricing, and more." />
+				<meta name="keywords" content="FAQ, frequently asked questions, Veotronic, automation services, AI integration, custom software, mobile app development, API platform, pricing" />
+				<meta name="robots" content="index, follow" />
+				<meta name="author" content="Veotronic" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				
+				{/* Canonical URL */}
+				<link rel="canonical" href="https://veotronic.com/faq" />
+				
+				{/* Open Graph / Facebook */}
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://veotronic.com/faq" />
+				<meta property="og:title" content="FAQ — Frequently Asked Questions | Veotronic" />
+				<meta property="og:description" content="Find answers to common questions about Veotronic's services: automation, AI, custom software, mobile apps, API platforms, and pricing." />
+				<meta property="og:image" content="https://veotronic.com/og-image-faq.jpg" />
+				<meta property="og:image:width" content="1200" />
+				<meta property="og:image:height" content="630" />
+				<meta property="og:site_name" content="Veotronic" />
+				<meta property="og:locale" content="en_US" />
+				
+				{/* Twitter */}
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta name="twitter:url" content="https://veotronic.com/faq" />
+				<meta name="twitter:title" content="FAQ | Veotronic" />
+				<meta name="twitter:description" content="Answers to common questions about Veotronic's IT services, automation, AI, and software development." />
+				<meta name="twitter:image" content="https://veotronic.com/og-image-faq.jpg" />
+				
+				{/* Favicon */}
+				<link rel="icon" href="/favicon.ico" sizes="any" />
+				<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+			</Head>
+
 			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="FAQ">
 				<div>
 					{/* FAQ Section */}
@@ -49,9 +85,7 @@ export default function Faq() {
 											<li className="nav-item" onClick={() => handleTab(3)}>
 												<button className={isTab == 3 ? "nav-link active" : "nav-link"} id="product-tab" data-bs-toggle="pill" data-bs-target="#product" type="button" role="tab" aria-controls="product" aria-selected="false">Development</button>
 											</li>
-											{/* <li className="nav-item" onClick={() => handleTab(4)}>
-												<button className={isTab == 4 ? "nav-link active" : "nav-link"} id="team-tab" data-bs-toggle="pill" data-bs-target="#team" type="button" role="tab" aria-controls="team" aria-selected="false">Team</button>
-											</li> */}
+										
 											<li className="nav-item" onClick={() => handleTab(5)}>
 												<button className={isTab == 5 ? "nav-link active" : "nav-link"} id="pricing-tab" data-bs-toggle="pill" data-bs-target="#pricing" type="button" role="tab" aria-controls="pricing" aria-selected="false">Pricing</button>
 											</li>
@@ -245,72 +279,6 @@ export default function Faq() {
 												</div>
 											</div>
 
-											{/* Tab 4 - Team */}
-											{/* <div className={isTab == 4 ? "tab-pane fade show active" : "tab-pane fade"} id="team" role="tabpanel" aria-labelledby="team-tab" tabIndex={0}>
-												<div className="accordion accordion-h4" id="accordionTeam">
-													<div className="accordion-item">
-														<h3 className="accordion-header" onClick={() => handleAccordion(1)}>
-															<span className={isAccordion == 1 ? "accordion-button" : "accordion-button collapsed"} type="button">
-																Who are the developers at Veotronic?
-															</span>
-														</h3>
-														<div id="collapseOne" className={isAccordion == 1 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
-															<div className="accordion-body">
-																Our team consists of experienced software engineers, data scientists, ML engineers, mobile developers, and QA specialists. Many have 5-15+ years of experience in enterprise software development.
-															</div>
-														</div>
-													</div>
-													<div className="accordion-item">
-														<h3 className="accordion-header" onClick={() => handleAccordion(2)}>
-															<span className={isAccordion == 2 ? "accordion-button" : "accordion-button collapsed"} type="button">
-																Can I communicate directly with developers?
-															</span>
-														</h3>
-														<div id="collapseTwo" className={isAccordion == 2 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
-															<div className="accordion-body">
-																Yes. We believe in transparency. You'll communicate directly with developers, project managers, and QA engineers throughout the project.
-															</div>
-														</div>
-													</div>
-													<div className="accordion-item">
-														<h3 className="accordion-header" onClick={() => handleAccordion(3)}>
-															<span className={isAccordion == 3 ? "accordion-button" : "accordion-button collapsed"} type="button">
-																Do you have experience in my industry?
-															</span>
-														</h3>
-														<div id="collapseThree" className={isAccordion == 3 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
-															<div className="accordion-body">
-																We have successfully delivered projects across retail, finance, healthcare, education, logistics, manufacturing, and more. We'll be happy to share relevant case studies.
-															</div>
-														</div>
-													</div>
-													<div className="accordion-item">
-														<h3 className="accordion-header" onClick={() => handleAccordion(4)}>
-															<span className={isAccordion == 4 ? "accordion-button" : "accordion-button collapsed"} type="button">
-																Can you scale the team up or down?
-															</span>
-														</h3>
-														<div id="collapsefore" className={isAccordion == 4 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
-															<div className="accordion-body">
-																Yes. We offer flexible engagement models. We can scale your dedicated team up or down based on project needs — from a single developer to a full squad.
-															</div>
-														</div>
-													</div>
-													<div className="accordion-item">
-														<h3 className="accordion-header" onClick={() => handleAccordion(5)}>
-															<span className={isAccordion == 5 ? "accordion-button" : "accordion-button collapsed"} type="button">
-																Do you have Microsoft or other certifications?
-															</span>
-														</h3>
-														<div id="collapsefire" className={isAccordion == 5 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
-															<div className="accordion-body">
-																Yes. We are a Microsoft Partner with certified expertise in .NET, Azure, and Xamarin. Our team also holds certifications in AWS, Google Cloud, and Agile methodologies.
-															</div>
-														</div>
-													</div>
-												</div>
-											</div> */}
-
 											{/* Tab 5 - Pricing */}
 											<div className={isTab == 5 ? "tab-pane fade show active" : "tab-pane fade"} id="pricing" role="tabpanel" aria-labelledby="pricing-tab" tabIndex={0}>
 												<div className="accordion accordion-h4" id="accordionPricing">
@@ -385,7 +353,7 @@ export default function Faq() {
 							<div className="row">
 								<div className="col-md-12">
 									<div className="video-faq relative">
-										<img src="/assets/images/page/video-dvl_new.jpg" alt="Veotronic video" />
+										<img src="/assets/images/page/video-dvl_new.jpg" alt="Veotronic company overview video" />
 										<VideoPopup />
 									</div>
 								</div>
@@ -393,87 +361,6 @@ export default function Faq() {
 						</div>
 					</section>
 
-					{/* Second FAQ Section - Still Have Questions? */}
-					{/* <section className="faq-section faq2-section pb-130">
-						<div className="tf-container">
-							<div className="row">
-								<div className="col-md-5">
-									<div className="heading-title">
-										<span className="sub-title texts-blue font-man">Still Have Questions?</span>
-										<h2 className="title">We're Here to Help</h2>
-										<p className="des mb-40">Didn't find the answer you were looking for? Contact our team — we'll get back to you within 24 hours.</p>
-										<Link href="/contact" className="button-src">Contact Us <i className="icon-angle-right" /></Link>
-									</div>
-								</div>
-								<div className="col-md-7">
-									<div className="tab-faq-content">
-										<div className="accordion accordion-h4" id="accordionMore">
-											<div className="accordion-item">
-												<h3 className="accordion-header" onClick={() => handleAccordion(11)}>
-													<span className={isAccordion == 11 ? "accordion-button" : "accordion-button collapsed"} type="button">
-														How do I start a project with Veotronic?
-													</span>
-												</h3>
-												<div id="collapseOne" className={isAccordion == 11 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
-													<div className="accordion-body">
-														Simply contact us via the form on our website, email us at hello@Veotronic.com, or call our office. We'll schedule a free consultation to discuss your project, goals, and timeline.
-													</div>
-												</div>
-											</div>
-											<div className="accordion-item">
-												<h3 className="accordion-header" onClick={() => handleAccordion(12)}>
-													<span className={isAccordion == 12 ? "accordion-button" : "accordion-button collapsed"} type="button">
-														Do you sign NDAs?
-													</span>
-												</h3>
-												<div id="collapseTwo" className={isAccordion == 12 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
-													<div className="accordion-body">
-														Yes. We take confidentiality seriously. We are happy to sign NDAs before discussing any sensitive project details.
-													</div>
-												</div>
-											</div>
-											<div className="accordion-item">
-												<h3 className="accordion-header" onClick={() => handleAccordion(13)}>
-													<span className={isAccordion == 13 ? "accordion-button" : "accordion-button collapsed"} type="button">
-														Do you offer ongoing support after launch?
-													</span>
-												</h3>
-												<div id="collapseThree" className={isAccordion == 13 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
-													<div className="accordion-body">
-														Absolutely. We offer ongoing maintenance, support, and enhancement packages tailored to your needs. Your success is our priority.
-													</div>
-												</div>
-											</div>
-											<div className="accordion-item">
-												<h3 className="accordion-header" onClick={() => handleAccordion(14)}>
-													<span className={isAccordion == 14 ? "accordion-button" : "accordion-button collapsed"} type="button">
-														Can you help with product ideation and strategy?
-													</span>
-												</h3>
-												<div id="collapsefore" className={isAccordion == 14 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
-													<div className="accordion-body">
-														Yes. We offer product discovery workshops, technical consulting, and strategy sessions to help validate your idea and define the right solution before development begins.
-													</div>
-												</div>
-											</div>
-											<div className="accordion-item">
-												<h3 className="accordion-header" onClick={() => handleAccordion(15)}>
-													<span className={isAccordion == 15 ? "accordion-button" : "accordion-button collapsed"} type="button">
-														What makes Veotronic different from other software companies?
-													</span>
-												</h3>
-												<div id="collapsefire" className={isAccordion == 15 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
-													<div className="accordion-body">
-														We combine deep technical expertise with a business-first approach. We don't just write code — we solve problems. Our focus on automation, AI, and API integration sets us apart, along with transparent communication and long-term partnerships.
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section> */}
 				</div>
 			</Layout>
 		</>

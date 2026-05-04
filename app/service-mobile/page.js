@@ -5,6 +5,7 @@ import { myTesHome5 } from "@/utils/swiperOptions"
 import Link from "next/link"
 import { useState } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
+import Head from "next/head"
 
 export default function ServiceDetails() {
     const [isTab, setIsTab] = useState(1)
@@ -92,10 +93,44 @@ export default function ServiceDetails() {
 	
     return (
         <>
+            <Head>
+                {/* Основные мета-теги */}
+                <title>Mobile App Development — Native, Hybrid & PWA | Veotronic</title>
+                <meta name="description" content="Professional mobile app development: native iOS (Swift), Android (Kotlin), hybrid (React Native, Flutter, Ionic), and Progressive Web Apps (PWA). AI-powered mobile solutions. Full-cycle development from idea to App Store." />
+                <meta name="keywords" content="mobile app development, iOS development, Android development, React Native, Flutter, PWA, hybrid apps, cross-platform apps, mobile developers, Veotronic" />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Veotronic" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                
+                {/* Canonical URL */}
+                <link rel="canonical" href="https://veotronic.com/services/mobile-app-development" />
+                
+                {/* Open Graph / Facebook */}
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://veotronic.com/services/mobile-app-development" />
+                <meta property="og:title" content="Mobile App Development — Native, Hybrid & PWA | Veotronic" />
+                <meta property="og:description" content="Native iOS, Android, hybrid cross-platform apps, and PWAs. AI-powered mobile solutions. Full-cycle development from concept to launch." />
+                <meta property="og:image" content="https://veotronic.com/og-image-mobile.jpg" />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                <meta property="og:site_name" content="Veotronic" />
+                <meta property="og:locale" content="en_US" />
+                
+                {/* Twitter */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:url" content="https://veotronic.com/services/mobile-app-development" />
+                <meta name="twitter:title" content="Mobile App Development | Veotronic" />
+                <meta name="twitter:description" content="Native iOS, Android, hybrid apps, and PWAs. AI-powered mobile solutions." />
+                <meta name="twitter:image" content="https://veotronic.com/og-image-mobile.jpg" />
+                
+                {/* Favicon */}
+                <link rel="icon" href="/favicon.ico" sizes="any" />
+                <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+            </Head>
 
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Mobile App Development">
              <div>
-    {/* Hero Section - Custom Software Development заменен на Mobile Development */}
+    {/* Hero Section - Mobile Development */}
     <section className="pt-130 pb-130 skill-team-member">
         <div className="tf-container">
             <div className="row align-center">
@@ -110,12 +145,12 @@ export default function ServiceDetails() {
                 </div>
                 <div className="col-12 col-sm-6 col-lg-4">
                     <div className="skill-team-image-center">
-                        <img src="/assets/images/service/service-app.jpg" alt="mobile development" />
+                        <img src="/assets/images/service/service-app.jpg" alt="Veotronic mobile app development team" />
                     </div>
                 </div>
                 <div className="col-12 col-sm-6 col-lg-3">
                     <div className="skill-team-image-right">
-                        <img src="/assets/images/service/service-app1.jpg" alt="mobile apps" />
+                        <img src="/assets/images/service/service-app1.jpg" alt="Mobile apps for iOS and Android" />
                     </div>
                 </div>
             </div>
@@ -182,8 +217,8 @@ export default function ServiceDetails() {
                                 </div>
                                 <div className="col-lg-5">
                                     <div className="tab-service-image relative">
-                                        <img src="/assets/images/service/service-h41_new3.jpg" alt="native mobile apps" />
-                                        <img src="/assets/images/service/service-h42_new2.jpg" alt="iOS Android development" className="service1" />
+                                        <img src="/assets/images/service/service-h41_new3.jpg" alt="Native iOS and Android mobile apps development" />
+                                        <img src="/assets/images/service/service-h42_new2.jpg" alt="Swift and Kotlin mobile development" className="service1" />
                                         <div className="clip" />
                                     </div>
                                 </div>
@@ -222,8 +257,8 @@ export default function ServiceDetails() {
                                 </div>
                                 <div className="col-lg-5">
                                     <div className="tab-service-image relative">
-                                        <img src="/assets/images/service/service-h41_new3.jpg" alt="hybrid mobile apps" />
-                                        <img src="/assets/images/service/service-h42_new3.jpg" alt="React Native Flutter" className="service1" />
+                                        <img src="/assets/images/service/service-h41_new3.jpg" alt="React Native and Flutter cross-platform development" />
+                                        <img src="/assets/images/service/service-h42_new3.jpg" alt="Hybrid mobile apps development" className="service1" />
                                         <div className="clip" />
                                     </div>
                                 </div>
@@ -262,8 +297,8 @@ export default function ServiceDetails() {
                                 </div>
                                 <div className="col-lg-5">
                                     <div className="tab-service-image relative">
-                                        <img src="/assets/images/service/service-h41_new3.jpg" alt="PWA progressive web apps" />
-                                        <img src="/assets/images/service/service-h42_new4.jpg" alt="progressive web apps" className="service1" />
+                                        <img src="/assets/images/service/service-h41_new3.jpg" alt="Progressive Web Apps (PWA) development" />
+                                        <img src="/assets/images/service/service-h42_new4.jpg" alt="PWA mobile experience" className="service1" />
                                         <div className="clip" />
                                     </div>
                                 </div>
@@ -302,8 +337,8 @@ export default function ServiceDetails() {
                                 </div>
                                 <div className="col-lg-5">
                                     <div className="tab-service-image relative">
-                                        <img src="/assets/images/service/service-h41_new3.jpg" alt="AI mobile apps" />
-                                        <img src="/assets/images/service/service-h42_new5.jpg" alt="AI chatbots mobile" className="service1" />
+                                        <img src="/assets/images/service/service-h41_new3.jpg" alt="AI-powered mobile app development with chatbots and machine learning" />
+                                        <img src="/assets/images/service/service-h42_new5.jpg" alt="AI integration for mobile apps" className="service1" />
                                         <div className="clip" />
                                     </div>
                                 </div>
@@ -328,7 +363,7 @@ export default function ServiceDetails() {
                                 Your customers expect seamless mobile experiences. Slow apps get uninstalled. Clunky UIs drive users away. We build mobile applications that are fast, intuitive, and reliable — keeping users engaged and your business growing. From performance optimization to pixel-perfect design, every detail matters.
                             </p>
                         </div>
-                        <img src="/assets/images/page/dvl-deatils_new2.jpg" alt="mobile development benefits" />
+                        <img src="/assets/images/page/dvl-deatils_new2.jpg" alt="Veotronic mobile app development process and quality assurance" />
                     </div>
                 </div>
                 <div className="col-md-6">
@@ -427,23 +462,7 @@ export default function ServiceDetails() {
         </div>
     </section>
 
-    {/* Quality Software Pays for Itself - Mobile Version */}
-    {/* <section className="team-member-details pt-30 pb-30">
-        <div className="tf-container">
-            <div className="row">
-                <div className="col-lg-12">
-                    <div className="team-member-details-wrap">
-                        <div className="widget-team-single bb-blog">
-                            <span>Quality Mobile Apps Pay for Themselves</span>
-                            <p>A great mobile app isn't a cost — it's an investment in customer engagement and business growth. It automates interactions, improves accessibility, and opens new revenue channels. Off-the-shelf apps force you to adapt. Custom mobile apps adapt to your users. <span className="text-blue2"> That's the difference between an app that sits unused and an app that drives results.</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> */}
-
-    {/* Contact Section - Same as original */}
+    {/* Contact Section */}
     <section className="section-contact contact-service-details bg-5 pt-130 pb-130">
         <div className="tf-container">
             <div className="row">
@@ -492,7 +511,6 @@ export default function ServiceDetails() {
                                 </fieldset>
                             </div>
                             <fieldset className="mb-20">
-                                {/* Changed to normal select dropdown */}
                                 <select className="form-control" id="services" name="services" value={formData.services} onChange={handleChange} required>
                                     <option value="">Choose Services</option>
                                     <option value="Business automation">Business automation</option>

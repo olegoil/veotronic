@@ -72,7 +72,7 @@ export default function Team1() {
 								<div className="flex">
 									<span className="number">04</span>
 									<div className="box-wrap">
-										<h3 className="name">Oleg Kono</h3>
+										<h3 className="name">Oli Kono</h3>
 										<p className="job font-man">Senior Developer</p>
 									</div>
 								</div>

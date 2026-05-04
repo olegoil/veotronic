@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://veotronic.com
+
+# Sitemaps
+Sitemap: https://veotronic.com/sitemap.xml

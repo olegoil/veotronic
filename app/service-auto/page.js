@@ -5,6 +5,7 @@ import { myTesHome5 } from "@/utils/swiperOptions"
 import Link from "next/link"
 import { useState, useEffect } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
+import Head from "next/head"
 
 export default function ServiceDetails() {
 	const [isTab, setIsTab] = useState(1)
@@ -127,6 +128,40 @@ export default function ServiceDetails() {
 	
 	return (
 		<>
+			<Head>
+				{/* Basic meta tags */}
+				<title>Business Process Automation — AI-Powered Workflow Automation | Veotronic</title>
+				<meta name="description" content="Automate your business processes with AI-powered solutions. Reduce manual work by 70%, cut document processing time by 90%, and eliminate errors. Smart chatbots, voice assistants, and workflow automation for finance, HR, logistics, and customer service." />
+				<meta name="keywords" content="business process automation, workflow automation, AI automation, document automation, RPA, chatbots, voice assistants, digital transformation, Veotronic" />
+				<meta name="robots" content="index, follow" />
+				<meta name="author" content="Veotronic" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				
+				{/* Canonical URL */}
+				<link rel="canonical" href="https://veotronic.com/services/process-automation" />
+				
+				{/* Open Graph / Facebook */}
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://veotronic.com/services/process-automation" />
+				<meta property="og:title" content="Business Process Automation — AI-Powered Workflow Automation | Veotronic" />
+				<meta property="og:description" content="Automate your business with AI. Reduce manual work by 70%, cut document processing time by 90%, and eliminate errors. Smart chatbots, voice assistants, and workflow automation." />
+				<meta property="og:image" content="https://veotronic.com/og-image-automation.jpg" />
+				<meta property="og:image:width" content="1200" />
+				<meta property="og:image:height" content="630" />
+				<meta property="og:site_name" content="Veotronic" />
+				<meta property="og:locale" content="en_US" />
+				
+				{/* Twitter */}
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta name="twitter:url" content="https://veotronic.com/services/process-automation" />
+				<meta name="twitter:title" content="Business Process Automation | Veotronic" />
+				<meta name="twitter:description" content="AI-powered workflow automation. Reduce manual work, cut document processing time, and eliminate errors." />
+				<meta name="twitter:image" content="https://veotronic.com/og-image-automation.jpg" />
+				
+				{/* Favicon */}
+				<link rel="icon" href="/favicon.ico" sizes="any" />
+				<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+			</Head>
 
 			<Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Process Automation">
 				<div>
@@ -145,7 +180,7 @@ This is clear business logic — digitized. Imagine orders from your website aut
 										<div className="video-background">
 											<video autoPlay muted loop playsInline disablePictureInPicture>
 												<source src="/assets/videos/n8n_workflow.mp4" type="video/mp4"/>
-												Your browser does not support HTML5 video. But the background experience is still beautiful.
+												Your browser does not support HTML5 video.
 											</video>
 										</div>
 									</div>

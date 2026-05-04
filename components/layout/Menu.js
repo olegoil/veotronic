@@ -21,6 +21,8 @@ export default function Menu() {
 				<li className={`${pathname === "/" ? "current" : ""}`}>
 					<Link href="/">Home</Link>
 				</li>
+
+
 				{/* <li className={`dropdown2 ${checkParentActive([
 					"/home2",
 					"/home3",
@@ -51,6 +53,10 @@ export default function Menu() {
 					</ul>
 
 				</li> */}
+
+
+
+
 				<li className={`${pathname === "/about-company" ? "current" : ""}`}>
 					<Link href="/about-company">About Company</Link>
 				</li>
@@ -182,15 +188,16 @@ export default function Menu() {
 					</ul>
 
 				</li> */}
+				<li className={`${pathname === "/portfolio" ? "current" : ""}`}>
+					<Link href="/portfolio">Products</Link>
+				</li>
 				<li className={`${pathname === "/faq" ? "current" : ""}`}>
 					<Link href="/faq">Faq</Link>
 				</li>
 				<li className={`${pathname === "/contact-us" ? "current" : ""}`}>
 					<Link href="/contact-us">Contact</Link>
 				</li>
-				{/* <li className={`${pathname === "/portfolio" ? "current" : ""}`}>
-					<Link href="/portfolio">Portfolio</Link>
-				</li> */}
+			
 			</ul>
 		</>
 	)
