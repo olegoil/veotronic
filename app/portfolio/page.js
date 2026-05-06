@@ -68,7 +68,7 @@ export default function ProductsPage() {
 						</div>
 						<div className="col-lg-12 col-xl-7">
 							<div className="image relative">
-								<img src="/assets/images/page/feature-h1_new.jpg" alt="image" />
+								<img src="/assets/images/page/portfolio_ai6.jpg" alt="image" />
 							
 							</div>
 						</div>
@@ -123,8 +123,8 @@ export default function ProductsPage() {
 								</div>
 								<div className="col-lg-6">
 									<div className="wcus-section4-image relative">
-										<img src="/assets/images/page/w-c-us-home4_new.jpg" alt="image" className="wcus-h41" />
-										<img src="/assets/images/page/wcus-h4-2_new.jpg" alt="image" className="wcus-h42" />
+										<img src="/assets/images/page/portfolio_api2.jpg" alt="image" className="wcus-h41" />
+										{/* <img src="/assets/images/page/wcus-h4-2_new.jpg" alt="image" className="wcus-h42" /> */}
 										<div className="clip" />
 									</div>
 								</div>
@@ -168,8 +168,8 @@ export default function ProductsPage() {
 							<div className="col-md-6">
 								<div className="can-do-it-image relative">
 									<div className="elip" />
-									<img src="/assets/images/page/image-feature-h412_new.jpg" alt="Veotronic unified API platform integration diagram" className="cdit-image" />
-									<img src="/assets/images/page/image-feature-h413_new.jpg" alt="API connectivity and system integration visualization" className="cdit-image1" />
+									<img src="/assets/images/page/portfolio_satl1.jpg" alt="Veotronic unified API platform integration diagram" className="cdit-image" />
+									<img src="/assets/images/page/portfolio_satl2.jpg" alt="API connectivity and system integration visualization" className="cdit-image1" />
 								</div>
 							</div>
 							<div className="col-md-6">
@@ -201,38 +201,34 @@ export default function ProductsPage() {
 					</div>
 				</section>
 
-				<section className="section-feature bg-2 relative ">
-					<div className="tf-container full">
-						<div className="row">
-							<div className="col-lg-12 col-xl-5">
-								<div className="content">
-									<div className="heading-title mb-40">
-										<span className="sub-title texts-blue font-man wow fadeInUpSmall">Intelligence instead of a logistician</span>
-										<h2 className="title wow fadeInUpSmall" data-wow-delay=".3s">
-										</h2>
-										<p className="des wow fadeInUpSmall" data-wow-delay=".4s">SATL ensures transport is used at maximum capacity. AI predicts delays and adjusts loading plans before they become a problem. This turns chaotic shipping into synced, smooth operations.</p>
+			
+
+				<section className="section-feature bg-2 relative pt-130">
+						<div className="tf-container full">
+							<div className="row">
+								<div className="col-lg-12 col-xl-5">
+									<div className="content">
+										<div className="heading-title">
+											{/* <span className="sub-title texts-blue font-man wow fadeInUpSmall">CRM with Autopilot</span> */}
+											<h2 className="title wow fadeInUpSmall" data-wow-delay=".3s">Intelligence instead of a logistician.
+											</h2>
+											<p className="des wow fadeInUpSmall" data-wow-delay=".4s">SATL ensures transport is used at maximum capacity. AI predicts delays and adjusts loading plans before they become a problem. This turns chaotic shipping into synced, smooth operations.
+											</p>
+											<p className="des wow fadeInUpSmall" data-wow-delay=".4s">Real-time calculation of the shortest and most economical routes considering traffic and road conditions. Fuel optimization algorithms based on terrain and cargo weight. Intelligent loading and unloading planning to minimize downtime.
+											</p>
+										</div>
 									</div>
-									<div className="heading-title mb-40">
-										<p className="des wow fadeInUpSmall" data-wow-delay=".4s">Real-time calculation of the shortest and most economical routes considering traffic and road conditions. Fuel optimization algorithms based on terrain and cargo weight. Intelligent loading and unloading planning to minimize downtime.</p>
-									</div>
-								
 								</div>
-							</div>
-							<div className="col-lg-12 col-xl-7">
-								<div className="image relative">
-									<div className="video-background">
-										<video autoPlay muted loop playsInline disablePictureInPicture>
-											<source src="/assets/videos/faq_headquarter.mp4" type="video/mp4"/>
-											Your browser does not support HTML5 video.
-										</video>
+								<div className="col-lg-12 col-xl-7">
+									<div className="image relative">
+										<img src="/assets/images/page/portfolio_satl10.jpg" alt="image" />
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</section>
+					</section>
 
-				<section className="pt-130 pb-130 wcus-section4">
+				{/* <section className="pt-130 pb-130 wcus-section4">
 						<div className="tf-container">
 							<div className="row">
 								<div className="col-lg-6">
@@ -240,7 +236,7 @@ export default function ProductsPage() {
 										<div className="heading-title">
 											<span className="sub-title text-blue1 font-man wow fadeInUpSmall" data-wow-delay=".2s">System for Automated Transport Logistics</span>
 											<h2 className="title wow fadeInUpSmall" data-wow-delay=".3s">SATL Technology Cycle
-												{/* <span className="text-black mask"> Challenge</span> */}
+												<span className="text-black mask"> Challenge</span>
 											</h2>
 										</div>
 										<div className="icon-list-wcus-wrap">
@@ -286,7 +282,7 @@ export default function ProductsPage() {
 								</div>
 							</div>
 						</div>
-					</section>
+					</section> */}
 
 					<section className="marque-text-style bg-5">
 						<div className="tf-container full">
@@ -328,12 +324,8 @@ export default function ProductsPage() {
 											<p className="des">
 The system automatically sends personalized offers to potential customers and creates a personal account upon first interaction. When a lead becomes a customer, all correspondence, documents, and order tracking move into their personal account automatically.</p>
 										</div>
-										{/* <img src="/assets/images/page/dvl-deatils_new.jpg" alt="image" /> */}
-										<div className="video-background">
-											<video autoPlay muted loop playsInline disablePictureInPicture>
-												<source src="/assets/videos/office_programming.mp4" type="video/mp4"/>
-												Your browser does not support HTML5 video. But the background experience is still beautiful.
-											</video>
+										<div className="image relative">
+										<img src="/assets/images/page/portfolio_cmr1.jpg" alt="image" />
 										</div>
 									</div>
 								</div>
@@ -462,7 +454,7 @@ The system automatically sends personalized offers to potential customers and cr
 						</div>
 						<div className="col-lg-4">
 							<div className="service-image-h3 layer">
-								<img src="/assets/images/page/serviceh3.png" alt="image" />
+								<img src="/assets/images/page/portfolio_api1.jpg" alt="image" />
 							</div>
 						</div>
 						<div className="col-lg-4">
@@ -509,7 +501,7 @@ The system automatically sends personalized offers to potential customers and cr
 						</div>
 						<div className="col-lg-12 col-xl-7">
 							<div className="image relative">
-								<img src="/assets/images/page/feature-h1_new.jpg" alt="image" />
+								<img src="/assets/images/page/portfolio_api5.jpg" alt="image" />
 							
 							</div>
 						</div>
@@ -552,8 +544,8 @@ The system automatically sends personalized offers to potential customers and cr
 							<div className="col-md-6">
 								<div className="can-do-it-image relative">
 									<div className="elip" />
-									<img src="/assets/images/page/image-feature-h412_new.jpg" alt="Veotronic unified API platform integration diagram" className="cdit-image" />
-									<img src="/assets/images/page/image-feature-h413_new.jpg" alt="API connectivity and system integration visualization" className="cdit-image1" />
+									<img src="/assets/images/page/portfolio_kr2.jpg" alt="Veotronic unified API platform integration diagram" className="cdit-image" />
+									<img src="/assets/images/page/portfolio_kr3.jpg" alt="API connectivity and system integration visualization" className="cdit-image1" />
 								</div>
 							</div>
 							<div className="col-md-6">
@@ -585,37 +577,36 @@ The system automatically sends personalized offers to potential customers and cr
 					</div>
 				</section>
 				
-				<section className="section-feature bg-2 relative ">
-					<div className="tf-container full">
-						<div className="row">
-							<div className="col-lg-12 col-xl-5">
-								<div className="content">
-									<div className="heading-title mb-40">
-										<span className="sub-title texts-blue font-man wow fadeInUpSmall">Configured for your tasks</span>
-										<h2 className="title wow fadeInUpSmall" data-wow-delay=".3s">Full Data Collection Automation
-										</h2>
-										<p className="des wow fadeInUpSmall" data-wow-delay=".4s">The system automatically scans specified sources, extracts relevant information, filters out "noise", and normalizes it. Works with any data type: text documents, images, tables, multimedia.</p>
-									</div>
-									<div className="heading-title mb-40">
-										
-										<p className="des wow fadeInUpSmall" data-wow-delay=".4s">The client configures sources, output format, and collection frequency. Results can be delivered as dashboards, reports, API responses, or downloadable files. Information arrives at the right time, in the right place, and in the right format — without delays or extra effort.</p>
-									</div>
+	<section className="section-feature bg-2 relative">
+				<div className="tf-container full">
+					<div className="row">
+						<div className="col-lg-12 col-xl-5">
+							<div className="content">
+								<div className="heading-title mb-40">
+									<span className="sub-title texts-blue font-man wow fadeInUpSmall">Configured for your tasks</span>
+									<h2 className="title wow fadeInUpSmall" data-wow-delay=".3s">Full Data Collection Automation</h2>
+									<p className="des wow fadeInUpSmall" data-wow-delay=".4s">The system automatically scans specified sources, extracts relevant information, filters out "noise", and normalizes it. Works with any data type: text documents, images, tables, multimedia.</p>
+									<p className="des wow fadeInUpSmall" data-wow-delay=".4s"> The client configures sources, output format, and collection frequency. Results can be delivered as dashboards, reports, API responses, or downloadable files. Information arrives at the right time, in the right place, and in the right format — without delays or extra effort.</p>
 								
 								</div>
-							</div>
-							<div className="col-lg-12 col-xl-7">
-								<div className="image relative">
-									<div className="video-background">
-										<video autoPlay muted loop playsInline disablePictureInPicture>
-											<source src="/assets/videos/faq_headquarter.mp4" type="video/mp4"/>
-											Your browser does not support HTML5 video.
-										</video>
-									</div>
+								<div className="flex progres-wrap mb-50  wow fadeInUpSmall" data-wow-delay=".4s">
+							
 								</div>
+								
+							</div>
+						</div>
+						<div className="col-lg-12 col-xl-7">
+							<div className="image relative">
+								<img src="/assets/images/page/portfolio_kr1.jpg" alt="image" />
+							
 							</div>
 						</div>
 					</div>
-				</section>
+				</div>
+					</section>
+
+
+			
 
 				<section className="section-performance-auto pt-122 bg-2">
 						<div className="tf-container">
