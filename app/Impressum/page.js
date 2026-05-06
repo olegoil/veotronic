@@ -83,7 +83,7 @@ export default function Impressum() {
 											<h3>5. Registration Information</h3>
 											<ul className="policy-list">
 												<li><strong>Register Court:</strong> United States (USA)</li>
-												<li><strong>Tax ID (EIN):</strong> [Your EIN / Tax ID Number]</li>
+												<li><strong>Tax ID (EIN):</strong> 42-1837679</li>
 											</ul>
 										</div>
 
