@@ -67,6 +67,9 @@ export default function MobileMenu({ closeMenu }) {
 						<div className="dropdown2-btn" onClick={() => handleAccordion(3)} />
 
 					</li>
+					<li className={`${pathname === "/portfolio" ? "current" : ""}`}>
+						<Link href="/portfolio" onClick={handleMenuItemClick}>Products</Link>
+					</li>
 					<li className={`${pathname === "/faq" ? "current" : ""}`}>
 						<Link href="/faq" onClick={handleMenuItemClick}>Faq</Link>
 					</li>
