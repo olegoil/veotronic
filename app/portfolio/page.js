@@ -27,6 +27,32 @@ export default function ProductsPage() {
 				
 				<div>
 					
+					<section className="marque-text-style bg-5">
+						<div className="tf-container full">
+							<div className="row">
+								<div className="col-md-12">
+									<div className="marquee-wrapper text-slider ">
+										<div className="marquee-inner to-left">
+											<ul className="marqee-list d-flex marque-slider">
+												<li className="marquee-item">
+													<span className="text-slider">AI Product Studio</span><i className="icon-asterisk" />
+													<span className="text-slider">AI Product Studio</span><i className="icon-asterisk" />
+													<span className="text-slider">AI Product Studio</span><i className="icon-asterisk" />
+													<span className="text-slider">AI Product Studio</span><i className="icon-asterisk" />
+													<span className="text-slider">AI Product Studio</span><i className="icon-asterisk" />
+													<span className="text-slider">AI Product Studio</span><i className="icon-asterisk" />
+													<span className="text-slider">AI Product Studio</span><i className="icon-asterisk" />
+													<span className="text-slider">AI Product Studio</span><i className="icon-asterisk" />
+													<span className="text-slider">AI Product Studio</span><i className="icon-asterisk" />
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
 					<section className="section-feature bg-2 relative pt-122">
 				<div className="tf-container full">
 					<div className="row">
@@ -133,7 +159,7 @@ export default function ProductsPage() {
 					</section>
 
 				
-						<section className="marque-text-style bg-5">
+					<section className="marque-text-style bg-5">
 						<div className="tf-container full">
 							<div className="row">
 								<div className="col-md-12">
@@ -141,18 +167,24 @@ export default function ProductsPage() {
 										<div className="marquee-inner to-left">
 											<ul className="marqee-list d-flex marque-slider">
 												<li className="marquee-item">
-													<span className="text-slider">CNN, R-CNN, YOLO</span><i className="icon-asterisk" />
-													<span className="text-slider">Digital Marketing</span><i className="icon-asterisk" />
-													<span className="text-slider">Web UX/UI Design</span><i className="icon-asterisk" />
-													<span className="text-slider">Image Processing</span><i className="icon-asterisk" />
-													<span className="text-slider">Machine Learning & AI</span><i className="icon-asterisk" />
-													<span className="text-slider">Computer Vision</span><i className="icon-asterisk" />
-													<span className="text-slider">IT Services</span><i className="icon-asterisk" />
-													<span className="text-slider">AR/VR Apps</span><i className="icon-asterisk" />
-													<span className="text-slider">Deep Learning</span><i className="icon-asterisk" />
-													<span className="text-slider">Web UX/UI Design</span><i className="icon-asterisk" />
-													<span className="text-slider">CNN, R-CNN, YOLO</span><i className="icon-asterisk" />
-													<span className="text-slider">Machine Learning & AI</span><i className="icon-asterisk" />
+													<span className="text-slider">System for Automated Transport Logistics
+</span><i className="icon-asterisk" />
+													<span className="text-slider">System for Automated Transport Logistics
+</span><i className="icon-asterisk" />
+													<span className="text-slider">System for Automated Transport Logistics
+</span><i className="icon-asterisk" />
+													<span className="text-slider">System for Automated Transport Logistics
+</span><i className="icon-asterisk" />
+													<span className="text-slider">System for Automated Transport Logistics
+</span><i className="icon-asterisk" />
+													<span className="text-slider">System for Automated Transport Logistics
+</span><i className="icon-asterisk" />
+													<span className="text-slider">System for Automated Transport Logistics
+</span><i className="icon-asterisk" />
+													<span className="text-slider">System for Automated Transport Logistics
+</span><i className="icon-asterisk" />
+													<span className="text-slider">System for Automated Transport Logistics
+</span><i className="icon-asterisk" />
 												</li>
 											</ul>
 										</div>
@@ -210,8 +242,8 @@ export default function ProductsPage() {
 									<div className="content">
 										<div className="heading-title">
 											{/* <span className="sub-title texts-blue font-man wow fadeInUpSmall">CRM with Autopilot</span> */}
-											<h2 className="title wow fadeInUpSmall" data-wow-delay=".3s">Intelligence instead of a logistician.
-											</h2>
+											<h3 className="title wow fadeInUpSmall" data-wow-delay=".3s">Intelligence instead of a logistician.
+											</h3>
 											<p className="des wow fadeInUpSmall" data-wow-delay=".4s">SATL ensures transport is used at maximum capacity. AI predicts delays and adjusts loading plans before they become a problem. This turns chaotic shipping into synced, smooth operations.
 											</p>
 											<p className="des wow fadeInUpSmall" data-wow-delay=".4s">Real-time calculation of the shortest and most economical routes considering traffic and road conditions. Fuel optimization algorithms based on terrain and cargo weight. Intelligent loading and unloading planning to minimize downtime.
@@ -292,18 +324,15 @@ export default function ProductsPage() {
 										<div className="marquee-inner to-left">
 											<ul className="marqee-list d-flex marque-slider">
 												<li className="marquee-item">
-													<span className="text-slider">CNN, R-CNN, YOLO</span><i className="icon-asterisk" />
-													<span className="text-slider">Digital Marketing</span><i className="icon-asterisk" />
-													<span className="text-slider">Web UX/UI Design</span><i className="icon-asterisk" />
-													<span className="text-slider">Image Processing</span><i className="icon-asterisk" />
-													<span className="text-slider">Machine Learning & AI</span><i className="icon-asterisk" />
-													<span className="text-slider">Computer Vision</span><i className="icon-asterisk" />
-													<span className="text-slider">IT Services</span><i className="icon-asterisk" />
-													<span className="text-slider">AR/VR Apps</span><i className="icon-asterisk" />
-													<span className="text-slider">Deep Learning</span><i className="icon-asterisk" />
-													<span className="text-slider">Web UX/UI Design</span><i className="icon-asterisk" />
-													<span className="text-slider">CNN, R-CNN, YOLO</span><i className="icon-asterisk" />
-													<span className="text-slider">Machine Learning & AI</span><i className="icon-asterisk" />
+													<span className="text-slider">Customer Workflow System</span><i className="icon-asterisk" />
+													<span className="text-slider">Customer Workflow System</span><i className="icon-asterisk" />
+													<span className="text-slider">Customer Workflow System</span><i className="icon-asterisk" />
+													<span className="text-slider">Customer Workflow System</span><i className="icon-asterisk" />
+													<span className="text-slider">Customer Workflow System</span><i className="icon-asterisk" />
+													<span className="text-slider">Customer Workflow System</span><i className="icon-asterisk" />
+													<span className="text-slider">Customer Workflow System</span><i className="icon-asterisk" />
+													<span className="text-slider">Customer Workflow System</span><i className="icon-asterisk" />
+													<span className="text-slider">Customer Workflow System</span><i className="icon-asterisk" />
 												</li>
 											</ul>
 										</div>
@@ -374,8 +403,8 @@ The system automatically sends personalized offers to potential customers and cr
 									<div className="content">
 										<div className="heading-title mb-40">
 											<span className="sub-title texts-blue font-man wow fadeInUpSmall">CRM with Autopilot</span>
-											<h2 className="title wow fadeInUpSmall" data-wow-delay=".3s">One Place. Full Control.
-											</h2>
+											<h3 className="title wow fadeInUpSmall" data-wow-delay=".3s">One Place. Full Control.
+											</h3>
 											<p className="des wow fadeInUpSmall" data-wow-delay=".4s">The system sends an offer based on the client's interests and immediately creates a personal account. After the status changes to "customer," all correspondence, documents, and orders are already in place — no data migration is needed.
 											</p>
 											<p className="des wow fadeInUpSmall" data-wow-delay=".4s">Employees see the history, tasks, and status of each client in real time. Management can check the deal's stage without asking — everything is in one place.
@@ -400,18 +429,15 @@ The system automatically sends personalized offers to potential customers and cr
 										<div className="marquee-inner to-left">
 											<ul className="marqee-list d-flex marque-slider">
 												<li className="marquee-item">
-													<span className="text-slider">CNN, R-CNN, YOLO</span><i className="icon-asterisk" />
-													<span className="text-slider">Digital Marketing</span><i className="icon-asterisk" />
-													<span className="text-slider">Web UX/UI Design</span><i className="icon-asterisk" />
-													<span className="text-slider">Image Processing</span><i className="icon-asterisk" />
-													<span className="text-slider">Machine Learning & AI</span><i className="icon-asterisk" />
-													<span className="text-slider">Computer Vision</span><i className="icon-asterisk" />
-													<span className="text-slider">IT Services</span><i className="icon-asterisk" />
-													<span className="text-slider">AR/VR Apps</span><i className="icon-asterisk" />
-													<span className="text-slider">Deep Learning</span><i className="icon-asterisk" />
-													<span className="text-slider">Web UX/UI Design</span><i className="icon-asterisk" />
-													<span className="text-slider">CNN, R-CNN, YOLO</span><i className="icon-asterisk" />
-													<span className="text-slider">Machine Learning & AI</span><i className="icon-asterisk" />
+													<span className="text-slider">Veotronic API Gateway</span><i className="icon-asterisk" />
+													<span className="text-slider">Veotronic API Gateway</span><i className="icon-asterisk" />
+													<span className="text-slider">Veotronic API Gateway</span><i className="icon-asterisk" />
+													<span className="text-slider">Veotronic API Gateway</span><i className="icon-asterisk" />
+													<span className="text-slider">Veotronic API Gateway</span><i className="icon-asterisk" />
+													<span className="text-slider">Veotronic API Gateway</span><i className="icon-asterisk" />
+													<span className="text-slider">Veotronic API Gateway</span><i className="icon-asterisk" />
+													<span className="text-slider">Veotronic API Gateway</span><i className="icon-asterisk" />
+													<span className="text-slider">Veotronic API Gateway</span><i className="icon-asterisk" />
 												</li>
 											</ul>
 										</div>
@@ -427,7 +453,7 @@ The system automatically sends personalized offers to potential customers and cr
 						<div className="col-lg-12">
 							<div className="heading-title center m0-auto w-680 mb-80">
 								<span className="sub-title text-blue1 font-man wow fadeInUpSmall" data-wow-delay=".2s">Simple. Secure. Interconnected.</span>
-								<h2 className="title wow fadeInUpSmall" data-wow-delay=".3s">Viotronic API Gateway
+								<h2 className="title wow fadeInUpSmall" data-wow-delay=".3s">Veotronic API Gateway
 									
 								</h2>
 							</div>
@@ -486,7 +512,7 @@ The system automatically sends personalized offers to potential customers and cr
 							<div className="content">
 								<div className="heading-title mb-40">
 									<span className="sub-title texts-blue font-man wow fadeInUpSmall">From photo to shelf in seconds</span>
-									<h2 className="title wow fadeInUpSmall" data-wow-delay=".3s">Automatic Content Generation</h2>
+									<h3 className="title wow fadeInUpSmall" data-wow-delay=".3s">Automatic Content Generation</h3>
 									<p className="des wow fadeInUpSmall" data-wow-delay=".4s">A single entry point for your entire IT infrastructure. Unifying CRM, ERP, marketplaces, and accounting into one seamless flow.</p>
 									<p className="des wow fadeInUpSmall" data-wow-delay=".4s"> This is not just integration — it's building a foundation for digital transformation where every system "hears" each other and data works for you 24/7.</p>
 									<p className="des wow fadeInUpSmall" data-wow-delay=".4s"> End-to-end real-time data flow. Automatic exchange between CRM, ERP, and AI. Lower maintenance costs and faster business processes.</p>
@@ -517,18 +543,15 @@ The system automatically sends personalized offers to potential customers and cr
 										<div className="marquee-inner to-left">
 											<ul className="marqee-list d-flex marque-slider">
 												<li className="marquee-item">
-													<span className="text-slider">CNN, R-CNN, YOLO</span><i className="icon-asterisk" />
-													<span className="text-slider">Digital Marketing</span><i className="icon-asterisk" />
-													<span className="text-slider">Web UX/UI Design</span><i className="icon-asterisk" />
-													<span className="text-slider">Image Processing</span><i className="icon-asterisk" />
-													<span className="text-slider">Machine Learning & AI</span><i className="icon-asterisk" />
-													<span className="text-slider">Computer Vision</span><i className="icon-asterisk" />
-													<span className="text-slider">IT Services</span><i className="icon-asterisk" />
-													<span className="text-slider">AR/VR Apps</span><i className="icon-asterisk" />
-													<span className="text-slider">Deep Learning</span><i className="icon-asterisk" />
-													<span className="text-slider">Web UX/UI Design</span><i className="icon-asterisk" />
-													<span className="text-slider">CNN, R-CNN, YOLO</span><i className="icon-asterisk" />
-													<span className="text-slider">Machine Learning & AI</span><i className="icon-asterisk" />
+													<span className="text-slider">Automated Data Collection & Processing System</span><i className="icon-asterisk" />
+													<span className="text-slider">Automated Data Collection & Processing System</span><i className="icon-asterisk" />
+													<span className="text-slider">Automated Data Collection & Processing System</span><i className="icon-asterisk" />
+													<span className="text-slider">Automated Data Collection & Processing System</span><i className="icon-asterisk" />
+													<span className="text-slider">Automated Data Collection & Processing System</span><i className="icon-asterisk" />
+													<span className="text-slider">Automated Data Collection & Processing System</span><i className="icon-asterisk" />
+													<span className="text-slider">Automated Data Collection & Processing System</span><i className="icon-asterisk" />
+													<span className="text-slider">Automated Data Collection & Processing System</span><i className="icon-asterisk" />
+													<span className="text-slider">Automated Data Collection & Processing System</span><i className="icon-asterisk" />
 												</li>
 											</ul>
 										</div>
@@ -584,7 +607,7 @@ The system automatically sends personalized offers to potential customers and cr
 							<div className="content">
 								<div className="heading-title mb-40">
 									<span className="sub-title texts-blue font-man wow fadeInUpSmall">Configured for your tasks</span>
-									<h2 className="title wow fadeInUpSmall" data-wow-delay=".3s">Full Data Collection Automation</h2>
+									<h3 className="title wow fadeInUpSmall" data-wow-delay=".3s">Full Data Collection Automation</h3>
 									<p className="des wow fadeInUpSmall" data-wow-delay=".4s">The system automatically scans specified sources, extracts relevant information, filters out "noise", and normalizes it. Works with any data type: text documents, images, tables, multimedia.</p>
 									<p className="des wow fadeInUpSmall" data-wow-delay=".4s"> The client configures sources, output format, and collection frequency. Results can be delivered as dashboards, reports, API responses, or downloadable files. Information arrives at the right time, in the right place, and in the right format — without delays or extra effort.</p>
 								
@@ -614,47 +637,14 @@ The system automatically sends personalized offers to potential customers and cr
 								<div className="col-lg-12">
 									<div className="heading-title m0-auto w-680 center">
 										<span className="sub-title texts-blue font-man">Beyond what you see</span>
-										<h2 className="title">These are just a few of our solutions. We have many more projects ready to launch:</h2>
+										<h2 className="title">These are just a few of our solutions. We have many more projects ready to launch</h2>
 									</div>
 								</div>
 							</div>
 						
 						</div>
 					</section>
-				
-
-					<section className="marque-text-style bg-5">
-						<div className="tf-container full">
-							<div className="row">
-								<div className="col-md-12">
-									<div className="marquee-wrapper text-slider ">
-										<div className="marquee-inner to-left">
-											<ul className="marqee-list d-flex marque-slider">
-												<li className="marquee-item">
-													<span className="text-slider">CNN, R-CNN, YOLO</span><i className="icon-asterisk" />
-													<span className="text-slider">Digital Marketing</span><i className="icon-asterisk" />
-													<span className="text-slider">Web UX/UI Design</span><i className="icon-asterisk" />
-													<span className="text-slider">Image Processing</span><i className="icon-asterisk" />
-													<span className="text-slider">Machine Learning & AI</span><i className="icon-asterisk" />
-													<span className="text-slider">Computer Vision</span><i className="icon-asterisk" />
-													<span className="text-slider">IT Services</span><i className="icon-asterisk" />
-													<span className="text-slider">AR/VR Apps</span><i className="icon-asterisk" />
-													<span className="text-slider">Deep Learning</span><i className="icon-asterisk" />
-													<span className="text-slider">Web UX/UI Design</span><i className="icon-asterisk" />
-													<span className="text-slider">CNN, R-CNN, YOLO</span><i className="icon-asterisk" />
-													<span className="text-slider">Machine Learning & AI</span><i className="icon-asterisk" />
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					
-	
-					
-			
+		
 				
 				</div>
 

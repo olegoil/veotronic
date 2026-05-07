@@ -168,6 +168,9 @@ export default function ContactUs() {
                                                             <li>
                                                                 <Link href="https://www.linkedin.com/company/113454316" className="flex-five"><i className="icon-ins" /></Link>
                                                             </li>
+                                                            <li>
+                                                                <Link href="https://www.facebook.com/veotronic/" className="flex-five"><i className="icon-fb" /></Link>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>

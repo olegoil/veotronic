@@ -26,6 +26,13 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handle
 									<i className="icon-ins" />
 									<a href="https://www.linkedin.com/company/113454316" className='text-white'>LinkedIn</a>
 								</li>
+								&nbsp;
+								&nbsp;
+								&nbsp;
+								<li className="flex-three">
+									<i className="icon-fb" />
+									<a href="https://www.facebook.com/veotronic/" className='text-white'>Facebook</a>
+								</li>
 							</ul>
 						</div>
 						<div className="col-md-5 flex-six">

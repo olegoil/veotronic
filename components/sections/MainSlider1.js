@@ -23,6 +23,13 @@ export default function MainSlider1() {
 											<a href="https://www.linkedin.com/company/113454316" className='text-white'>
 											<i className="icon-ins" />LinkedIn</a>
 										</span>
+										&nbsp;
+										&nbsp;
+										&nbsp;
+										<span className="text-white font-man">
+											<a href="https://www.facebook.com/veotronic/" className='text-white'>
+											<i className="icon-fb" />Facebook</a>
+										</span>
 									</div>
 									<h1 className="title-slider text-white wow fadeInUpSmall" data-wow-delay=".2s">AI Development &amp; Implementation <br /> for Business Automation
 									</h1>
@@ -50,6 +57,13 @@ export default function MainSlider1() {
 										<span className="text-white font-man">
 											<a href="https://www.linkedin.com/company/113454316" className='text-white'>
 											<i className="icon-ins" />LinkedIn</a>
+										</span>
+										&nbsp;
+										&nbsp;
+										&nbsp;
+										<span className="text-white font-man">
+											<a href="https://www.facebook.com/veotronic/" className='text-white'>
+											<i className="icon-fb" />Facebook</a>
 										</span>
 									</div>
 									<h1 className="title-slider text-white wow fadeInUpSmall" data-wow-delay=".2s">Business Process Automation
@@ -79,6 +93,10 @@ export default function MainSlider1() {
 											<a href="https://www.linkedin.com/company/113454316" className='text-white'>
 											<i className="icon-ins" />LinkedIn</a>
 										</span>
+										<span className="text-white font-man">
+											<a href="https://www.facebook.com/veotronic/" className='text-white'>
+											<i className="icon-fb" />Facebook</a>
+										</span>
 									</div>
 									<h1 className="title-slider text-white wow fadeInUpSmall" data-wow-delay=".2s">API Integration Platform
 										<br />Connecting Disparate Systems into One
@@ -106,6 +124,13 @@ export default function MainSlider1() {
 										<span className="text-white font-man">
 											<a href="https://www.linkedin.com/company/113454316" className='text-white'>
 											<i className="icon-ins" />LinkedIn</a>
+										</span>
+										&nbsp;
+										&nbsp;
+										&nbsp;
+										<span className="text-white font-man">
+											<a href="https://www.facebook.com/veotronic/" className='text-white'>
+											<i className="icon-fb" />Facebook</a>
 										</span>
 									</div>
 									<h1 className="title-slider text-white wow fadeInUpSmall" data-wow-delay=".2s">Custom Software Solutions
