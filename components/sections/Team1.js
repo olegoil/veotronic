@@ -38,21 +38,21 @@ export default function Team1() {
 					</div>
 					<div className="row relative z-index-3 mb-50 group-team-style1">
 						<div className="col-md-5 content-left">
-							<div className="tf-team-list flex-one team-post team-post-11 wow fadeInUpSmall" data-wow-delay=".2s" data-id={11} onMouseEnter={() => handleHover(1)} onMouseLeave={() => handleHover(1)}>
+							<div className="tf-team-list flex-one team-post team-post-22 wow fadeInUpSmall" data-wow-delay=".3s" data-id={22} onMouseEnter={() => handleHover(2)} onMouseLeave={() => handleHover(2)}>
 								<div className="flex">
 									<span className="number">01</span>
 									<div className="box-wrap">
-										<h3 className="name">Egor Lasitsa</h3>
+										<h3 className="name">Vlady Lasitsa</h3>
 										<p className="job font-man">Account Executive</p>
 									</div>
 								</div>
 								{/* <Link href="/team-details" className="link-team flex-five"><i className="icon-top" /></Link> */}
 							</div>
-							<div className="tf-team-list flex-one team-post team-post-22 wow fadeInUpSmall" data-wow-delay=".3s" data-id={22} onMouseEnter={() => handleHover(2)} onMouseLeave={() => handleHover(2)}>
+							<div className="tf-team-list flex-one team-post team-post-11 wow fadeInUpSmall" data-wow-delay=".2s" data-id={11} onMouseEnter={() => handleHover(1)} onMouseLeave={() => handleHover(1)}>
 								<div className="flex">
 									<span className="number">02</span>
 									<div className="box-wrap">
-										<h3 className="name">Vlady Lasitsa</h3>
+										<h3 className="name">Egor Lasitsa</h3>
 										<p className="job font-man">Chief Financial Officer</p>
 									</div>
 								</div>

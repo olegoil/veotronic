@@ -22,7 +22,7 @@ export default function AboutUs1() {
 							<div className="about-us-content wow fadeInUpSmall" data-wow-delay=".2s">
 								<div className="heading-title">
 									<span className="sub-title texts-blue font-man">About Company</span>
-									<h2 className="title">AI-Powered Innovation for Your Business
+									<h2 className="title">Enterprise-Grade Custom Development for Technical Environments
 									</h2>
 									<h2 className="title">
 										<span className="animationtext clip texts-blue">

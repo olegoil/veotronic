@@ -94,7 +94,7 @@ export default function ProductsPage() {
 						</div>
 						<div className="col-lg-12 col-xl-7">
 							<div className="image relative">
-								<img src="/assets/images/page/portfolio_ai6.jpg" alt="image" />
+								<img src="/assets/images/page/reteil_ai1.jpg" alt="image" />
 							
 							</div>
 						</div>
@@ -149,7 +149,7 @@ export default function ProductsPage() {
 								</div>
 								<div className="col-lg-6">
 									<div className="wcus-section4-image relative">
-										<img src="/assets/images/page/portfolio_api2.jpg" alt="image" className="wcus-h41" />
+										<img src="/assets/images/page/mob_ret2.jpg" alt="image" className="wcus-h41" />
 										{/* <img src="/assets/images/page/wcus-h4-2_new.jpg" alt="image" className="wcus-h42" /> */}
 										<div className="clip" />
 									</div>
@@ -200,7 +200,7 @@ export default function ProductsPage() {
 							<div className="col-md-6">
 								<div className="can-do-it-image relative">
 									<div className="elip" />
-									<img src="/assets/images/page/portfolio_satl1.jpg" alt="Veotronic unified API platform integration diagram" className="cdit-image" />
+									<img src="/assets/images/page/portfolio_satl11.jpg" alt="Veotronic unified API platform integration diagram" className="cdit-image" />
 									<img src="/assets/images/page/portfolio_satl2.jpg" alt="API connectivity and system integration visualization" className="cdit-image1" />
 								</div>
 							</div>
@@ -235,7 +235,7 @@ export default function ProductsPage() {
 
 			
 
-				<section className="section-feature bg-2 relative pt-130">
+				<section className="section-feature bg-2 relative pt-130 pb-50">
 						<div className="tf-container full">
 							<div className="row">
 								<div className="col-lg-12 col-xl-5">
@@ -248,7 +248,7 @@ export default function ProductsPage() {
 											</p>
 											<p className="des wow fadeInUpSmall" data-wow-delay=".4s">Real-time calculation of the shortest and most economical routes considering traffic and road conditions. Fuel optimization algorithms based on terrain and cargo weight. Intelligent loading and unloading planning to minimize downtime.
 											</p>
-										</div>
+										</div>Customer Workflow System
 									</div>
 								</div>
 								<div className="col-lg-12 col-xl-7">
@@ -354,7 +354,7 @@ export default function ProductsPage() {
 The system automatically sends personalized offers to potential customers and creates a personal account upon first interaction. When a lead becomes a customer, all correspondence, documents, and order tracking move into their personal account automatically.</p>
 										</div>
 										<div className="image relative">
-										<img src="/assets/images/page/portfolio_cmr1.jpg" alt="image" />
+										<img src="/assets/images/page/cmr_work1.jpg" alt="image" />
 										</div>
 									</div>
 								</div>
@@ -396,7 +396,7 @@ The system automatically sends personalized offers to potential customers and cr
 						</div>
 					</section>
 
-					<section className="section-feature bg-2 relative ">
+					<section className="section-feature bg-2 relative pb-130 pt-130">
 						<div className="tf-container full">
 							<div className="row">
 								<div className="col-lg-12 col-xl-5">
@@ -480,7 +480,7 @@ The system automatically sends personalized offers to potential customers and cr
 						</div>
 						<div className="col-lg-4">
 							<div className="service-image-h3 layer">
-								<img src="/assets/images/page/portfolio_api1.jpg" alt="image" />
+								<img src="/assets/images/page/portfolio2.jpg" alt="image" />
 							</div>
 						</div>
 						<div className="col-lg-4">
@@ -527,7 +527,7 @@ The system automatically sends personalized offers to potential customers and cr
 						</div>
 						<div className="col-lg-12 col-xl-7">
 							<div className="image relative">
-								<img src="/assets/images/page/portfolio_api5.jpg" alt="image" />
+								<img src="/assets/images/page/portfolio_sustem1.jpg" alt="image" />
 							
 							</div>
 						</div>
@@ -567,8 +567,8 @@ The system automatically sends personalized offers to potential customers and cr
 							<div className="col-md-6">
 								<div className="can-do-it-image relative">
 									<div className="elip" />
-									<img src="/assets/images/page/portfolio_kr2.jpg" alt="Veotronic unified API platform integration diagram" className="cdit-image" />
-									<img src="/assets/images/page/portfolio_kr3.jpg" alt="API connectivity and system integration visualization" className="cdit-image1" />
+									<img src="/assets/images/page/portfolio_information1.jpg" alt="Veotronic unified API platform integration diagram" className="cdit-image" />
+									<img src="/assets/images/page/portfolio_robot1.jpg" alt="API connectivity and system integration visualization" className="cdit-image1" />
 								</div>
 							</div>
 							<div className="col-md-6">
@@ -620,7 +620,7 @@ The system automatically sends personalized offers to potential customers and cr
 						</div>
 						<div className="col-lg-12 col-xl-7">
 							<div className="image relative">
-								<img src="/assets/images/page/portfolio_kr1.jpg" alt="image" />
+								<img src="/assets/images/page/n8n1.jpg" alt="image" />
 							
 							</div>
 						</div>

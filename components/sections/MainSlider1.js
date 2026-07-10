@@ -12,10 +12,10 @@ export default function MainSlider1() {
 					<SwiperSlide>
 						<div className="slider-it-main relative over overflow-hiden">
 							<div className="slider-image-it">
-								<img src="/assets/images/slide/slider_ai.jpg" alt="" />
+								<img src="/assets/images/slide/glass3.jpg" alt="" />
 							</div>
 							<span className="it-solution fw-600">IT Solutions</span>
-							<img src="/assets/images/slide/mask.png" alt="image" className="mask-slider" />
+							{/* <img src="/assets/images/slide/mask.png" alt="image" className="mask-slider" /> */}
 							<div className="tf-container">
 								<div className="slider-content-it relative z-index-3">
 									<div className="sub-title-slider wow fadeInUpSmall">
@@ -31,7 +31,8 @@ export default function MainSlider1() {
 											<i className="icon-fb" />Facebook</a>
 										</span>
 									</div>
-									<h1 className="title-slider text-white wow fadeInUpSmall" data-wow-delay=".2s">AI Development &amp; Implementation <br /> for Business Automation
+									<h1 className="title-slider text-white wow fadeInUpSmall" data-wow-delay=".2s">Custom Software Solutions
+										<br />for Business & Industrial Operations
 									</h1>
 									<p className="des text-white fw-500 mb-40 wow fadeInUpSmall" data-wow-delay=".3s">10+ Years Of Experience In Tech
 										Services
@@ -50,7 +51,7 @@ export default function MainSlider1() {
 								<img src="/assets/images/slide/slider_workflow.jpg" alt="" />
 							</div>
 							<span className="it-solution fw-600">IT Solutions</span>
-							<img src="/assets/images/slide/mask.png" alt="image" className="mask-slider" />
+							{/* <img src="/assets/images/slide/mask.png" alt="image" className="mask-slider" /> */}
 							<div className="tf-container">
 								<div className="slider-content-it relative z-index-3">
 									<div className="sub-title-slider wow fadeInUpSmall">
@@ -114,10 +115,10 @@ export default function MainSlider1() {
 					<SwiperSlide>
 						<div className="slider-it-main relative over overflow-hiden">
 							<div className="slider-image-it">
-								<img src="/assets/images/slide/slider_software.jpg" alt="" />
+								<img src="/assets/images/slide/slider_ai.jpg" alt="" />
 							</div>
 							<span className="it-solution fw-600">IT Solutions</span>
-							<img src="/assets/images/slide/mask.png" alt="image" className="mask-slider" />
+							{/* <img src="/assets/images/slide/mask.png" alt="image" className="mask-slider" /> */}
 							<div className="tf-container">
 								<div className="slider-content-it relative z-index-3">
 									<div className="sub-title-slider wow fadeInUpSmall">
@@ -133,8 +134,7 @@ export default function MainSlider1() {
 											<i className="icon-fb" />Facebook</a>
 										</span>
 									</div>
-									<h1 className="title-slider text-white wow fadeInUpSmall" data-wow-delay=".2s">Custom Software Solutions
-										<br />for Business & Industrial Operations
+									<h1 className="title-slider text-white wow fadeInUpSmall" data-wow-delay=".2s">AI Development &amp; Implementation <br /> for Business Automation
 									</h1>
 									<p className="des text-white fw-500 mb-40 wow fadeInUpSmall" data-wow-delay=".3s">10+ Years Of Experience In Tech
 										Services

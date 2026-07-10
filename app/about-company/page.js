@@ -69,7 +69,7 @@ export default function AboutCompany() {
 								<div className="col-md-6">
 									<div className="can-do-it-image relative">
 										<div className="elip" />
-										<img src="/assets/images/page/image-feature-h41_new.jpg" alt="Veotronic team working on software development" className="cdit-image" />
+										<img src="/assets/images/page/phone2.jpg" alt="Veotronic team working on software development" className="cdit-image" />
 										<img src="/assets/images/page/image-feature-h41_new2.jpg" alt="Veotronic office and development environment" className="cdit-image1" />
 										<div className="quote-feature-wrap">
 											<div className="counter tf-counter">
@@ -199,8 +199,8 @@ export default function AboutCompany() {
 								</div>
 								<div className="col-lg-6">
 									<div className="wcus-section4-image relative">
-										<img src="/assets/images/page/w-c-us-home4_new.jpg" alt="Veotronic software architecture and development process" className="wcus-h41" />
-										<img src="/assets/images/page/wcus-h4-2_new.jpg" alt="Veotronic team collaboration and design workflow" className="wcus-h42" />
+										<img src="/assets/images/page/silver1.jpg" alt="Veotronic software architecture and development process" className="wcus-h41" />
+										{/* <img src="/assets/images/page/wcus-h4-2_new.jpg" alt="Veotronic team collaboration and design workflow" className="wcus-h42" /> */}
 										<div className="clip" />
 									</div>
 								</div>
@@ -208,7 +208,7 @@ export default function AboutCompany() {
 						</div>
 					</section>
 
-					<section className="section-feature bg-2 relative ">
+					<section className="section-feature bg-2 relative pt-130 pb-130">
 						<div className="tf-container full">
 							<div className="row">
 								<div className="col-lg-12 col-xl-5">
@@ -223,7 +223,7 @@ export default function AboutCompany() {
 								</div>
 								<div className="col-lg-12 col-xl-7">
 									<div className="image relative">
-										<img src="/assets/images/page/case-h1_new5.jpg" alt="Veotronic development team at work" />
+										<img src="/assets/images/page/komanda1.jpg" alt="Veotronic development team at work" />
 									</div>
 								</div>
 							</div>

@@ -17,10 +17,10 @@ export default function CaseStudies1() {
 										<img src="/assets/images/page/case-h1_new4.jpg" alt="image silder" />
 									</SwiperSlide>
 									<SwiperSlide>
-										<img src="/assets/images/page/case-h1_new.jpg" alt="image silder" />
+										<img src="/assets/images/page/case-h1_new3.jpg" alt="image silder" />
 									</SwiperSlide>
 									<SwiperSlide>
-										<img src="/assets/images/page/case-h1_new3.jpg" alt="image silder" />
+										<img src="/assets/images/page/case-h1_new.jpg" alt="image silder" />
 									</SwiperSlide>
 								</div>
 								<div className="swiper-pagination" />

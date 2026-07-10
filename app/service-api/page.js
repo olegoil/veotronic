@@ -341,7 +341,7 @@ Without a unified API platform, your systems work in silos — manual data entry
 											</div>
 											<div className="col-lg-5">
 												<div className="tab-service-image relative">
-													<img src="/assets/images/service/api-med.jpg" alt="Healthcare and medicine API integration" />
+													<img src="/assets/images/service/medical1.jpg" alt="Healthcare and medicine API integration" />
 													<div className="clip" />
 												</div>
 											</div>
