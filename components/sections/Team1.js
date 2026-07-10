@@ -38,7 +38,7 @@ export default function Team1() {
 					</div>
 					<div className="row relative z-index-3 mb-50 group-team-style1">
 						<div className="col-md-5 content-left">
-							<div className="tf-team-list flex-one team-post team-post-22 wow fadeInUpSmall" data-wow-delay=".3s" data-id={22} onMouseEnter={() => handleHover(1)} onMouseLeave={() => handleHover(2)}>
+							<div className="tf-team-list flex-one team-post team-post-11 wow fadeInUpSmall" data-wow-delay=".3s" data-id={11} onMouseEnter={() => handleHover(1)} onMouseLeave={() => handleHover(1)}>
 								<div className="flex">
 									<span className="number">01</span>
 									<div className="box-wrap">
@@ -48,7 +48,7 @@ export default function Team1() {
 								</div>
 								{/* <Link href="/team-details" className="link-team flex-five"><i className="icon-top" /></Link> */}
 							</div>
-							<div className="tf-team-list flex-one team-post team-post-11 wow fadeInUpSmall" data-wow-delay=".2s" data-id={11} onMouseEnter={() => handleHover(2)} onMouseLeave={() => handleHover(1)}>
+							<div className="tf-team-list flex-one team-post team-post-22 wow fadeInUpSmall" data-wow-delay=".2s" data-id={22} onMouseEnter={() => handleHover(2)} onMouseLeave={() => handleHover(2)}>
 								<div className="flex">
 									<span className="number">02</span>
 									<div className="box-wrap">
@@ -83,7 +83,7 @@ export default function Team1() {
 							<div className="item-team-grid">
 								<div className={`item-team-member team-post team-post-11 item1 relative ${isHover == 1 ? "active-thumb" : ""}`} data-id={11}>
 									
-										<img src="/assets/images/team/teamh1_new.jpg" alt="image" />
+										<img src="/assets/images/team/teamh1_new4.jpg" alt="image" />
 									
 									{/* <ul className="social-team flex-three">
 										<li>
@@ -102,7 +102,7 @@ export default function Team1() {
 								</div>
 								<div className={`item-team-member team-post team-post-22 item2 relative ${isHover == 2 ? "active-thumb" : ""}`} data-id={22}>
 									
-										<img src="/assets/images/team/teamh1_new4.jpg" alt="image" />
+										<img src="/assets/images/team/teamh1_new.jpg" alt="image" />
 									
 									{/* <ul className="social-team flex-three">
 										<li>
