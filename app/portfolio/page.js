@@ -620,7 +620,7 @@ The system automatically sends personalized offers to potential customers and cr
 						</div>
 						<div className="col-lg-12 col-xl-7">
 							<div className="image relative">
-								<img src="/assets/images/page/n8n1.jpg" alt="image" />
+								<img src="/assets/images/page/optimizetion1.jpg" alt="image" />
 							
 							</div>
 						</div>
